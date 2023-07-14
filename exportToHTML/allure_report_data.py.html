@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>allure_report_data.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+allure_report_data.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-03-07 15:36</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : allure_report_data.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>json
+<a name="l9"><span class="ln">9    </span></a><span class="s2">from </span>typing <span class="s2">import </span>List, Text
+<a name="l10"><span class="ln">10   </span></a><span class="s2">from </span>common.setting <span class="s2">import </span>ensure_path_sep
+<a name="l11"><span class="ln">11   </span></a><span class="s2">from </span>utils.read_file_tools.get_all_files_path <span class="s2">import </span>get_all_files
+<a name="l12"><span class="ln">12   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>TestMetrics
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s2">class </span>AllureFileClean:
+<a name="l16"><span class="ln">16   </span></a>    <span class="s0">&quot;&quot;&quot;allure 报告数据清洗，提取业务需要得数据&quot;&quot;&quot;</span>
+<a name="l17"><span class="ln">17   </span></a>    @classmethod
+<a name="l18"><span class="ln">18   </span></a>    <span class="s2">def </span>get_testcases(cls) -&gt; List:
+<a name="l19"><span class="ln">19   </span></a>        <span class="s0">&quot;&quot;&quot; 获取所有 allure 报告中执行用例的情况&quot;&quot;&quot;</span>
+<a name="l20"><span class="ln">20   </span></a>        <span class="s0"># 将所有数据都收集到files中</span>
+<a name="l21"><span class="ln">21   </span></a>        files = []
+<a name="l22"><span class="ln">22   </span></a>        <span class="s2">for </span>i <span class="s2">in </span>get_all_files(ensure_path_sep(<span class="s3">&quot;</span><span class="s2">\\</span><span class="s3">report</span><span class="s2">\\</span><span class="s3">html</span><span class="s2">\\</span><span class="s3">data</span><span class="s2">\\</span><span class="s3">test-cases&quot;</span>)):
+<a name="l23"><span class="ln">23   </span></a>            <span class="s2">with </span>open(i, <span class="s3">'r'</span>, encoding=<span class="s3">'utf-8'</span>) <span class="s2">as </span>file:
+<a name="l24"><span class="ln">24   </span></a>                date = json.load(file)
+<a name="l25"><span class="ln">25   </span></a>                files.append(date)
+<a name="l26"><span class="ln">26   </span></a>        print(files)
+<a name="l27"><span class="ln">27   </span></a>        <span class="s2">return </span>files
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>    <span class="s2">def </span>get_failed_case(self) -&gt; List:
+<a name="l30"><span class="ln">30   </span></a>        <span class="s0">&quot;&quot;&quot; 获取到所有失败的用例标题和用例代码路径&quot;&quot;&quot;</span>
+<a name="l31"><span class="ln">31   </span></a>        error_case = []
+<a name="l32"><span class="ln">32   </span></a>        <span class="s2">for </span>i <span class="s2">in </span>self.get_testcases():
+<a name="l33"><span class="ln">33   </span></a>            <span class="s2">if </span>i[<span class="s3">'status'</span>] == <span class="s3">'failed' </span><span class="s2">or </span>i[<span class="s3">'status'</span>] == <span class="s3">'broken'</span>:
+<a name="l34"><span class="ln">34   </span></a>                error_case.append((i[<span class="s3">'name'</span>], i[<span class="s3">'fullName'</span>]))
+<a name="l35"><span class="ln">35   </span></a>        <span class="s2">return </span>error_case
+<a name="l36"><span class="ln">36   </span></a>
+<a name="l37"><span class="ln">37   </span></a>    <span class="s2">def </span>get_failed_cases_detail(self) -&gt; Text:
+<a name="l38"><span class="ln">38   </span></a>        <span class="s0">&quot;&quot;&quot; 返回所有失败的测试用例相关内容 &quot;&quot;&quot;</span>
+<a name="l39"><span class="ln">39   </span></a>        date = self.get_failed_case()
+<a name="l40"><span class="ln">40   </span></a>        values = <span class="s3">&quot;&quot;</span>
+<a name="l41"><span class="ln">41   </span></a>        <span class="s0"># 判断有失败用例，则返回内容</span>
+<a name="l42"><span class="ln">42   </span></a>        <span class="s2">if </span>len(date) &gt;= <span class="s4">1</span>:
+<a name="l43"><span class="ln">43   </span></a>            values = <span class="s3">&quot;失败用例:</span><span class="s2">\n</span><span class="s3">&quot;</span>
+<a name="l44"><span class="ln">44   </span></a>            values += <span class="s3">&quot;           **********************************</span><span class="s2">\n</span><span class="s3">&quot;</span>
+<a name="l45"><span class="ln">45   </span></a>            <span class="s2">for </span>i <span class="s2">in </span>date:
+<a name="l46"><span class="ln">46   </span></a>                values += <span class="s3">&quot;        &quot; </span>+ i[<span class="s4">0</span>] + <span class="s3">&quot;:&quot; </span>+ i[<span class="s4">1</span>] + <span class="s3">&quot;</span><span class="s2">\n</span><span class="s3">&quot;</span>
+<a name="l47"><span class="ln">47   </span></a>        <span class="s2">return </span>values
+<a name="l48"><span class="ln">48   </span></a>
+<a name="l49"><span class="ln">49   </span></a>    @classmethod
+<a name="l50"><span class="ln">50   </span></a>    <span class="s2">def </span>get_case_count(cls) -&gt; <span class="s3">&quot;TestMetrics&quot;</span>:
+<a name="l51"><span class="ln">51   </span></a>        <span class="s0">&quot;&quot;&quot; 统计用例数量 &quot;&quot;&quot;</span>
+<a name="l52"><span class="ln">52   </span></a>        <span class="s2">try</span>:
+<a name="l53"><span class="ln">53   </span></a>            file_name = ensure_path_sep(<span class="s3">&quot;</span><span class="s2">\\</span><span class="s3">report</span><span class="s2">\\</span><span class="s3">html</span><span class="s2">\\</span><span class="s3">widgets</span><span class="s2">\\</span><span class="s3">summary.json&quot;</span>)
+<a name="l54"><span class="ln">54   </span></a>            <span class="s2">with </span>open(file_name, <span class="s3">'r'</span>, encoding=<span class="s3">'utf-8'</span>) <span class="s2">as </span>file:
+<a name="l55"><span class="ln">55   </span></a>                data = json.load(file)
+<a name="l56"><span class="ln">56   </span></a>            _case_count = data[<span class="s3">'statistic'</span>]
+<a name="l57"><span class="ln">57   </span></a>            _time = data[<span class="s3">'time'</span>]
+<a name="l58"><span class="ln">58   </span></a>            keep_keys = {<span class="s3">&quot;passed&quot;</span>, <span class="s3">&quot;failed&quot;</span>, <span class="s3">&quot;broken&quot;</span>, <span class="s3">&quot;skipped&quot;</span>, <span class="s3">&quot;total&quot;</span>}
+<a name="l59"><span class="ln">59   </span></a>            run_case_data = {k: v <span class="s2">for </span>k, v <span class="s2">in </span>data[<span class="s3">'statistic'</span>].items() <span class="s2">if </span>k <span class="s2">in </span>keep_keys}
+<a name="l60"><span class="ln">60   </span></a>            <span class="s0"># 判断运行用例总数大于0</span>
+<a name="l61"><span class="ln">61   </span></a>            <span class="s2">if </span>_case_count[<span class="s3">&quot;total&quot;</span>] &gt; <span class="s4">0</span>:
+<a name="l62"><span class="ln">62   </span></a>                <span class="s0"># 计算用例成功率</span>
+<a name="l63"><span class="ln">63   </span></a>                run_case_data[<span class="s3">&quot;pass_rate&quot;</span>] = round(
+<a name="l64"><span class="ln">64   </span></a>                    (_case_count[<span class="s3">&quot;passed&quot;</span>] + _case_count[<span class="s3">&quot;skipped&quot;</span>]) / _case_count[<span class="s3">&quot;total&quot;</span>] * <span class="s4">100</span>, <span class="s4">2</span>
+<a name="l65"><span class="ln">65   </span></a>                )
+<a name="l66"><span class="ln">66   </span></a>            <span class="s2">else</span>:
+<a name="l67"><span class="ln">67   </span></a>                <span class="s0"># 如果未运行用例，则成功率为 0.0</span>
+<a name="l68"><span class="ln">68   </span></a>                run_case_data[<span class="s3">&quot;pass_rate&quot;</span>] = <span class="s4">0.0</span>
+<a name="l69"><span class="ln">69   </span></a>            <span class="s0"># 收集用例运行时长</span>
+<a name="l70"><span class="ln">70   </span></a>            run_case_data[<span class="s3">'time'</span>] = _time <span class="s2">if </span>run_case_data[<span class="s3">'total'</span>] == <span class="s4">0 </span><span class="s2">else </span>round(_time[<span class="s3">'duration'</span>] / <span class="s4">1000</span>, <span class="s4">2</span>)
+<a name="l71"><span class="ln">71   </span></a>            <span class="s2">return </span>TestMetrics(**run_case_data)
+<a name="l72"><span class="ln">72   </span></a>        <span class="s2">except </span>FileNotFoundError <span class="s2">as </span>exc:
+<a name="l73"><span class="ln">73   </span></a>            <span class="s2">raise </span>FileNotFoundError(
+<a name="l74"><span class="ln">74   </span></a>                <span class="s3">&quot;程序中检查到您未生成allure报告，&quot;</span>
+<a name="l75"><span class="ln">75   </span></a>                <span class="s3">&quot;通常可能导致的原因是allure环境未配置正确&quot;</span>
+<a name="l76"><span class="ln">76   </span></a>            ) <span class="s2">from </span>exc
+<a name="l77"><span class="ln">77   </span></a>
+<a name="l78"><span class="ln">78   </span></a>
+<a name="l79"><span class="ln">79   </span></a><span class="s2">if </span>__name__ == <span class="s3">'__main__'</span>:
+<a name="l80"><span class="ln">80   </span></a>    AllureFileClean().get_case_count()
+<a name="l81"><span class="ln">81   </span></a>    AllureFileClean().get_testcases()
+<a name="l82"><span class="ln">82   </span></a></pre>
+</body>
+</html>

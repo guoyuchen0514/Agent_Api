@@ -1,0 +1,88 @@
+INFO2023-06-05 09:27:50,891D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 拓展组列表导出
+请求路径: https://api.pre.lianok.com/agent/v1/agentPartner/exportPartner?userType=13
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '1cf765af8a2b421ba48aa4f5493aa8ad'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"fb1dbeb0-8bcf-4e1f-896c-3961b646d7cc"}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 15:49:57,923D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 查询拓展组通道费率限制
+请求路径: https://api.pre.lianok.com/agent/v1/rate/queryAgentRateConfigList?userType=13
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e78ca6d1fc2943d892df26814c8905d6'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"channelCode":"leShua","topAgentCode":"zicai","agentNo":null,"minAliRate":"0.0023","maxAliRate":"0.0500","minWeixinRate":"0.0023","maxWeixinRate":"0.0500","minCloudPayGt1000Rate":"0.0055","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0023","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":null,"maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":"0.0100","maxShareServiceRate":"0.1"},{"channelCode":"leShuaOnline","topAgentCode":"zicai","agentNo":null,"minAliRate":"0.0023","maxAliRate":"0.0500","minWeixinRate":"0.0066","maxWeixinRate":"0.0500","minCloudPayGt1000Rate":"0.0055","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0023","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":null,"maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":"0.0100","maxShareServiceRate":"0.1"},{"channelCode":"ysepay","topAgentCode":"zicai","agentNo":null,"minAliRate":"0.0023","maxAliRate":"0.1000","minWeixinRate":"0.0023","maxWeixinRate":"0.1000","minCloudPayGt1000Rate":"0.0055","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0025","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":"0.0003","maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":null,"maxShareServiceRate":"0.1"},{"channelCode":"suiXingFu","topAgentCode":"zicai","agentNo":null,"minAliRate":"0.0023","maxAliRate":"0.0100","minWeixinRate":"0.0023","maxWeixinRate":"0.0100","minCloudPayGt1000Rate":"0.0055","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0025","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":null,"maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":null,"maxShareServiceRate":"0.1"},{"channelCode":"heLiBao","topAgentCode":"zicai","agentNo":null,"minAliRate":"0.0023","maxAliRate":"0.1000","minWeixinRate":"0.0023","maxWeixinRate":"0.1000","minCloudPayGt1000Rate":"0.0052","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0025","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":null,"maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":null,"maxShareServiceRate":"0.1"}]}
+接口响应时长: 85 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 15:56:17,851D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 获取费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a0f42caa8e1b4ab4a7765501556002c6'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"}]}
+接口响应时长: 372 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 15:59:43,235D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 获取费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ba2dcd25abd642c6ae8d650822ddc29b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"}]}
+接口响应时长: 110 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 15:59:43,362D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 获取费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ba2dcd25abd642c6ae8d650822ddc29b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"}]}
+接口响应时长: 104 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 16:00:31,727D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 获取费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'c52d94535c86431693137b4e201191df'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"}]}
+接口响应时长: 72 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 16:00:31,796D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 获取"测试服务商模板-1"费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'c52d94535c86431693137b4e201191df'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"}]}
+接口响应时长: 64 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-05 16:19:48,035D:\Agent_Api\logs\info-2023-06-05.log:log_decorator.py:45 
+======================================================
+用例标题: 选择费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/getRateTemplateInfo
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9dacb704e7bd4cfd84742f13865b6200', 'Content-Length': '20'}
+请求内容: {'templateId': '45'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07","rateConfigList":[{"id":220,"templateId":45,"channelAgentCode":"zicai","channelCode":"leShua","wechatPayRate":"0.0025","alipayRate":"0.0025","cloudPayLe1000Rate":"0.0025","cloudPayGt1000Rate":"0.0057","scanCodeQuickPayRate":null,"chargeFeePercent":"0.30","shareServiceRate":"0.0100","isDeleted":0,"createTime":"2023-06-05","updateTime":"2023-06-05"},{"id":221,"templateId":45,"channelAgentCode":"zicai","channelCode":"leShuaOnline","wechatPayRate":"0.0072","alipayRate":"0.0026","cloudPayLe1000Rate":"0.0026","cloudPayGt1000Rate":"0.0058","scanCodeQuickPayRate":null,"chargeFeePercent":"0.30","shareServiceRate":"0.0100","isDeleted":0,"createTime":"2023-06-05","updateTime":"2023-06-05"},{"id":222,"templateId":45,"channelAgentCode":"zicai","channelCode":"ysepay","wechatPayRate":"0.0026","alipayRate":"0.0026","cloudPayLe1000Rate":"0.0026","cloudPayGt1000Rate":"0.0058","scanCodeQuickPayRate":"0.0005","chargeFeePercent":"0.30","shareServiceRate":"0.0000","isDeleted":0,"createTime":"2023-06-05","updateTime":"2023-06-05"},{"id":223,"templateId":45,"channelAgentCode":"zicai","channelCode":"suiXingFu","wechatPayRate":"0.0026","alipayRate":"0.0026","cloudPayLe1000Rate":"0.0026","cloudPayGt1000Rate":"0.0058","scanCodeQuickPayRate":null,"chargeFeePercent":"0.30","shareServiceRate":"0.0000","isDeleted":0,"createTime":"2023-06-05","updateTime":"2023-06-05"},{"id":224,"templateId":45,"channelAgentCode":"zicai","channelCode":"heLiBao","wechatPayRate":"0.0026","alipayRate":"0.0026","cloudPayLe1000Rate":"0.0026","cloudPayGt1000Rate":"0.0059","scanCodeQuickPayRate":null,"chargeFeePercent":"0.30","shareServiceRate":"0.0000","isDeleted":0,"createTime":"2023-06-05","updateTime":"2023-06-05"}]}}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================

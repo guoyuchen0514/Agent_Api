@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查看订单详情
+请求路径: https://api.pre.lianok.com/agent/v1/order/selectOrderDetails
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=f2a75f0b13a849b181b33c949aa4e3bd', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '333'}
+请求内容: {'merchantNo': '100018', 'shopNo': '100036', 'orderNo': '81023151150000001'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"businessOrderNo":"acb6cefe6f2f46909844ea5f7ccf0771","channelOrderNo":"9000878009023151","orderNo":"81023151150000001","transactionNo":"092023053122001477301457280048","payTime":"2023-05-31 15:06:57","createTime":"2023-05-31 15:06:51","payChannel":"leShua","payChannelName":"乐刷","tradeType":null,"orderStatus":2,"orderStatusName":null,"totalAmount":"0.01","actualAmount":"0.01","payAmount":"0.01","benefitAmount":"0.00","officialCouponAmount":"0.00","serviceFee":"0.00","merchantRate":"0.0450","refundAmount":null,"topAgentCommission":"0.00","agentCommission":"0.00","ourCommission":"0.00","payWay":"alipay","payWayName":"支付宝","merchantNo":"100018","merchantName":"百果园水果","merchantLoginAccount":"13455456862","shopNo":"100036","shopName":"百果园水果店","shopShortName":"百果园水果店","cashierNo":"100081","cashierName":"百果园水果店","deviceType":null,"deviceNo":"","partnerName":"小熊测试服务商","partnerGroupName":"小熊测试服务商","userName":"百果园水果店","payAccount":null,"remark":"","payType":"activeScan","payTypeCN":"主扫","userId":"2088022895977302","canRefundAmount":null,"promotionList":null}}
+接口响应时长: 119 ms
+Http状态码: 200
+=====================================================

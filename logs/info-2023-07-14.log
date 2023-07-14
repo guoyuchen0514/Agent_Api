@@ -1,0 +1,572 @@
+INFO2023-07-14 09:47:36,469D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ae5021aa83ad4c77aa7185c4bd4127d7', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 76 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 09:47:36,559D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ae5021aa83ad4c77aa7185c4bd4127d7', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 09:47:36,654D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ae5021aa83ad4c77aa7185c4bd4127d7', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 78 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 09:51:25,028D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6d84aa0a49f1425a86e43d9cb6b64fbe', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 105 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 09:51:25,120D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6d84aa0a49f1425a86e43d9cb6b64fbe', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 09:51:25,205D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6d84aa0a49f1425a86e43d9cb6b64fbe', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 79 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:16:02,143D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '55719437f40e40c1876a50502e9f9601', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 89 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:16:02,326D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '55719437f40e40c1876a50502e9f9601', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:16:02,407D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '55719437f40e40c1876a50502e9f9601', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 73 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:16:02,476D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '55719437f40e40c1876a50502e9f9601', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 64 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:22:02,296D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '02b79c521dda452e9050e9e472ec7ab6', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 309 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:22:02,471D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '02b79c521dda452e9050e9e472ec7ab6', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 66 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:22:02,540D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '02b79c521dda452e9050e9e472ec7ab6', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 64 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:22:02,622D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '02b79c521dda452e9050e9e472ec7ab6', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 76 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:23:26,546D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'be48c1bd9b364fad8c4b36c7b0618749', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 99 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:23:26,752D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'be48c1bd9b364fad8c4b36c7b0618749', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:23:26,840D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'be48c1bd9b364fad8c4b36c7b0618749', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 83 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:23:26,946D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'be48c1bd9b364fad8c4b36c7b0618749', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 99 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:24:47,946D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '04dc41fa5c32481dba7c824472b9d4f4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 128 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:24:48,137D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '04dc41fa5c32481dba7c824472b9d4f4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:24:48,227D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '04dc41fa5c32481dba7c824472b9d4f4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:24:48,336D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '04dc41fa5c32481dba7c824472b9d4f4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 103 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:25:49,592D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b8e8e6c729cb46568a9e5a581eb10878', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 90 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:25:49,676D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b8e8e6c729cb46568a9e5a581eb10878', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:25:49,784D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b8e8e6c729cb46568a9e5a581eb10878', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 101 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:02,573D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8cab5868625a42b8bb77460287820946', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 304 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:02,756D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8cab5868625a42b8bb77460287820946', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 78 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:02,833D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8cab5868625a42b8bb77460287820946', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 68 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:03,003D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8cab5868625a42b8bb77460287820946', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 164 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:51,206D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'dd2985fa5e2e4bea9d58f715810802e1', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 67 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:51,299D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'dd2985fa5e2e4bea9d58f715810802e1', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 83 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:28:51,386D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'dd2985fa5e2e4bea9d58f715810802e1', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 74 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:30:47,377D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '74555c10226a4ebb85c1c762b75e939c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:30:47,571D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '74555c10226a4ebb85c1c762b75e939c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 74 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:30:47,650D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '74555c10226a4ebb85c1c762b75e939c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 74 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:30:47,740D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '74555c10226a4ebb85c1c762b75e939c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:31:47,683D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '01a003d919da444aa654c649a8d1c11c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 73 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:31:47,760D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '01a003d919da444aa654c649a8d1c11c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 66 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:31:47,840D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '01a003d919da444aa654c649a8d1c11c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 74 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:31:47,934D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '01a003d919da444aa654c649a8d1c11c', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 89 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:32:57,659D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1e9d5c500654c89a41cb5e6051c5c7b', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 177 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:32:57,912D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1e9d5c500654c89a41cb5e6051c5c7b', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 149 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:32:58,105D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1e9d5c500654c89a41cb5e6051c5c7b', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 188 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:32:58,278D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1e9d5c500654c89a41cb5e6051c5c7b', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 167 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:37:17,225D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9a5fa280cc00489f8e40905bf7fe87ec', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 69 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:37:17,407D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9a5fa280cc00489f8e40905bf7fe87ec', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 72 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:37:17,490D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9a5fa280cc00489f8e40905bf7fe87ec', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:37:17,575D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9a5fa280cc00489f8e40905bf7fe87ec', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 76 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:45:42,315D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6e90308f45414d9597354f7d44b37311', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-13', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 160 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:45:42,516D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6e90308f45414d9597354f7d44b37311', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-11', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 193 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:45:42,735D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近七日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6e90308f45414d9597354f7d44b37311', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-07', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 210 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-14 10:45:42,919D:\Agent_Api\logs\info-2023-07-14.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6e90308f45414d9597354f7d44b37311', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-14', 'endTradeDate': '2023-07-13'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"40.74","totalTradeCount":50,"totalRefundAmount":"40.04","totalRefundCount":9,"agentCommission":"0.00"}}
+接口响应时长: 179 ms
+Http状态码: 200
+=====================================================

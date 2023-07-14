@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Send_SmsCode.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #000000;}
+.s4 { color: #008000; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Send_SmsCode.yaml</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># 公共参数</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s2">case_common</span>:
+<a name="l3"><span class="ln">3    </span></a>  <span class="s2">allureEpic</span>: 服务商后台接口
+<a name="l4"><span class="ln">4    </span></a>  <span class="s2">allureFeature</span>: 账户中心
+<a name="l5"><span class="ln">5    </span></a>  <span class="s2">allureStory</span>: 修改密码
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a><span class="s2">Send_SmsCode_01</span>:
+<a name="l8"><span class="ln">8    </span></a>    <span class="s2">host</span>: ${{host()}}
+<a name="l9"><span class="ln">9    </span></a>    <span class="s2">url</span>: /common/v1/user/sendSmsCode
+<a name="l10"><span class="ln">10   </span></a>    <span class="s2">method</span>: POST
+<a name="l11"><span class="ln">11   </span></a>    <span class="s2">detail</span>: 获取验证码
+<a name="l12"><span class="ln">12   </span></a>    <span class="s2">headers</span>:
+<a name="l13"><span class="ln">13   </span></a>      <span class="s2">Content-Type</span>: application/json
+<a name="l14"><span class="ln">14   </span></a>      <span class="s2">accesstoken</span>: $cache{login_cookie}
+<a name="l15"><span class="ln">15   </span></a>    <span class="s0"># 请求的数据，是 params 还是 json、或者file、data</span>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s2">requestType</span>: json
+<a name="l17"><span class="ln">17   </span></a>    <span class="s0"># 是否执行，空或者 true 都会执行</span>
+<a name="l18"><span class="ln">18   </span></a>    <span class="s2">is_run</span>: true
+<a name="l19"><span class="ln">19   </span></a>    <span class="s2">data</span>:
+<a name="l20"><span class="ln">20   </span></a>      <span class="s2">businessCode</span>: <span class="s4">'commonSms'</span>
+<a name="l21"><span class="ln">21   </span></a>      <span class="s2">phone</span>: <span class="s4">'15617886089'</span>
+<a name="l22"><span class="ln">22   </span></a>      <span class="s2">system</span>: <span class="s4">'agent'</span>
+<a name="l23"><span class="ln">23   </span></a>      <span class="s0"># 是否有依赖业务，为空或者false则表示没有</span>
+<a name="l24"><span class="ln">24   </span></a>    <span class="s2">dependence_case</span>: False
+<a name="l25"><span class="ln">25   </span></a>      <span class="s0"># 依赖的数据</span>
+<a name="l26"><span class="ln">26   </span></a>    <span class="s2">dependence_case_data</span>: None
+<a name="l27"><span class="ln">27   </span></a>    <span class="s2">assert</span>:
+<a name="l28"><span class="ln">28   </span></a>  <span class="s0"># 断言接口状态码</span>
+<a name="l29"><span class="ln">29   </span></a>      <span class="s2">status_code</span>: 200
+<a name="l30"><span class="ln">30   </span></a>      <span class="s2">Code</span>:
+<a name="l31"><span class="ln">31   </span></a>        <span class="s2">jsonpath</span>: $.code
+<a name="l32"><span class="ln">32   </span></a>        <span class="s2">type</span>: ==
+<a name="l33"><span class="ln">33   </span></a>        <span class="s2">value</span>: 0
+<a name="l34"><span class="ln">34   </span></a>        <span class="s2">AssertType</span>:
+<a name="l35"><span class="ln">35   </span></a>        <span class="s0"># 断言接口返回的username</span>
+<a name="l36"><span class="ln">36   </span></a>      <span class="s2">Status</span>:
+<a name="l37"><span class="ln">37   </span></a>        <span class="s2">jsonpath</span>: $.status
+<a name="l38"><span class="ln">38   </span></a>        <span class="s2">type</span>: ==
+<a name="l39"><span class="ln">39   </span></a>        <span class="s2">value</span>: 0
+<a name="l40"><span class="ln">40   </span></a>        <span class="s2">AssertType</span>:
+<a name="l41"><span class="ln">41   </span></a>    <span class="s2">sql</span>:
+<a name="l42"><span class="ln">42   </span></a></pre>
+</body>
+</html>

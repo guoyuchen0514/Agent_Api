@@ -1,0 +1,583 @@
+INFO2023-06-13 09:50:09,569D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十一位正确手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b008209629c5432a83e7c6c03094d132'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 320 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,171D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"0eb902f951e546018d7c387445b376f5","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"partnerGroupNo":null,"partnerNo":null,"agentNo":null,"shopQrCode":null}}}
+接口响应时长: 1832 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,271D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '1561788608', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 93 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,359D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '86'}
+请求内容: {'phone': '15617886089', 'password': 'hl12345', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+接口响应时长: 82 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,451D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '76'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+接口响应时长: 87 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,536D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '15617886089', 'password': '', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,638D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 95 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:51:34,708D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '156178860890', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 65 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,222D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"ead80a528c864a60b15b8cae0fa524e6","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"partnerGroupNo":null,"partnerNo":null,"agentNo":null,"shopQrCode":null}}}
+接口响应时长: 3231 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,326D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '1561788608', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,415D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '86'}
+请求内容: {'phone': '15617886089', 'password': 'hl12345', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,497D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '76'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,598D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '15617886089', 'password': '', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+接口响应时长: 96 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,685D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:53:00,765D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '156178860890', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 69 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:58:01,742D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十一位正确手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '765123fb17104391b706b684a4faf16d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 316 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 09:58:01,810D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '765123fb17104391b706b684a4faf16d'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 61 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:00:09,173D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十一位正确手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a2eeccd978264bd687d189aaa0b378be'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 288 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:00:09,234D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a2eeccd978264bd687d189aaa0b378be'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 55 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:00:48,172D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十一位正确手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '67ce5ab157da4e77b9a72e5d46dd083b'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"一分钟内已经发过短信","param":null,"data":null}
+接口响应时长: 75 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:00:48,362D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '67ce5ab157da4e77b9a72e5d46dd083b'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 66 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:02:39,462D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'c6d2123e55d8462f8c233b1914e09905'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:02:39,528D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'c6d2123e55d8462f8c233b1914e09905'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 52 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:03:14,116D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0ee0302afa2540ce8ffcc5e8ab465bd7'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 68 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:03:14,187D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0ee0302afa2540ce8ffcc5e8ab465bd7'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 65 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:05:17,302D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '758b13aad92e45508ff0f7fbcec9a74d'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 47 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:05:17,358D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '758b13aad92e45508ff0f7fbcec9a74d'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 50 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:06:15,161D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f98be7afd7174b239c093836f0359379'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 55 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:06:15,231D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f98be7afd7174b239c093836f0359379'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 62 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:06:15,296D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十二位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=156178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f98be7afd7174b239c093836f0359379'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 60 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:09:31,354D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '914370a61726498ba89c0ec7a5d2e9dd'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 55 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:09:31,407D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '914370a61726498ba89c0ec7a5d2e9dd'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 47 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:09:31,474D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十二位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=156178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '914370a61726498ba89c0ec7a5d2e9dd'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 57 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:09:31,557D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取非1开头的手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=256178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '914370a61726498ba89c0ec7a5d2e9dd'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 72 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:10:08,500D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6eb154ea7b5e48adb56c378b1a5be662'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 67 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:10:08,593D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6eb154ea7b5e48adb56c378b1a5be662'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 78 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:10:08,665D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十二位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=156178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6eb154ea7b5e48adb56c378b1a5be662'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 65 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:10:08,746D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取非1开头的手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=25617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6eb154ea7b5e48adb56c378b1a5be662'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 75 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:20:24,260D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6da1ff06c240444f8e2831b5c8bcc8e6'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 59 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:20:24,325D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6da1ff06c240444f8e2831b5c8bcc8e6'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 58 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:20:24,387D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十二位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=156178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6da1ff06c240444f8e2831b5c8bcc8e6'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 56 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:20:24,478D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取非1开头的手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=25617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6da1ff06c240444f8e2831b5c8bcc8e6'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:20:24,541D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取未注册的十一位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617889809&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6da1ff06c240444f8e2831b5c8bcc8e6'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 54 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:35:50,722D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 使用正确的验证码登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '3cfd80e8b3ce43628b8a0a47bbdae834', 'Content-Length': '80'}
+请求内容: {'phone': '15617886089', 'system': 'agent', 'code': '826673', 'type': 'message'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"98b2cc2142d7401094febebf720a13b2","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":"","password":"39ee488c7696d8f3ee3456218666a3c9","email":"","sex":0,"jobName":"","img":"","provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":0,"infoStatus":4,"status":"normal","userInfo":"","superiorId":0,"authenticationCode":"","authorizeCode":"","thirdPartyJson":"","type":"","typeDescription":"","otherInfo":"","jobNumber":"","birthday":null,"position":0,"nickName":"","userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":0,"editor":0,"remark":"","client":"","partnerGroupNo":null,"partnerNo":null,"agentNo":null,"shopQrCode":""}}}
+接口响应时长: 2060 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 10:36:39,252D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 使用正确的验证码登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '86abbcf8b25948bcbc4de4f6dc1a5599', 'Content-Length': '80'}
+请求内容: {'phone': '15617886089', 'system': 'agent', 'code': '826673', 'type': 'message'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"539f5d7df4164f3dabe22e8db7aed167","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":"","password":"39ee488c7696d8f3ee3456218666a3c9","email":"","sex":0,"jobName":"","img":"","provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":0,"infoStatus":4,"status":"normal","userInfo":"","superiorId":0,"authenticationCode":"","authorizeCode":"","thirdPartyJson":"","type":"","typeDescription":"","otherInfo":"","jobNumber":"","birthday":null,"position":0,"nickName":"","userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":0,"editor":0,"remark":"","client":"","partnerGroupNo":null,"partnerNo":null,"agentNo":null,"shopQrCode":""}}}
+接口响应时长: 1868 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,362D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十一位正确手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 314 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,438D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取空手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号不能为空","param":null,"data":null}
+接口响应时长: 70 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,520D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=1561788608&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 75 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,588D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取十二位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=156178860899&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 61 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,671D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取非1开头的手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=25617886089&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 76 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:38:35,740D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取未注册的十一位手机号验证码信息
+请求路径: https://api.pre.lianok.com/common/v1/user/sendRegisterCode?phone=15617889809&system=agent
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '97684209ce1740099fc800a5a1b3cca8'}
+请求内容: None
+接口响应内容: {"status":1,"code":0,"message":"手机号码未注册","param":null,"data":null}
+接口响应时长: 63 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:39:20,896D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '41f55810c1c6499f9c4ad4e88507cde7'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-05-25","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100"},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100"},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null}]}}
+接口响应时长: 196 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-13 15:40:29,131D:\Agent_Api\logs\info-2023-06-13.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'd2db0d91378d4f5a8e1d8a23ca640cfe'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-05-25","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100"},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100"},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null}]}}
+接口响应时长: 295 ms
+Http状态码: 200
+=====================================================

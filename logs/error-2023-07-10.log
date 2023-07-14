@@ -1,0 +1,4 @@
+ERROR2023-07-10 17:03:46,162D:\Agent_Api\logs\error-2023-07-10.log:assertion_control.py:165 JsonPath值获取失败 $.data.roleName 
+ERROR2023-07-10 17:09:45,074D:\Agent_Api\logs\error-2023-07-10.log:assertion_control.py:165 JsonPath值获取失败 $.data.id[1260].name 
+ERROR2023-07-10 18:06:30,612D:\Agent_Api\logs\error-2023-07-10.log:assertion_control.py:165 JsonPath值获取失败 $.data[0].roleName 
+ERROR2023-07-10 18:46:05,826D:\Agent_Api\logs\error-2023-07-10.log:assertion_control.py:165 JsonPath值获取失败 $.data[?(@.id==1260)].name 

@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询今日订单流水
+请求路径: https://api.pre.lianok.com/agent/v1/order/selectByPage
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=1d61f8bd368d4dfebb86a85e3cca1e23', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '454'}
+请求内容: {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-11 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 294 ms
+Http状态码: 200
+=====================================================

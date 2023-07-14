@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 设备回拨
+请求路径: https://api.pre.lianok.com/agent/v1/deviceinfo/recall
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=fcef9d97c83b48c09a8b832da35316d3', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '143'}
+请求内容: {'deviceNo': '4023080140000001'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 113 ms
+Http状态码: 200
+=====================================================

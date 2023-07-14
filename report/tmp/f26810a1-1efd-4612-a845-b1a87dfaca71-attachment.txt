@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 修改商户微信被扫支付通道
+请求路径: https://api.pre.lianok.com/agent/v1/shop/changeMerchantChannel
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=dd776a4980e2468a8f2797d94b6217b6', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '440'}
+请求内容: {'beforeChannelId': '647', 'shopNo': '100036', 'platformPayWay': 'wechatPassiveScan', 'afterChannelId': '647'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 177 ms
+Http状态码: 200
+=====================================================

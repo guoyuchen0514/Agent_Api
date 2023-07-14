@@ -1,0 +1,245 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 登录页面
+  allureStory: 验证码登录
+
+Send_RegisterCode_01:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取十一位正确手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone: '15617886089'
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Send_RegisterCode_02:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取空手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone:
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+      Msg:
+        jsonpath: $.message
+        type: ==
+        value: "手机号不能为空"
+        AssertType:
+    sql:
+
+Send_RegisterCode_03:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取十位手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone: '1561788608'
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+      Msg:
+        jsonpath: $.message
+        type: ==
+        value: "手机号码未注册"
+        AssertType:
+    sql:
+
+Send_RegisterCode_04:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取十二位手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone: '156178860899'
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+      Msg:
+        jsonpath: $.message
+        type: ==
+        value: "手机号码未注册"
+        AssertType:
+    sql:
+
+Send_RegisterCode_05:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取非1开头的手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone: '25617886089'
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+      Msg:
+        jsonpath: $.message
+        type: ==
+        value: "手机号码未注册"
+        AssertType:
+    sql:
+
+Send_RegisterCode_06:
+    host: ${{host()}}
+    url: /common/v1/user/sendRegisterCode
+    method: GET
+    detail: 获取未注册的十一位手机号验证码信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      phone: '15617889809'
+      system: 'agent'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+      Msg:
+        jsonpath: $.message
+        type: ==
+        value: "手机号码未注册"
+        AssertType:
+    sql:

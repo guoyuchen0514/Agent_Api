@@ -1,0 +1,246 @@
+{
+  "uid" : "41194ae47c0ddb9f",
+  "name" : "test_Get_RoleList[获取权限组数据]",
+  "fullName" : "test_case.Employee_Manage.test_Get_RoleList.TestGetRolelist#test_Get_RoleList",
+  "historyId" : "a6e28974b8d0bb429da54be96a737e58",
+  "time" : {
+    "start" : 1689065372867,
+    "stop" : 1689065372973,
+    "duration" : 106
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065372866,
+      "stop" : 1689065372866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/role/getRoleList",
+      "time" : {
+        "start" : 1689065372971,
+        "stop" : 1689065372971,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: GET",
+      "time" : {
+        "start" : 1689065372971,
+        "stop" : 1689065372971,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065372972,
+        "stop" : 1689065372972,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3a17de4598c06a83",
+        "name" : "请求头: ",
+        "source" : "3a17de4598c06a83.json",
+        "type" : "application/json",
+        "size" : 210
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065372972,
+        "stop" : 1689065372972,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "debac73552dc74b4",
+        "name" : "请求数据: ",
+        "source" : "debac73552dc74b4.json",
+        "type" : "application/json",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065372972,
+        "stop" : 1689065372972,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3cc974d219a90f5f",
+        "name" : "预期数据: ",
+        "source" : "3cc974d219a90f5f.json",
+        "type" : "application/json",
+        "size" : 289
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 101",
+      "time" : {
+        "start" : 1689065372972,
+        "stop" : 1689065372972,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065372972,
+        "stop" : 1689065372973,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8e596eae01a3f177",
+        "name" : "响应结果: ",
+        "source" : "8e596eae01a3f177.json",
+        "type" : "application/json",
+        "size" : 528
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3d8cf149cb06fcc9",
+      "name" : "log",
+      "source" : "3d8cf149cb06fcc9.txt",
+      "type" : "text/plain",
+      "size" : 1065
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "story",
+    "value" : "员工列表"
+  }, {
+    "name" : "feature",
+    "value" : "员工管理模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Employee_Manage"
+  }, {
+    "name" : "suite",
+    "value" : "test_Get_RoleList"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetRolelist"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Employee_Manage.test_Get_RoleList"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/role/getRoleList', 'method': 'GET', 'detail': '获取权限组数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'RoleName': {'jsonpath': '$.data[0].roleName', 'type': '==', 'value': '顶代员工', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41194ae47c0ddb9f.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/role/getRoleList', 'method': 'GET', 'detail': '获取权限组数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'RoleName': {'jsonpath': '$.data[0].roleName', 'type': '==', 'value': '顶代员工', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

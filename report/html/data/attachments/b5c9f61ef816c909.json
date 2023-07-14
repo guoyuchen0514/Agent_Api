@@ -1,0 +1,1 @@
+"{'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}}"

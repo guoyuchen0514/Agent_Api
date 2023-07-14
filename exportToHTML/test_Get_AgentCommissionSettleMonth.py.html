@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>test_Get_AgentCommissionSettleMonth.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008080; font-weight: bold;}
+.s3 { color: #808080; font-style: italic;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+test_Get_AgentCommissionSettleMonth.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">import </span>pytest
+<a name="l2"><span class="ln">2    </span></a><span class="s0">import </span>yaml
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span>re
+<a name="l4"><span class="ln">4    </span></a><span class="s0">import </span>datetime
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a>@pytest.mark.parametrize(<span class="s2">&quot;test_data&quot;</span>, yaml.safe_load(open(<span class="s2">&quot;test_Get_AgentCommissionSettleMonth.py.yaml&quot;</span>)))
+<a name="l7"><span class="ln">7    </span></a><span class="s0">def </span>test_case(test_data):
+<a name="l8"><span class="ln">8    </span></a>    <span class="s3"># 获取yaml文件中的测试数据</span>
+<a name="l9"><span class="ln">9    </span></a>    sql_queries = test_data.get(<span class="s2">&quot;sql&quot;</span>, [])
+<a name="l10"><span class="ln">10   </span></a>    <span class="s0">for </span>sql_query <span class="s0">in </span>sql_queries:
+<a name="l11"><span class="ln">11   </span></a>        <span class="s3"># 使用正则表达式替换占位符</span>
+<a name="l12"><span class="ln">12   </span></a>        sql_query = re.sub(<span class="s2">r&quot;\${yesterday_time\(\)}&quot;</span>, <span class="s2">&quot;2023-07-13&quot;</span>, sql_query)
+<a name="l13"><span class="ln">13   </span></a>        <span class="s3"># 在这里执行SQL查询或其他操作</span>
+<a name="l14"><span class="ln">14   </span></a>        <span class="s3"># ...</span>
+<a name="l15"><span class="ln">15   </span></a>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s3"># 其他测试逻辑...</span></pre>
+</body>
+</html>

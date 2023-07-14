@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 拓展员下拉列表展示
+请求路径: https://api.pre.lianok.com/agent/v1/agentPartner/queryPartnerNoList?nameOrPhone&currentPage=1&pageSize=20
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"partnerName":"小熊测试拓展员(15617347657)","partnerNo":"100007"},{"partnerName":"小熊拓展员2号(14416235467)","partnerNo":"100008"},{"partnerName":"小熊拓展员3号(14723645267)","partnerNo":"100018"},{"partnerName":"火钳富友拓展员(13000003213)","partnerNo":"100045"}]}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>testcase_template.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008080; font-weight: bold;}
+.s3 { color: #808080; font-style: italic;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+testcase_template.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">import </span>datetime
+<a name="l2"><span class="ln">2    </span></a><span class="s0">import </span>re
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span>os.path
+<a name="l4"><span class="ln">4    </span></a><span class="s0">from </span>common.setting <span class="s0">import </span>ensure_path_sep
+<a name="l5"><span class="ln">5    </span></a><span class="s0">from </span>utils.read_file_tools.yaml_control <span class="s0">import </span>GetYamlData
+<a name="l6"><span class="ln">6    </span></a><span class="s0">from </span>utils.others_tool.exceptions <span class="s0">import </span>ValueNotFoundError
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a>
+<a name="l10"><span class="ln">10   </span></a><span class="s0">def </span>write_case(case_path, page):
+<a name="l11"><span class="ln">11   </span></a>    <span class="s0">with </span>open(case_path, <span class="s2">'w'</span>, encoding=<span class="s2">'utf-8'</span>) <span class="s0">as </span>file:
+<a name="l12"><span class="ln">12   </span></a>        file.write(page)
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s0">def </span>generate_testcase_content(file_name, yesterday_time, allure_epic, allure_feature, class_title, allure_story, func_title, case_ids):
+<a name="l16"><span class="ln">16   </span></a>    now = datetime.datetime.now().strftime(<span class="s2">'%Y-%m-%d %H:%M:%S'</span>)
+<a name="l17"><span class="ln">17   </span></a>    testcase_content = <span class="s2">f&quot;&quot;&quot;</span>
+<a name="l18"><span class="ln">18   </span></a><span class="s2">import allure</span>
+<a name="l19"><span class="ln">19   </span></a><span class="s2">import pytest</span>
+<a name="l20"><span class="ln">20   </span></a><span class="s2">from utils.read_file_tools.get_yaml_data_analysis import GetTestCase</span>
+<a name="l21"><span class="ln">21   </span></a><span class="s2">from utils.read_file_tools.regular_control import regular</span>
+<a name="l22"><span class="ln">22   </span></a><span class="s2">from utils.requests_tool.request_control import RequestControl</span>
+<a name="l23"><span class="ln">23   </span></a><span class="s2">from utils.requests_tool.teardown_control import TearDownHandler</span>
+<a name="l24"><span class="ln">24   </span></a><span class="s2">from utils.assertion.assertion_control import Assert</span>
+<a name="l25"><span class="ln">25   </span></a><span class="s2">from utils.cache_process.redis_control import RedisHandler</span>
+<a name="l26"><span class="ln">26   </span></a>
+<a name="l27"><span class="ln">27   </span></a><span class="s2">case_ids = </span><span class="s0">{</span>case_ids<span class="s0">}</span>
+<a name="l28"><span class="ln">28   </span></a><span class="s2">TestData = GetTestCase.case_data(case_ids)</span>
+<a name="l29"><span class="ln">29   </span></a><span class="s2">re_data = regular(str(TestData))</span>
+<a name="l30"><span class="ln">30   </span></a>
+<a name="l31"><span class="ln">31   </span></a><span class="s2">@allure.epic(&quot;</span><span class="s0">{</span>allure_epic<span class="s0">}</span><span class="s2">&quot;)</span>
+<a name="l32"><span class="ln">32   </span></a><span class="s2">@allure.feature(&quot;</span><span class="s0">{</span>allure_feature<span class="s0">}</span><span class="s2">&quot;)</span>
+<a name="l33"><span class="ln">33   </span></a><span class="s2">class Test</span><span class="s0">{</span>class_title<span class="s0">}</span><span class="s2">:</span>
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>    <span class="s2">@allure.story(&quot;</span><span class="s0">{</span>allure_story<span class="s0">}</span><span class="s2">&quot;)</span>
+<a name="l36"><span class="ln">36   </span></a>    <span class="s2">@pytest.mark.parametrize(&quot;in_data&quot;, eval(re_data), ids=[i[&quot;detail&quot;] for i in TestData])</span>
+<a name="l37"><span class="ln">37   </span></a>    <span class="s2">def test_</span><span class="s0">{</span>func_title<span class="s0">}</span><span class="s2">(self, in_data, case_skip):</span>
+<a name="l38"><span class="ln">38   </span></a>        <span class="s2">res = RequestControl(in_data).http_request()</span>
+<a name="l39"><span class="ln">39   </span></a>        <span class="s2">TearDownHandler(res).teardown_handle()</span>
+<a name="l40"><span class="ln">40   </span></a>        <span class="s2">Assert(in_data[&quot;assert_data&quot;]).assert_equality(response_data=res.response_data,</span>
+<a name="l41"><span class="ln">41   </span></a>                                                       <span class="s2">sql_data=res.sql_data, status_code=res.status_code)</span>
+<a name="l42"><span class="ln">42   </span></a>
+<a name="l43"><span class="ln">43   </span></a><span class="s2">if __name__ == &quot;__main__&quot;:</span>
+<a name="l44"><span class="ln">44   </span></a>    <span class="s2">pytest.main([&quot;</span><span class="s0">{</span>file_name<span class="s0">}</span><span class="s2">&quot;, &quot;-s&quot;, &quot;-W&quot;, &quot;ignore:Module already imported:pytest.PytestWarning&quot;])</span>
+<a name="l45"><span class="ln">45   </span></a><span class="s2">&quot;&quot;&quot;</span>.strip()
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a>    testcase_content = re.sub(<span class="s2">r&quot;\${{yesterday_time\(\)}}&quot;</span>, yesterday_time, testcase_content)
+<a name="l48"><span class="ln">48   </span></a>    <span class="s0">return </span>testcase_content
+<a name="l49"><span class="ln">49   </span></a>
+<a name="l50"><span class="ln">50   </span></a>
+<a name="l51"><span class="ln">51   </span></a><span class="s0">def </span>write_testcase_file(*, allure_epic, allure_feature, class_title, func_title, case_path, case_ids, file_name,
+<a name="l52"><span class="ln">52   </span></a>                        allure_story, yesterday_time):
+<a name="l53"><span class="ln">53   </span></a>    conf_data = GetYamlData(ensure_path_sep(<span class="s2">'</span><span class="s0">\\</span><span class="s2">common</span><span class="s0">\\</span><span class="s2">config.yaml'</span>)).get_yaml_data()
+<a name="l54"><span class="ln">54   </span></a>    real_time_update_test_cases = conf_data[<span class="s2">'real_time_update_test_cases'</span>]
+<a name="l55"><span class="ln">55   </span></a>    <span class="s3"># 创建文件夹</span>
+<a name="l56"><span class="ln">56   </span></a>    case_dir = os.path.dirname(case_path)
+<a name="l57"><span class="ln">57   </span></a>    os.makedirs(case_dir, exist_ok=<span class="s0">True</span>)
+<a name="l58"><span class="ln">58   </span></a>
+<a name="l59"><span class="ln">59   </span></a>    testcase_content = generate_testcase_content(file_name, yesterday_time)
+<a name="l60"><span class="ln">60   </span></a>
+<a name="l61"><span class="ln">61   </span></a>    <span class="s3"># 执行正则表达式替换</span>
+<a name="l62"><span class="ln">62   </span></a>    testcase_content = re.sub(<span class="s2">r&quot;\${yesterday_time\(\)}&quot;</span>, yesterday_time, testcase_content)
+<a name="l63"><span class="ln">63   </span></a>
+<a name="l64"><span class="ln">64   </span></a>    <span class="s0">if </span>real_time_update_test_cases:
+<a name="l65"><span class="ln">65   </span></a>        write_case(case_path=case_path, page=testcase_content)
+<a name="l66"><span class="ln">66   </span></a>    <span class="s0">elif </span>real_time_update_test_cases <span class="s0">is False</span>:
+<a name="l67"><span class="ln">67   </span></a>        <span class="s0">if not </span>os.path.exists(case_path):
+<a name="l68"><span class="ln">68   </span></a>            write_case(case_path=case_path, page=testcase_content)
+<a name="l69"><span class="ln">69   </span></a>    <span class="s0">else</span>:
+<a name="l70"><span class="ln">70   </span></a>        <span class="s0">raise </span>ValueNotFoundError(<span class="s2">'real_time_update_test_cases 配置不正确，只能配置True 或者False'</span>)
+<a name="l71"><span class="ln">71   </span></a>
+<a name="l72"><span class="ln">72   </span></a>
+<a name="l73"><span class="ln">73   </span></a></pre>
+</body>
+</html>

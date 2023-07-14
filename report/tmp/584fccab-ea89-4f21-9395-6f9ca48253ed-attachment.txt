@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 交易流水昨日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/order/selectOrderStatic
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=533db46dbdb14de3907e6e166db71a88', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '438'}
+请求内容: {'currentPage': '1', 'pageSize': '10', 'beginTime': '2023-07-10 00:00:00', 'endTime': '2023-07-10 23:59:59'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"merchantNo":null,"shopNo":null,"orderNo":null,"totalAmount":"0.00","totalCount":0,"actualAmount":"0.00","actualAccountAmount":"0.00","actualCount":0,"serviceFee":"0.00","agentCommission":"0.00","platformCommission":"0.00","refundAmount":"0.00","refundCount":0,"sellerCouponAmount":"0.00","sellerCouponCount":0}}
+接口响应时长: 371 ms
+Http状态码: 200
+=====================================================

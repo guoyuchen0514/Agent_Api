@@ -1,0 +1,375 @@
+{
+  "uid" : "5dc6e0f4e8b30292",
+  "name" : "test_Add_User[禁用员工]",
+  "fullName" : "test_case.Employee_Manage.test_Add_User.TestAddUser#test_Add_User",
+  "historyId" : "56c296ffff93e1b912998f9da04e3552",
+  "time" : {
+    "start" : 1689065371645,
+    "stop" : 1689065371878,
+    "duration" : 233
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065371645,
+      "stop" : 1689065371645,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5",
+      "time" : {
+        "start" : 1689065371769,
+        "stop" : 1689065371770,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: GET",
+      "time" : {
+        "start" : 1689065371770,
+        "stop" : 1689065371770,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065371770,
+        "stop" : 1689065371771,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "59db1a1ca326e290",
+        "name" : "请求头: ",
+        "source" : "59db1a1ca326e290.json",
+        "type" : "application/json",
+        "size" : 210
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065371771,
+        "stop" : 1689065371772,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8ca04dc8d217dd78",
+        "name" : "请求数据: ",
+        "source" : "8ca04dc8d217dd78.json",
+        "type" : "application/json",
+        "size" : 69
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065371772,
+        "stop" : 1689065371773,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24c882ee8d9365f0",
+        "name" : "预期数据: ",
+        "source" : "24c882ee8d9365f0.json",
+        "type" : "application/json",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 75",
+      "time" : {
+        "start" : 1689065371773,
+        "stop" : 1689065371773,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065371773,
+        "stop" : 1689065371774,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "350365005d069192",
+        "name" : "响应结果: ",
+        "source" : "350365005d069192.json",
+        "type" : "application/json",
+        "size" : 389
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/user/freezeUser",
+      "time" : {
+        "start" : 1689065371876,
+        "stop" : 1689065371876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1689065371876,
+        "stop" : 1689065371876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065371876,
+        "stop" : 1689065371876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "77697669bcdf3e7f",
+        "name" : "请求头: ",
+        "source" : "77697669bcdf3e7f.json",
+        "type" : "application/json",
+        "size" : 281
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065371876,
+        "stop" : 1689065371876,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aebf91d3df1d4595",
+        "name" : "请求数据: ",
+        "source" : "aebf91d3df1d4595.json",
+        "type" : "application/json",
+        "size" : 16
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065371876,
+        "stop" : 1689065371877,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a0b0237fa542136f",
+        "name" : "预期数据: ",
+        "source" : "a0b0237fa542136f.json",
+        "type" : "application/json",
+        "size" : 100
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 94",
+      "time" : {
+        "start" : 1689065371877,
+        "stop" : 1689065371877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065371877,
+        "stop" : 1689065371877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "55da42e122ad5ba1",
+        "name" : "响应结果: ",
+        "source" : "55da42e122ad5ba1.json",
+        "type" : "application/json",
+        "size" : 73
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "28d939b7247009f1",
+      "name" : "log",
+      "source" : "28d939b7247009f1.txt",
+      "type" : "text/plain",
+      "size" : 1774
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 9,
+    "stepsCount" : 14,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "feature",
+    "value" : "员工管理模块"
+  }, {
+    "name" : "story",
+    "value" : "员工操作"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Employee_Manage"
+  }, {
+    "name" : "suite",
+    "value" : "test_Add_User"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddUser"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Employee_Manage.test_Add_User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/user/freezeUser', 'method': 'POST', 'detail': '禁用员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '$cache{Query_AgentUserId}'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'Query_AgentUserId', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data[0].id', 'set_cache': 'Query_AgentUserId', 'replace_key': None}]}], 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5dc6e0f4e8b30292.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/freezeUser', 'method': 'POST', 'detail': '禁用员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '$cache{Query_AgentUserId}'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'Query_AgentUserId', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data[0].id', 'set_cache': 'Query_AgentUserId', 'replace_key': None}]}], 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>config.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #000000;}
+.s3 { color: #808080; font-style: italic;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+config.yaml</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">project_name</span>: 火脸服务商后台
+<a name="l2"><span class="ln">2    </span></a><span class="s0">env</span>: 预发环境
+<a name="l3"><span class="ln">3    </span></a><span class="s3"># 测试人员名称，作用于自动生成代码的作者，以及发送企业微信、钉钉通知的测试负责人</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0">tester_name</span>:  小     熊
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a><span class="s3"># 域名1</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">host</span>: https://api.pre.lianok.com
+<a name="l8"><span class="ln">8    </span></a><span class="s3"># 域名2，支持多个域名配置</span>
+<a name="l9"><span class="ln">9    </span></a><span class="s3">#app_host:</span>
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a><span class="s3"># 实时更新用例内容，False时，已生成的代码不会在做变更</span>
+<a name="l12"><span class="ln">12   </span></a><span class="s3"># 设置为True的时候，修改yaml文件的用例，代码中的内容会实时更新</span>
+<a name="l13"><span class="ln">13   </span></a><span class="s0">real_time_update_test_cases</span>: False
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s3"># 报告通知类型：0: 不发送通知 1：钉钉 2：企业微信通知 3、邮箱通知 4、飞书通知</span>
+<a name="l16"><span class="ln">16   </span></a><span class="s0">notification_type</span>: 4
+<a name="l17"><span class="ln">17   </span></a><span class="s3"># 收集失败的用例开关，整理成excel报告的形式，自动发送，目前只支持返送企业微信通知</span>
+<a name="l18"><span class="ln">18   </span></a><span class="s3">#excel_report: False</span>
+<a name="l19"><span class="ln">19   </span></a>
+<a name="l20"><span class="ln">20   </span></a><span class="s3">## 钉钉相关配置</span>
+<a name="l21"><span class="ln">21   </span></a><span class="s3">#ding_talk:</span>
+<a name="l22"><span class="ln">22   </span></a><span class="s3">##  webhook:</span>
+<a name="l23"><span class="ln">23   </span></a><span class="s3">##  secret:</span>
+<a name="l24"><span class="ln">24   </span></a><span class="s3">#  webhook:</span>
+<a name="l25"><span class="ln">25   </span></a><span class="s3">#  secret:</span>
+<a name="l26"><span class="ln">26   </span></a><span class="s3">## 数据库相关配置</span>
+<a name="l27"><span class="ln">27   </span></a><span class="s0">mysql_db</span>:
+<a name="l28"><span class="ln">28   </span></a><span class="s3"># 数据库开关</span>
+<a name="l29"><span class="ln">29   </span></a>  <span class="s0">switch</span>: True
+<a name="l30"><span class="ln">30   </span></a>  <span class="s0">host</span>: 121.41.215.125
+<a name="l31"><span class="ln">31   </span></a><span class="s3">#生产 ：java-lianok.mysql.polardb.rds.aliyuncs.com</span>
+<a name="l32"><span class="ln">32   </span></a>  <span class="s0">user</span>: root
+<a name="l33"><span class="ln">33   </span></a><span class="s3">#生产：readyonly</span>
+<a name="l34"><span class="ln">34   </span></a>  <span class="s0">password</span>: Youyun@baisi
+<a name="l35"><span class="ln">35   </span></a><span class="s3">#生产： m4HSaAlQVzoK%bj7Z$zH3UlpJpR6t0</span>
+<a name="l36"><span class="ln">36   </span></a>  <span class="s0">port</span>: 3306
+<a name="l37"><span class="ln">37   </span></a><span class="s3">## 镜像源</span>
+<a name="l38"><span class="ln">38   </span></a><span class="s3">#mirror_source: http://mirrors.aliyun.com/pypi/simple/</span>
+<a name="l39"><span class="ln">39   </span></a><span class="s3">## 企业通知的相关配置</span>
+<a name="l40"><span class="ln">40   </span></a><span class="s3">#wechat:</span>
+<a name="l41"><span class="ln">41   </span></a><span class="s3">#  webhook:</span>
+<a name="l42"><span class="ln">42   </span></a><span class="s3">### 邮箱必填，需要全部都配置好，程序运行失败时，会发送邮件通知!!!!</span>
+<a name="l43"><span class="ln">43   </span></a>
+<a name="l44"><span class="ln">44   </span></a><span class="s0">email</span>:
+<a name="l45"><span class="ln">45   </span></a>  <span class="s0">send_user</span>: mys
+<a name="l46"><span class="ln">46   </span></a>  <span class="s0">email_host</span>: huolianpro.com
+<a name="l47"><span class="ln">47   </span></a><span class="s3">#  # 自己到QQ邮箱中配置stamp_key</span>
+<a name="l48"><span class="ln">48   </span></a><span class="s3">#  stamp_key:</span>
+<a name="l49"><span class="ln">49   </span></a>  <span class="s3"># 收件人改成自己的邮箱</span>
+<a name="l50"><span class="ln">50   </span></a>  <span class="s0">send_list</span>: mys@huolianpro.com
+<a name="l51"><span class="ln">51   </span></a><span class="s3"># 飞书通知</span>
+<a name="l52"><span class="ln">52   </span></a><span class="s0">lark</span>:
+<a name="l53"><span class="ln">53   </span></a>  <span class="s0">webhook</span>: https://open.feishu.cn/open-apis/bot/v2/hook/77e9d07c-8eb3-478c-adb9-9384797f14b4
+<a name="l54"><span class="ln">54   </span></a></pre>
+</body>
+</html>

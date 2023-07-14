@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 禁用门店
+请求路径: https://api.pre.lianok.com/agent/v1/shop/update
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=92eed2f21aae4f91832d490845e6b01c', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '309'}
+请求内容: {'id': '440', 'isDisabled': '1', 'shopNo': '100036'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 99 ms
+Http状态码: 200
+=====================================================

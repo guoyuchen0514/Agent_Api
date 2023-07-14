@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>log_control.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+log_control.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-03-01 19:21</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : log_control.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s2">import </span>logging
+<a name="l8"><span class="ln">8    </span></a><span class="s2">from </span>logging <span class="s2">import </span>handlers
+<a name="l9"><span class="ln">9    </span></a><span class="s2">from </span>typing <span class="s2">import </span>Text
+<a name="l10"><span class="ln">10   </span></a><span class="s2">import </span>colorlog
+<a name="l11"><span class="ln">11   </span></a><span class="s2">import </span>time
+<a name="l12"><span class="ln">12   </span></a><span class="s2">from </span>common.setting <span class="s2">import </span>ensure_path_sep
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s2">class </span>LogHandler:
+<a name="l16"><span class="ln">16   </span></a>    <span class="s0">&quot;&quot;&quot; 日志打印封装&quot;&quot;&quot;</span>
+<a name="l17"><span class="ln">17   </span></a>    <span class="s0"># 日志级别关系映射</span>
+<a name="l18"><span class="ln">18   </span></a>    level_relations = {
+<a name="l19"><span class="ln">19   </span></a>        <span class="s3">'debug'</span>: logging.DEBUG,
+<a name="l20"><span class="ln">20   </span></a>        <span class="s3">'info'</span>: logging.INFO,
+<a name="l21"><span class="ln">21   </span></a>        <span class="s3">'warning'</span>: logging.WARNING,
+<a name="l22"><span class="ln">22   </span></a>        <span class="s3">'error'</span>: logging.ERROR,
+<a name="l23"><span class="ln">23   </span></a>        <span class="s3">'critical'</span>: logging.CRITICAL
+<a name="l24"><span class="ln">24   </span></a>    }
+<a name="l25"><span class="ln">25   </span></a>
+<a name="l26"><span class="ln">26   </span></a>    <span class="s2">def </span>__init__(
+<a name="l27"><span class="ln">27   </span></a>            self,
+<a name="l28"><span class="ln">28   </span></a>            filename: Text,
+<a name="l29"><span class="ln">29   </span></a>            level: Text = <span class="s3">&quot;info&quot;</span>,
+<a name="l30"><span class="ln">30   </span></a>            when: Text = <span class="s3">&quot;D&quot;</span>,
+<a name="l31"><span class="ln">31   </span></a>            fmt: Text = <span class="s3">&quot;%(levelname)-s%(asctime)s%(name)s:%(filename)s:%(lineno)d %(message)s&quot;</span>
+<a name="l32"><span class="ln">32   </span></a>    ):
+<a name="l33"><span class="ln">33   </span></a>        self.logger = logging.getLogger(filename)
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>        <span class="s0">#设置日志颜色</span>
+<a name="l36"><span class="ln">36   </span></a>        formatter = self.log_color()
+<a name="l37"><span class="ln">37   </span></a>        <span class="s0"># 设置日志格式</span>
+<a name="l38"><span class="ln">38   </span></a>        format_str = logging.Formatter(fmt)
+<a name="l39"><span class="ln">39   </span></a>
+<a name="l40"><span class="ln">40   </span></a>        <span class="s0"># 设置日志级别</span>
+<a name="l41"><span class="ln">41   </span></a>        self.logger.setLevel(self.level_relations.get(level))
+<a name="l42"><span class="ln">42   </span></a>        <span class="s0"># 往控制台上输出</span>
+<a name="l43"><span class="ln">43   </span></a>        screen_output = logging.StreamHandler()
+<a name="l44"><span class="ln">44   </span></a>        <span class="s0"># 设置控制台上显示的格式</span>
+<a name="l45"><span class="ln">45   </span></a>        screen_output.setFormatter(formatter)
+<a name="l46"><span class="ln">46   </span></a>        <span class="s0"># 往文件里写入#指定间隔时间自动生成文件的处理器</span>
+<a name="l47"><span class="ln">47   </span></a>        time_rotating = handlers.TimedRotatingFileHandler(
+<a name="l48"><span class="ln">48   </span></a>            filename=filename,
+<a name="l49"><span class="ln">49   </span></a>            when=when,
+<a name="l50"><span class="ln">50   </span></a>            backupCount=<span class="s4">3</span>,
+<a name="l51"><span class="ln">51   </span></a>            encoding=<span class="s3">'utf-8'</span>
+<a name="l52"><span class="ln">52   </span></a>        )
+<a name="l53"><span class="ln">53   </span></a>        <span class="s0"># 设置文件里写入的格式</span>
+<a name="l54"><span class="ln">54   </span></a>        time_rotating.setFormatter(format_str)
+<a name="l55"><span class="ln">55   </span></a>        <span class="s0"># 把对象加到logger里</span>
+<a name="l56"><span class="ln">56   </span></a>        self.logger.addHandler(screen_output)
+<a name="l57"><span class="ln">57   </span></a>        self.logger.addHandler(time_rotating)
+<a name="l58"><span class="ln">58   </span></a>        self.log_path = ensure_path_sep(<span class="s3">'</span><span class="s2">\\</span><span class="s3">logs</span><span class="s2">\\</span><span class="s3">log.log'</span>)
+<a name="l59"><span class="ln">59   </span></a>
+<a name="l60"><span class="ln">60   </span></a>    @classmethod
+<a name="l61"><span class="ln">61   </span></a>    <span class="s2">def </span>log_color(cls):
+<a name="l62"><span class="ln">62   </span></a>        <span class="s0">&quot;&quot;&quot; 设置日志颜色 &quot;&quot;&quot;</span>
+<a name="l63"><span class="ln">63   </span></a>        log_colors_config = {
+<a name="l64"><span class="ln">64   </span></a>            <span class="s3">'DEBUG'</span>: <span class="s3">'cyan'</span>,
+<a name="l65"><span class="ln">65   </span></a>            <span class="s3">'INFO'</span>: <span class="s3">'green'</span>,
+<a name="l66"><span class="ln">66   </span></a>            <span class="s3">'WARNING'</span>: <span class="s3">'blue'</span>,
+<a name="l67"><span class="ln">67   </span></a>            <span class="s3">'ERROR'</span>: <span class="s3">'red'</span>,
+<a name="l68"><span class="ln">68   </span></a>            <span class="s3">'CRITICAL'</span>: <span class="s3">'red'</span>,
+<a name="l69"><span class="ln">69   </span></a>        }
+<a name="l70"><span class="ln">70   </span></a>
+<a name="l71"><span class="ln">71   </span></a>        formatter = colorlog.ColoredFormatter(
+<a name="l72"><span class="ln">72   </span></a>            <span class="s3">'%(log_color)s[%(asctime)s] - [%(name)s] - [%(levelname)s]: %(message)s'</span>,
+<a name="l73"><span class="ln">73   </span></a>            log_colors=log_colors_config
+<a name="l74"><span class="ln">74   </span></a>        )
+<a name="l75"><span class="ln">75   </span></a>        <span class="s2">return </span>formatter
+<a name="l76"><span class="ln">76   </span></a>
+<a name="l77"><span class="ln">77   </span></a>
+<a name="l78"><span class="ln">78   </span></a>now_time_day = time.strftime(<span class="s3">&quot;%Y-%m-%d&quot;</span>, time.localtime())
+<a name="l79"><span class="ln">79   </span></a>INFO = LogHandler(ensure_path_sep(<span class="s3">f&quot;</span><span class="s2">\\</span><span class="s3">logs</span><span class="s2">\\</span><span class="s3">info-</span><span class="s2">{</span>now_time_day<span class="s2">}</span><span class="s3">.log&quot;</span>), level=<span class="s3">'info'</span>)
+<a name="l80"><span class="ln">80   </span></a>ERROR = LogHandler(ensure_path_sep(<span class="s3">f&quot;</span><span class="s2">\\</span><span class="s3">logs</span><span class="s2">\\</span><span class="s3">error-</span><span class="s2">{</span>now_time_day<span class="s2">}</span><span class="s3">.log&quot;</span>), level=<span class="s3">'error'</span>)
+<a name="l81"><span class="ln">81   </span></a>WARNING = LogHandler(ensure_path_sep(<span class="s3">f'</span><span class="s2">\\</span><span class="s3">logs</span><span class="s2">\\</span><span class="s3">warning-</span><span class="s2">{</span>now_time_day<span class="s2">}</span><span class="s3">.log'</span>))
+<a name="l82"><span class="ln">82   </span></a>
+<a name="l83"><span class="ln">83   </span></a><span class="s0"># if __name__ == '__main__':</span>
+<a name="l84"><span class="ln">84   </span></a><span class="s0">#     INFO.logger.warning('测试')</span>
+<a name="l85"><span class="ln">85   </span></a><span class="s0">#     ERROR.logger.error('error日志')</span>
+<a name="l86"><span class="ln">86   </span></a><span class="s0">#     WARNING.logger.warning('warning日志')</span>
+<a name="l87"><span class="ln">87   </span></a>
+<a name="l88"><span class="ln">88   </span></a>
+<a name="l89"><span class="ln">89   </span></a>
+<a name="l90"><span class="ln">90   </span></a></pre>
+</body>
+</html>

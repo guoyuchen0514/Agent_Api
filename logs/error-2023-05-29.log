@@ -1,0 +1,1169 @@
+ERROR2023-05-29 10:05:47,500D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备列表查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/page/query?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:47.669+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:47,634D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备管理页面的设备型号
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/model/page/query?currentPage=1&pageSize=10&deviceModel
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:47.810+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/model/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:47,766D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备类型查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/devicetyps/query
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:47.934+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/devicetyps/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:47,855D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页趋势图数据接口
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getHourTendency?beginDate=2023-05-29&endDate=2023-05-29&dateType=day
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:48.022+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getHourTendency"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:47,950D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页商户排行
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-29 00:00:00', 'currentPage': 1, 'endTime': '2023-05-29 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-05-29T02:05:48.115+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:48,027D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页看板数据统计
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/queryHomeTradeDataStatistics?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:48.201+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/queryHomeTradeDataStatistics"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:51,106D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3065 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"3ea6cd4716d7470b9585bd5efc11f7da","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=3065 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 10:05:51,845D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:51.956+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:54,494D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:54.386+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:54,617D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单看板统计数据
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectOrderStaticNew?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:54.747+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectOrderStaticNew"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,629D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:56.759+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,706D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:56.884+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,800D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:56.977+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,856D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.033+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,925D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 2, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.103+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:56,987D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 1, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.165+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,071D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.240+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,173D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.348+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,248D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 延时结算统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.422+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,320D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/list?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.491+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/list"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,440D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单时间统计
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/total?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.590+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/total"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,514D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?currentPage=1&pageSize=10&queryType=2
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.688+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,573D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 查询员工所属商户门店
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10&merchantNo&shopShortName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.750+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,691D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.864+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,764D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:57.940+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,885D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:58.050+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:05:57,958D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店详情查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/getShopDetail?shopNo=100127&channelCode=leShua
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:05:58.134+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/getShopDetail"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,288D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备列表查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/page/query?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.465+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,385D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备管理页面的设备型号
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/model/page/query?currentPage=1&pageSize=10&deviceModel
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.551+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/model/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,456D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备类型查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/devicetyps/query
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.631+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/devicetyps/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,530D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页趋势图数据接口
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getHourTendency?beginDate=2023-05-29&endDate=2023-05-29&dateType=day
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.701+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getHourTendency"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,586D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页商户排行
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-29 00:00:00', 'currentPage': 1, 'endTime': '2023-05-29 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.763+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:01,660D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页看板数据统计
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/queryHomeTradeDataStatistics?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:01.837+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/queryHomeTradeDataStatistics"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:05,245D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3573 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"bdc850ff64d14b35b15450f369c884e4","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=3573 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 10:06:06,233D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:06.377+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:08,608D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:08.753+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:08,761D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单看板统计数据
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectOrderStaticNew?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:08.877+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectOrderStaticNew"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,373D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.500+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,470D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.645+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,552D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.726+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,638D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.812+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,706D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 2, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.879+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,772D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 1, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:11.946+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,840D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.015+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,918D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.090+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:11,986D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 延时结算统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.162+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:12,089D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/list?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.263+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/list"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:12,147D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单时间统计
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/total?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.324+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/total"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:12,213D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?currentPage=1&pageSize=10&queryType=2
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.390+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:12,563D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 查询员工所属商户门店
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10&merchantNo&shopShortName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:12.451+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:13,331D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:13.200+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:13,687D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:13.861+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:14,333D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:14.491+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:06:14,569D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店详情查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/getShopDetail?shopNo=100127&channelCode=leShua
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:06:14.747+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/getShopDetail"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,299D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备列表查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/page/query?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.476+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,515D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备管理页面的设备型号
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/model/page/query?currentPage=1&pageSize=10&deviceModel
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.693+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/model/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,583D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备类型查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/devicetyps/query
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.764+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/devicetyps/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,663D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页趋势图数据接口
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getHourTendency?beginDate=2023-05-29&endDate=2023-05-29&dateType=day
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.840+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getHourTendency"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,740D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页商户排行
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-29 00:00:00', 'currentPage': 1, 'endTime': '2023-05-29 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.917+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:26,820D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页看板数据统计
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/queryHomeTradeDataStatistics?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:26.999+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/queryHomeTradeDataStatistics"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:29,268D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:29.401+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:32,161D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:32.292+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:32,287D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单看板统计数据
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectOrderStaticNew?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:32.429+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectOrderStaticNew"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:35,373D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3034 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"2d5c68dc0a0b453cb99df20ad483f0b6","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=3034 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 10:17:35,647D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:35.760+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:35,729D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:35.908+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:35,796D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:35.975+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:35,882D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.051+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:35,959D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 2, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.135+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,019D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 1, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.199+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,122D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.296+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,222D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.397+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,297D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 延时结算统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.474+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,370D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/list?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.546+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/list"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,459D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单时间统计
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/total?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.637+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/total"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,528D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?currentPage=1&pageSize=10&queryType=2
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.708+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,585D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 查询员工所属商户门店
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10&merchantNo&shopShortName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.765+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,714D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:36.892+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:36,907D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:37.086+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:37,018D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:37.198+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:37,094D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店详情查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/getShopDetail?shopNo=100127&channelCode=leShua
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:37.271+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/getShopDetail"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,422D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备列表查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/page/query?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.603+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,491D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备管理页面的设备型号
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/model/page/query?currentPage=1&pageSize=10&deviceModel
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.669+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/model/page/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,584D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 设备类型查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/deviceinfo/devicetyps/query
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.752+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/deviceinfo/devicetyps/query"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,642D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页趋势图数据接口
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getHourTendency?beginDate=2023-05-29&endDate=2023-05-29&dateType=day
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.821+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getHourTendency"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,706D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页商户排行
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-29 00:00:00', 'currentPage': 1, 'endTime': '2023-05-29 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.884+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:40,775D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 首页看板数据统计
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/queryHomeTradeDataStatistics?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:40.951+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/queryHomeTradeDataStatistics"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:45,246D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:45.393+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:47,359D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:47.492+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:47,498D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单看板统计数据
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectOrderStaticNew?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:47.632+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectOrderStaticNew"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:51,578D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 4030 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"a8cf4433bbf7463ca22b651cb08364ac","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=4030 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 10:17:51,822D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 订单列表
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-29%2000:00:00&queryEndPayTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:51.957+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/order/selectByPage"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:51,889D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.070+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:51,968D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权完成接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.145+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,048D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.221+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,112D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 2, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.293+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,182D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权列表接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '157'}
+请求内容: {'authType': 1, 'currentPage': 1, 'pageSize': 10, 'orderStatus': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.356+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,241D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 扫码预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.421+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,314D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 刷卡预授权统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 1, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.488+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,486D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 延时结算统计接口
+请求路径: https://api.pre.lianok.com/merchant/v1/preAuthOrder/overData
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}', 'Content-Length': '105'}
+请求内容: {'authType': 2, 'beginFinishAuthTime': '2023-05-29 00:00:00', 'endFinishAuthTime': '2023-05-29 23:59:59'}
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.666+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/preAuthOrder/overData"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,556D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/list?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.736+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/list"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:52,620D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单时间统计
+请求路径: https://api.pre.lianok.com/merchant/v1/receive/total?beginTime=2023-05-29%2000:00:00&endTime=2023-05-29%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:52.801+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/receive/total"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:53,279D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?currentPage=1&pageSize=10&queryType=2
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:53.176+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:53,659D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 查询员工所属商户门店
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10&merchantNo&shopShortName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:53.837+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:54,296D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:54.194+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:54,623D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:54.798+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:54,880D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店列表查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/selectMerchantShopList?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:55.055+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/selectMerchantShopList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:17:54,957D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 门店详情查询
+请求路径: https://api.pre.lianok.com/merchantNew/v1/shop/getShopDetail?shopNo=100127&channelCode=leShua
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:17:55.138+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchantNew/v1/shop/getShopDetail"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:39:20,375D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:39:20.557+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:40:01,008D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:40:01.193+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:54:15,904D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:54:16.090+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:54:34,259D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 预授权操作人查询接口
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?shopId&currentPage=1&pageSize=10&showAllEmployerFlag=1&employeeName
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:54:34.446+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 10:58:01,631D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:log_decorator.py:47 
+======================================================
+用例标题: 收款单列表
+请求路径: https://api.pre.lianok.com/merchant/v1/employee/selectMerchantEmployeeList?currentPage=1&pageSize=10&queryType=2
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-05-29T02:58:01.818+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/employee/selectMerchantEmployeeList"}
+Http状态码: 401
+=====================================================
+ERROR2023-05-29 11:00:52,159D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 4751 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"903a74ee3fae4876b3c8fcc8b658bfdb","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=4751 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 11:11:53,511D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3773 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"2fc453cdf5a348849bdfdbbdf1a66598","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=3773 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 11:13:37,406D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3459 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"46bbb9b810d446f3a9f8600d0d5fd805","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.name', 'type': '==', 'value': '皆人自动化专用商户(勿动', 'AssertType': None}} res_time=3459 status_code=200 teardown=None teardown_sql=None body={'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-05-29 15:56:37,143D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-29.log:assertion_control.py:165 JsonPath值获取失败 $.data.midPlatformOrderNo 
+ERROR2023-05-29 17:23:24,380D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 4385 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"0bd2c5c47c074656b752210b5f6da717","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=4385 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================
+ERROR2023-05-29 17:33:35,912D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3866 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"3bd0f98f3f724e5a9987fe203d62c5e2","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=3866 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================
+ERROR2023-05-29 17:48:21,166D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 4072 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"a0f628e5f413410fb6071e1e74e347e3","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=4072 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================
+ERROR2023-05-29 18:30:36,577D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3101 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"fdbe6cccba1d4c6dabdf390d7f541205","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=3101 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================
+ERROR2023-05-29 18:33:35,998D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3113 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"5581331dbec14688af297150f584c0d5","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=3113 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================
+ERROR2023-05-29 18:34:51,203D:\Agent_Api\logs\error-2023-05-29.log:run_time_decorator.py:27 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 4381 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=True detail='正常登录' response_data='{"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"44977e70ccd04a44896b110732c4c1f3","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}' request_body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='正常登录', assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=True, data={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'} cookie={} assert_data={'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}} res_time=4381 status_code=200 teardown=None teardown_sql=None body={'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+=================================================

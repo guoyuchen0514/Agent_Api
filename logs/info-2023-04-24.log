@@ -1,0 +1,100 @@
+INFO2023-04-24 10:15:43,200D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'fa570aeb362e4aa095a78ee4b1517e03', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:31:08,290D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '5ec121a2810d4b979d78e27d6f633375', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:31:15,801D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '089a7218232c4058a438d906b2955f92', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:32:20,893D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '25ea6356f65c4ab8b2e1c5450ee8a553', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:33:19,302D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9772f894685c4c569617afd34d557f02', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:33:44,365D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '67b0a1ca76b8474ba37bc51da039c3da', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:44:46,359D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f04d01fc6236478b929005600d293502', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 10:57:28,906D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '99cad00421804cb7b6ecd7d2d5b7e443', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 11:04:24,721D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0bd4899ee24f423f8b96a67958b29a19', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-04-24 11:05:46,877D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-24.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '02b8fb8b4e0745dea246216ea9faa682', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-24 00:00:00', 'currentPage': 1, 'endTime': '2023-04-24 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================

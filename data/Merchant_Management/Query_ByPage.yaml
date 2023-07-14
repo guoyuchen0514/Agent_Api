@@ -1,0 +1,91 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 商户列表模块
+  allureStory: 商户列表信息展示
+
+Qurey_ByPage_01:
+    host: ${{host()}}
+    url: /agent/v1/shop/queryByPage
+    method: GET
+    detail: 商户列表信息展示
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Qurey_ByPage_02:
+    host: ${{host()}}
+    url: /agent/v1/shop/queryByPage
+    method: GET
+    detail: 搜索百果园商户
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+      shopShortName: '百果园'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+      MerchantNo:
+        jsonpath: $.data[0].merchantNo
+        type: ==
+        value: '100018'
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:

@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 近三日顶部统计数据
+请求路径: https://api.pre.lianok.com/agent/v1/overData/topDate
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"totalTradeAmount":"0.00","totalTradeCount":0,"totalRefundAmount":"0.00","totalRefundCount":0,"agentCommission":"0.00"}}
+接口响应时长: 92 ms
+Http状态码: 200
+=====================================================

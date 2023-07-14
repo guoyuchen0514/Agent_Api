@@ -1,0 +1,246 @@
+{
+  "uid" : "86b72e40fc98bc06",
+  "name" : "test_Query_OpenDcpayStatus[查询商户数字人民币开通状态]",
+  "fullName" : "test_case.Merchant_Details.test_Query_OpenDcpayStatus.TestQueryOpendcpaystatus#test_Query_OpenDcpayStatus",
+  "historyId" : "80fa24bcdea7e9ad2b178fa1bc8a2dfa",
+  "time" : {
+    "start" : 1689065383553,
+    "stop" : 1689065383651,
+    "duration" : 98
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065383552,
+      "stop" : 1689065383553,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/shop/queryOpenDcpayStatus",
+      "time" : {
+        "start" : 1689065383649,
+        "stop" : 1689065383650,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383650,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383650,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a902e49b95fd0b0d",
+        "name" : "请求头: ",
+        "source" : "a902e49b95fd0b0d.json",
+        "type" : "application/json",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383650,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fae1cbc28f7c2b0a",
+        "name" : "请求数据: ",
+        "source" : "fae1cbc28f7c2b0a.json",
+        "type" : "application/json",
+        "size" : 22
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383650,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e872b6e0a14dfcf",
+        "name" : "预期数据: ",
+        "source" : "e872b6e0a14dfcf.json",
+        "type" : "application/json",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 94",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383650,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065383650,
+        "stop" : 1689065383651,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "17b0f7797912f87e",
+        "name" : "响应结果: ",
+        "source" : "17b0f7797912f87e.json",
+        "type" : "application/json",
+        "size" : 82
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "24a742baaa51cf19",
+      "name" : "log",
+      "source" : "24a742baaa51cf19.txt",
+      "type" : "text/plain",
+      "size" : 740
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "feature",
+    "value" : "商户详情"
+  }, {
+    "name" : "story",
+    "value" : "查询商户数字人民币开通状态"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Merchant_Details"
+  }, {
+    "name" : "suite",
+    "value" : "test_Query_OpenDcpayStatus"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQueryOpendcpaystatus"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Merchant_Details.test_Query_OpenDcpayStatus"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryOpenDcpayStatus', 'method': 'POST', 'detail': '查询商户数字人民币开通状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "86b72e40fc98bc06.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryOpenDcpayStatus', 'method': 'POST', 'detail': '查询商户数字人民币开通状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

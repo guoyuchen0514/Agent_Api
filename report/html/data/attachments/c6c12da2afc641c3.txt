@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 搜索100153收款门店
+请求路径: https://api.pre.lianok.com/agent/v1/shop/selectShopByConditon?currentPage=1&pageSize=20&shopSearchInfo=100153
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":545,"channelAgentCode":"zicai","agentNo":"285171","subAgentNo":null,"agentPartnerNo":null,"merchantNo":"100018","parentShopNo":"100036","shopNo":"100153","shopName":"百果园水果店分店","shopShortName":"百果园水果店","shopSearchInfo":null,"mccCode":"5812","shopImg":"https://horse-pay-develop.oss-cn-hangzhou.aliyuncs.com/common/20230524113030443_kJAcHlSCbQks.jpg","provinceCode":"140000","provinceName":"山西省","cityCode":"140400","cityName":"长治市","areaCode":"140423","areaName":"襄垣县","address":"山西省/长治市/襄垣县","lng":null,"lat":null,"contacter":null,"phone":"14824678523","qrCodeNo":null,"qrCode":null,"qrCodeKey":null,"kbShopId":null,"status":4,"isDisabled":0,"deleted":null,"createTime":"2023-05-24 11:30:32","updateTime":"2023-07-05 17:56:43"}],"totalCount":1}
+接口响应时长: 79 ms
+Http状态码: 200
+=====================================================

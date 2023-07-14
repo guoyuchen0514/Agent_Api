@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 获取可使用通道配置
+请求路径: https://api.pre.lianok.com/agent/v1/shop/getCanUseChannelConfigs
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=252395910b774a4f969f8ffd5d6b9908', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '243'}
+请求内容: {'shopNo': '100036', 'platformPayWay': 'wechatPassiveScan'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":647,"index":null,"channelCode":"leShua","channelCodeName":"乐刷","platformPayWayRate":"4.50","platformPayWay":"wechatPassiveScan","platformPayWayName":"微信被扫","payWayStatus":0,"useStatus":0,"sortCode":20},{"id":650,"index":null,"channelCode":"ysepay","channelCodeName":"银盛","platformPayWayRate":"0.45","platformPayWay":"wechatPassiveScan","platformPayWayName":"微信被扫","payWayStatus":1,"useStatus":1,"sortCode":20},{"id":666,"index":null,"channelCode":"suiXingFu","channelCodeName":"随行付","platformPayWayRate":"0.45","platformPayWay":"wechatPassiveScan","platformPayWayName":"微信被扫","payWayStatus":1,"useStatus":1,"sortCode":20},{"id":822,"index":null,"channelCode":"heLiBao","channelCodeName":"合利宝","platformPayWayRate":"0.45","platformPayWay":"wechatPassiveScan","platformPayWayName":"微信被扫","payWayStatus":0,"useStatus":1,"sortCode":20}]}
+接口响应时长: 147 ms
+Http状态码: 200
+=====================================================

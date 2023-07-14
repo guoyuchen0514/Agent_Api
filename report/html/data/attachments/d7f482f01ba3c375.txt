@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================

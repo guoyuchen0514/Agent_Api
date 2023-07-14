@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十天收款方式统计
+请求路径: https://api.pre.lianok.com/agent/v1/overData/payTypeProportion
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"payType":"activeScan","payTypeName":"主扫","color":"#81DD98","tradeAmount":"0.49"},{"payType":"applet","payTypeName":"小程序","color":"#86D6F1","tradeAmount":"0.05"},{"payType":"bank","payTypeName":"银行卡支付","color":"#97BAFE","tradeAmount":"40.00"},{"payType":"passiveScan","payTypeName":"被扫","color":"#77BCFF","tradeAmount":"5.41"}]}
+接口响应时长: 130 ms
+Http状态码: 200
+=====================================================

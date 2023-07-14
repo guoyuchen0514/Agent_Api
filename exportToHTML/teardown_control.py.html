@@ -1,0 +1,342 @@
+<html>
+<head>
+<title>teardown_control.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+teardown_control.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-03-09 16:48</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : teardown_control.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>ast
+<a name="l9"><span class="ln">9    </span></a><span class="s2">import </span>json
+<a name="l10"><span class="ln">10   </span></a><span class="s2">from </span>typing <span class="s2">import </span>Dict, Text
+<a name="l11"><span class="ln">11   </span></a><span class="s2">from </span>jsonpath <span class="s2">import </span>jsonpath
+<a name="l12"><span class="ln">12   </span></a><span class="s2">from </span>utils.requests_tool.request_control <span class="s2">import </span>RequestControl
+<a name="l13"><span class="ln">13   </span></a><span class="s2">from </span>utils.read_file_tools.regular_control <span class="s2">import </span>cache_regular, sql_regular, regular
+<a name="l14"><span class="ln">14   </span></a><span class="s2">from </span>utils.others_tool.jsonpath_date_replace <span class="s2">import </span>jsonpath_replace
+<a name="l15"><span class="ln">15   </span></a><span class="s2">from </span>utils.mysql_tool.mysql_control <span class="s2">import </span>MysqlDB
+<a name="l16"><span class="ln">16   </span></a><span class="s2">from </span>utils.logging_tool.log_control <span class="s2">import </span>WARNING
+<a name="l17"><span class="ln">17   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>ResponseData, TearDown, SendRequest, ParamPrepare
+<a name="l18"><span class="ln">18   </span></a><span class="s2">from </span>utils.others_tool.exceptions <span class="s2">import </span>JsonpathExtractionFailed, ValueNotFoundError
+<a name="l19"><span class="ln">19   </span></a><span class="s2">from </span>utils.cache_process.cache_control <span class="s2">import </span>CacheHandler
+<a name="l20"><span class="ln">20   </span></a><span class="s2">from </span>utils <span class="s2">import </span>config
+<a name="l21"><span class="ln">21   </span></a>
+<a name="l22"><span class="ln">22   </span></a><span class="s2">class </span>TearDownHandler:
+<a name="l23"><span class="ln">23   </span></a>    <span class="s2">def </span>__init__(self, res: <span class="s3">&quot;ResponseData&quot;</span>):
+<a name="l24"><span class="ln">24   </span></a>        self._res = res
+<a name="l25"><span class="ln">25   </span></a>
+<a name="l26"><span class="ln">26   </span></a>
+<a name="l27"><span class="ln">27   </span></a>    <span class="s2">class </span>TearDownHandler:
+<a name="l28"><span class="ln">28   </span></a>        <span class="s0">&quot;&quot;&quot; 处理yaml格式后置请求 &quot;&quot;&quot;</span>
+<a name="l29"><span class="ln">29   </span></a>
+<a name="l30"><span class="ln">30   </span></a>        <span class="s2">def </span>__init__(self, res: <span class="s3">&quot;ResponseData&quot;</span>):
+<a name="l31"><span class="ln">31   </span></a>            self._res = res
+<a name="l32"><span class="ln">32   </span></a>
+<a name="l33"><span class="ln">33   </span></a>    @classmethod
+<a name="l34"><span class="ln">34   </span></a>    <span class="s2">def </span>jsonpath_replace_data(
+<a name="l35"><span class="ln">35   </span></a>            cls,
+<a name="l36"><span class="ln">36   </span></a>            replace_key: Text,
+<a name="l37"><span class="ln">37   </span></a>            replace_value: Dict) -&gt; Text:
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a>        <span class="s0">&quot;&quot;&quot; 通过jsonpath判断出需要替换数据的位置 &quot;&quot;&quot;</span>
+<a name="l40"><span class="ln">40   </span></a>        _change_data = replace_key.split(<span class="s3">&quot;.&quot;</span>)
+<a name="l41"><span class="ln">41   </span></a>        <span class="s0"># jsonpath 数据解析</span>
+<a name="l42"><span class="ln">42   </span></a>        _new_data = jsonpath_replace(
+<a name="l43"><span class="ln">43   </span></a>            change_data=_change_data,
+<a name="l44"><span class="ln">44   </span></a>            key_name=<span class="s3">'_teardown_case'</span>,
+<a name="l45"><span class="ln">45   </span></a>            data_switch=<span class="s2">False</span>
+<a name="l46"><span class="ln">46   </span></a>        )
+<a name="l47"><span class="ln">47   </span></a>
+<a name="l48"><span class="ln">48   </span></a>        <span class="s2">if not </span>isinstance(replace_value, str):
+<a name="l49"><span class="ln">49   </span></a>            _new_data += <span class="s3">f&quot; = </span><span class="s2">{</span>replace_value<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l50"><span class="ln">50   </span></a>        <span class="s0"># 最终提取到的数据,转换成 _teardown_case[xxx][xxx]</span>
+<a name="l51"><span class="ln">51   </span></a>        <span class="s2">else</span>:
+<a name="l52"><span class="ln">52   </span></a>            _new_data += <span class="s3">f&quot; = '</span><span class="s2">{</span>replace_value<span class="s2">}</span><span class="s3">'&quot;</span>
+<a name="l53"><span class="ln">53   </span></a>        <span class="s2">return </span>_new_data
+<a name="l54"><span class="ln">54   </span></a>
+<a name="l55"><span class="ln">55   </span></a>    @classmethod
+<a name="l56"><span class="ln">56   </span></a>    <span class="s2">def </span>get_cache_name(
+<a name="l57"><span class="ln">57   </span></a>            cls,
+<a name="l58"><span class="ln">58   </span></a>            replace_key: Text,
+<a name="l59"><span class="ln">59   </span></a>            resp_case_data: Dict) -&gt; <span class="s2">None</span>:
+<a name="l60"><span class="ln">60   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l61"><span class="ln">61   </span></a>        获取缓存名称，并且讲提取到的数据写入缓存 
+<a name="l62"><span class="ln">62   </span></a>        &quot;&quot;&quot;</span>
+<a name="l63"><span class="ln">63   </span></a>        <span class="s2">if </span><span class="s3">&quot;$set_cache{&quot; </span><span class="s2">in </span>replace_key <span class="s2">and </span><span class="s3">&quot;}&quot; </span><span class="s2">in </span>replace_key:
+<a name="l64"><span class="ln">64   </span></a>            start_index = replace_key.index(<span class="s3">&quot;$set_cache{&quot;</span>)
+<a name="l65"><span class="ln">65   </span></a>            end_index = replace_key.index(<span class="s3">&quot;}&quot;</span>, start_index)
+<a name="l66"><span class="ln">66   </span></a>            old_value = replace_key[start_index:end_index + <span class="s4">2</span>]
+<a name="l67"><span class="ln">67   </span></a>            cache_name = old_value[<span class="s4">11</span>:old_value.index(<span class="s3">&quot;}&quot;</span>)]
+<a name="l68"><span class="ln">68   </span></a>            CacheHandler.update_cache(cache_name=cache_name, value=resp_case_data)
+<a name="l69"><span class="ln">69   </span></a>            <span class="s0"># Cache(cache_name).set_caches(resp_case_data)</span>
+<a name="l70"><span class="ln">70   </span></a>
+<a name="l71"><span class="ln">71   </span></a>    @classmethod
+<a name="l72"><span class="ln">72   </span></a>    <span class="s2">def </span>regular_testcase(cls, teardown_case: Dict) -&gt; Dict:
+<a name="l73"><span class="ln">73   </span></a>        <span class="s0">&quot;&quot;&quot;处理测试用例中的动态数据&quot;&quot;&quot;</span>
+<a name="l74"><span class="ln">74   </span></a>        test_case = regular(str(teardown_case))
+<a name="l75"><span class="ln">75   </span></a>        test_case = ast.literal_eval(cache_regular(str(test_case)))
+<a name="l76"><span class="ln">76   </span></a>        <span class="s2">return </span>test_case
+<a name="l77"><span class="ln">77   </span></a>
+<a name="l78"><span class="ln">78   </span></a>    @classmethod
+<a name="l79"><span class="ln">79   </span></a>    <span class="s2">def </span>teardown_http_requests(cls, teardown_case: Dict) -&gt; <span class="s3">&quot;ResponseData&quot;</span>:
+<a name="l80"><span class="ln">80   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l81"><span class="ln">81   </span></a>        发送后置请求 
+<a name="l82"><span class="ln">82   </span></a>        @param teardown_case: 后置用例 
+<a name="l83"><span class="ln">83   </span></a>        @return: 
+<a name="l84"><span class="ln">84   </span></a>        &quot;&quot;&quot;</span>
+<a name="l85"><span class="ln">85   </span></a>
+<a name="l86"><span class="ln">86   </span></a>        test_case = cls.regular_testcase(teardown_case)
+<a name="l87"><span class="ln">87   </span></a>        res = RequestControl(test_case).http_request(
+<a name="l88"><span class="ln">88   </span></a>            dependent_switch=<span class="s2">False</span>
+<a name="l89"><span class="ln">89   </span></a>        )
+<a name="l90"><span class="ln">90   </span></a>        <span class="s2">return </span>res
+<a name="l91"><span class="ln">91   </span></a>
+<a name="l92"><span class="ln">92   </span></a>    <span class="s2">def </span>dependent_type_response(
+<a name="l93"><span class="ln">93   </span></a>            self,
+<a name="l94"><span class="ln">94   </span></a>            teardown_case_data: <span class="s3">&quot;SendRequest&quot;</span>,
+<a name="l95"><span class="ln">95   </span></a>            resp_data: Dict) -&gt; Text:
+<a name="l96"><span class="ln">96   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l97"><span class="ln">97   </span></a>        判断依赖类型为当前执行用例响应内容 
+<a name="l98"><span class="ln">98   </span></a>        :param : teardown_case_data: teardown中的用例内容 
+<a name="l99"><span class="ln">99   </span></a>        :param : resp_data: 需要替换的内容 
+<a name="l100"><span class="ln">100  </span></a>        :return: 
+<a name="l101"><span class="ln">101  </span></a>        &quot;&quot;&quot;</span>
+<a name="l102"><span class="ln">102  </span></a>        _replace_key = teardown_case_data.replace_key
+<a name="l103"><span class="ln">103  </span></a>        _response_dependent = jsonpath(
+<a name="l104"><span class="ln">104  </span></a>            obj=resp_data,
+<a name="l105"><span class="ln">105  </span></a>            expr=teardown_case_data.jsonpath
+<a name="l106"><span class="ln">106  </span></a>        )
+<a name="l107"><span class="ln">107  </span></a>        <span class="s0"># 如果提取到数据，则进行下一步</span>
+<a name="l108"><span class="ln">108  </span></a>        <span class="s2">if </span>_response_dependent <span class="s2">is not False</span>:
+<a name="l109"><span class="ln">109  </span></a>            _resp_case_data = _response_dependent[<span class="s4">0</span>]
+<a name="l110"><span class="ln">110  </span></a>            data = self.jsonpath_replace_data(
+<a name="l111"><span class="ln">111  </span></a>                replace_key=_replace_key,
+<a name="l112"><span class="ln">112  </span></a>                replace_value=_resp_case_data
+<a name="l113"><span class="ln">113  </span></a>            )
+<a name="l114"><span class="ln">114  </span></a>        <span class="s2">else</span>:
+<a name="l115"><span class="ln">115  </span></a>            <span class="s2">raise </span>JsonpathExtractionFailed(
+<a name="l116"><span class="ln">116  </span></a>                <span class="s3">f&quot;jsonpath提取失败，替换内容: </span><span class="s2">{</span>resp_data<span class="s2">} \n</span><span class="s3">&quot;</span>
+<a name="l117"><span class="ln">117  </span></a>                <span class="s3">f&quot;jsonpath: </span><span class="s2">{</span>teardown_case_data.jsonpath<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l118"><span class="ln">118  </span></a>            )
+<a name="l119"><span class="ln">119  </span></a>        <span class="s2">return </span>data
+<a name="l120"><span class="ln">120  </span></a>
+<a name="l121"><span class="ln">121  </span></a>    <span class="s2">def </span>dependent_type_request(
+<a name="l122"><span class="ln">122  </span></a>            self,
+<a name="l123"><span class="ln">123  </span></a>            teardown_case_data: Dict,
+<a name="l124"><span class="ln">124  </span></a>            request_data: Dict) -&gt; <span class="s2">None</span>:
+<a name="l125"><span class="ln">125  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l126"><span class="ln">126  </span></a>        判断依赖类型为请求内容 
+<a name="l127"><span class="ln">127  </span></a>        :param : teardown_case_data: teardown中的用例内容 
+<a name="l128"><span class="ln">128  </span></a>        :param : request_data: 需要替换的内容 
+<a name="l129"><span class="ln">129  </span></a>        :return: 
+<a name="l130"><span class="ln">130  </span></a>        &quot;&quot;&quot;</span>
+<a name="l131"><span class="ln">131  </span></a>        <span class="s2">try</span>:
+<a name="l132"><span class="ln">132  </span></a>            _request_set_value = teardown_case_data[<span class="s3">'set_value'</span>]
+<a name="l133"><span class="ln">133  </span></a>            _request_dependent = jsonpath(
+<a name="l134"><span class="ln">134  </span></a>                obj=request_data,
+<a name="l135"><span class="ln">135  </span></a>                expr=teardown_case_data[<span class="s3">'jsonpath'</span>]
+<a name="l136"><span class="ln">136  </span></a>            )
+<a name="l137"><span class="ln">137  </span></a>            <span class="s2">if </span>_request_dependent <span class="s2">is not False</span>:
+<a name="l138"><span class="ln">138  </span></a>                _request_case_data = _request_dependent[<span class="s4">0</span>]
+<a name="l139"><span class="ln">139  </span></a>                self.get_cache_name(
+<a name="l140"><span class="ln">140  </span></a>                    replace_key=_request_set_value,
+<a name="l141"><span class="ln">141  </span></a>                    resp_case_data=_request_case_data
+<a name="l142"><span class="ln">142  </span></a>                )
+<a name="l143"><span class="ln">143  </span></a>            <span class="s2">else</span>:
+<a name="l144"><span class="ln">144  </span></a>                <span class="s2">raise </span>JsonpathExtractionFailed(
+<a name="l145"><span class="ln">145  </span></a>                    <span class="s3">f&quot;jsonpath提取失败，替换内容: </span><span class="s2">{</span>request_data<span class="s2">} \n</span><span class="s3">&quot;</span>
+<a name="l146"><span class="ln">146  </span></a>                    <span class="s3">f&quot;jsonpath: </span><span class="s2">{</span>teardown_case_data[<span class="s3">'jsonpath'</span>]<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l147"><span class="ln">147  </span></a>                )
+<a name="l148"><span class="ln">148  </span></a>        <span class="s2">except </span>KeyError <span class="s2">as </span>exc:
+<a name="l149"><span class="ln">149  </span></a>            <span class="s2">raise </span>ValueNotFoundError(<span class="s3">&quot;teardown中缺少set_value参数，请检查用例是否正确&quot;</span>) <span class="s2">from </span>exc
+<a name="l150"><span class="ln">150  </span></a>
+<a name="l151"><span class="ln">151  </span></a>    <span class="s2">def </span>dependent_self_response(
+<a name="l152"><span class="ln">152  </span></a>            self,
+<a name="l153"><span class="ln">153  </span></a>            teardown_case_data: <span class="s3">&quot;ParamPrepare&quot;</span>,
+<a name="l154"><span class="ln">154  </span></a>            res: Dict,
+<a name="l155"><span class="ln">155  </span></a>            resp_data: Dict) -&gt; <span class="s2">None</span>:
+<a name="l156"><span class="ln">156  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l157"><span class="ln">157  </span></a>        判断依赖类型为依赖用例ID自己响应的内容 
+<a name="l158"><span class="ln">158  </span></a>        :param : teardown_case_data: teardown中的用例内容 
+<a name="l159"><span class="ln">159  </span></a>        :param : resp_data: 需要替换的内容 
+<a name="l160"><span class="ln">160  </span></a>        :param : res: 接口响应的内容 
+<a name="l161"><span class="ln">161  </span></a>        :return: 
+<a name="l162"><span class="ln">162  </span></a>        &quot;&quot;&quot;</span>
+<a name="l163"><span class="ln">163  </span></a>        <span class="s2">try</span>:
+<a name="l164"><span class="ln">164  </span></a>            _set_value = teardown_case_data.set_cache
+<a name="l165"><span class="ln">165  </span></a>            _response_dependent = jsonpath(
+<a name="l166"><span class="ln">166  </span></a>                obj=res,
+<a name="l167"><span class="ln">167  </span></a>                expr=teardown_case_data.jsonpath
+<a name="l168"><span class="ln">168  </span></a>            )
+<a name="l169"><span class="ln">169  </span></a>            <span class="s0"># 如果提取到数据，则进行下一步</span>
+<a name="l170"><span class="ln">170  </span></a>            <span class="s2">if </span>_response_dependent <span class="s2">is not False</span>:
+<a name="l171"><span class="ln">171  </span></a>                _resp_case_data = _response_dependent[<span class="s4">0</span>]
+<a name="l172"><span class="ln">172  </span></a>                <span class="s0"># 拿到 set_cache 然后将数据写入缓存</span>
+<a name="l173"><span class="ln">173  </span></a>                <span class="s0"># Cache(_set_value).set_caches(_resp_case_data)</span>
+<a name="l174"><span class="ln">174  </span></a>                CacheHandler.update_cache(cache_name=_set_value, value=_resp_case_data)
+<a name="l175"><span class="ln">175  </span></a>                self.get_cache_name(
+<a name="l176"><span class="ln">176  </span></a>                    replace_key=_set_value,
+<a name="l177"><span class="ln">177  </span></a>                    resp_case_data=_resp_case_data
+<a name="l178"><span class="ln">178  </span></a>                )
+<a name="l179"><span class="ln">179  </span></a>            <span class="s2">else</span>:
+<a name="l180"><span class="ln">180  </span></a>                <span class="s2">raise </span>JsonpathExtractionFailed(
+<a name="l181"><span class="ln">181  </span></a>                    <span class="s3">f&quot;jsonpath提取失败，替换内容: </span><span class="s2">{</span>resp_data<span class="s2">} \n</span><span class="s3">&quot;</span>
+<a name="l182"><span class="ln">182  </span></a>                    <span class="s3">f&quot;jsonpath: </span><span class="s2">{</span>teardown_case_data.jsonpath<span class="s2">}</span><span class="s3">&quot;</span>)
+<a name="l183"><span class="ln">183  </span></a>        <span class="s2">except </span>KeyError <span class="s2">as </span>exc:
+<a name="l184"><span class="ln">184  </span></a>            <span class="s2">raise </span>ValueNotFoundError(<span class="s3">&quot;teardown中缺少set_cache参数，请检查用例是否正确&quot;</span>) <span class="s2">from </span>exc
+<a name="l185"><span class="ln">185  </span></a>
+<a name="l186"><span class="ln">186  </span></a>    @classmethod
+<a name="l187"><span class="ln">187  </span></a>    <span class="s2">def </span>dependent_type_cache(cls, teardown_case: <span class="s3">&quot;SendRequest&quot;</span>) -&gt; Text:
+<a name="l188"><span class="ln">188  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l189"><span class="ln">189  </span></a>        判断依赖类型为从缓存中处理 
+<a name="l190"><span class="ln">190  </span></a>        :param : teardown_case_data: teardown中的用例内容 
+<a name="l191"><span class="ln">191  </span></a>        :return: 
+<a name="l192"><span class="ln">192  </span></a>        &quot;&quot;&quot;</span>
+<a name="l193"><span class="ln">193  </span></a>        <span class="s2">if </span>teardown_case.dependent_type == <span class="s3">'cache'</span>:
+<a name="l194"><span class="ln">194  </span></a>            _cache_name = teardown_case.cache_data
+<a name="l195"><span class="ln">195  </span></a>            _replace_key = teardown_case.replace_key
+<a name="l196"><span class="ln">196  </span></a>            <span class="s0"># 通过jsonpath判断出需要替换数据的位置</span>
+<a name="l197"><span class="ln">197  </span></a>            _change_data = _replace_key.split(<span class="s3">&quot;.&quot;</span>)
+<a name="l198"><span class="ln">198  </span></a>            _new_data = jsonpath_replace(
+<a name="l199"><span class="ln">199  </span></a>                change_data=_change_data,
+<a name="l200"><span class="ln">200  </span></a>                key_name=<span class="s3">'_teardown_case'</span>,
+<a name="l201"><span class="ln">201  </span></a>                data_switch=<span class="s2">False</span>
+<a name="l202"><span class="ln">202  </span></a>            )
+<a name="l203"><span class="ln">203  </span></a>            <span class="s0"># jsonpath 数据解析</span>
+<a name="l204"><span class="ln">204  </span></a>            value_types = [<span class="s3">'int:'</span>, <span class="s3">'bool:'</span>, <span class="s3">'list:'</span>, <span class="s3">'dict:'</span>, <span class="s3">'tuple:'</span>, <span class="s3">'float:'</span>]
+<a name="l205"><span class="ln">205  </span></a>            <span class="s2">if </span>any(i <span class="s2">in </span>_cache_name <span class="s2">for </span>i <span class="s2">in </span>value_types) <span class="s2">is True</span>:
+<a name="l206"><span class="ln">206  </span></a>                <span class="s0"># _cache_data = Cache(_cache_name.split(':')[1]).get_cache()</span>
+<a name="l207"><span class="ln">207  </span></a>                _cache_data = CacheHandler.get_cache(_cache_name.split(<span class="s3">':'</span>)[<span class="s4">1</span>])
+<a name="l208"><span class="ln">208  </span></a>                _new_data += <span class="s3">f&quot; = </span><span class="s2">{</span>_cache_data<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l209"><span class="ln">209  </span></a>
+<a name="l210"><span class="ln">210  </span></a>            <span class="s0"># 最终提取到的数据,转换成 _teardown_case[xxx][xxx]</span>
+<a name="l211"><span class="ln">211  </span></a>            <span class="s2">else</span>:
+<a name="l212"><span class="ln">212  </span></a>                <span class="s0"># _cache_data = Cache(_cache_name).get_cache()</span>
+<a name="l213"><span class="ln">213  </span></a>                _cache_data = CacheHandler.get_cache(_cache_name)
+<a name="l214"><span class="ln">214  </span></a>                _new_data += <span class="s3">f&quot; = '</span><span class="s2">{</span>_cache_data<span class="s2">}</span><span class="s3">'&quot;</span>
+<a name="l215"><span class="ln">215  </span></a>
+<a name="l216"><span class="ln">216  </span></a>            <span class="s2">return </span>_new_data
+<a name="l217"><span class="ln">217  </span></a>
+<a name="l218"><span class="ln">218  </span></a>    <span class="s2">def </span>send_request_handler(
+<a name="l219"><span class="ln">219  </span></a>            self, data: <span class="s3">&quot;TearDown&quot;</span>,
+<a name="l220"><span class="ln">220  </span></a>            resp_data: Dict,
+<a name="l221"><span class="ln">221  </span></a>            request_data: Dict
+<a name="l222"><span class="ln">222  </span></a>    ) -&gt; <span class="s2">None</span>:
+<a name="l223"><span class="ln">223  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l224"><span class="ln">224  </span></a>        后置请求处理 
+<a name="l225"><span class="ln">225  </span></a>        @return: 
+<a name="l226"><span class="ln">226  </span></a>        &quot;&quot;&quot;</span>
+<a name="l227"><span class="ln">227  </span></a>        _send_request = data.send_request
+<a name="l228"><span class="ln">228  </span></a>        _case_id = data.case_id
+<a name="l229"><span class="ln">229  </span></a>        <span class="s0"># _teardown_case = ast.literal_eval(Cache('case_process').get_cache())[_case_id]</span>
+<a name="l230"><span class="ln">230  </span></a>        _teardown_case = CacheHandler.get_cache(_case_id)
+<a name="l231"><span class="ln">231  </span></a>        <span class="s2">for </span>i <span class="s2">in </span>_send_request:
+<a name="l232"><span class="ln">232  </span></a>            <span class="s2">if </span>i.dependent_type == <span class="s3">'cache'</span>:
+<a name="l233"><span class="ln">233  </span></a>                exec(self.dependent_type_cache(teardown_case=i))
+<a name="l234"><span class="ln">234  </span></a>            <span class="s0"># 判断从响应内容提取数据</span>
+<a name="l235"><span class="ln">235  </span></a>            <span class="s2">if </span>i.dependent_type == <span class="s3">'response'</span>:
+<a name="l236"><span class="ln">236  </span></a>                exec(
+<a name="l237"><span class="ln">237  </span></a>                    self.dependent_type_response(
+<a name="l238"><span class="ln">238  </span></a>                        teardown_case_data=i,
+<a name="l239"><span class="ln">239  </span></a>                        resp_data=resp_data)
+<a name="l240"><span class="ln">240  </span></a>                )
+<a name="l241"><span class="ln">241  </span></a>            <span class="s0"># 判断请求中的数据</span>
+<a name="l242"><span class="ln">242  </span></a>            <span class="s2">elif </span>i.dependent_type == <span class="s3">'request'</span>:
+<a name="l243"><span class="ln">243  </span></a>                self.dependent_type_request(
+<a name="l244"><span class="ln">244  </span></a>                    teardown_case_data=i,
+<a name="l245"><span class="ln">245  </span></a>                    request_data=request_data
+<a name="l246"><span class="ln">246  </span></a>                )
+<a name="l247"><span class="ln">247  </span></a>
+<a name="l248"><span class="ln">248  </span></a>        test_case = self.regular_testcase(_teardown_case)
+<a name="l249"><span class="ln">249  </span></a>        self.teardown_http_requests(test_case)
+<a name="l250"><span class="ln">250  </span></a>
+<a name="l251"><span class="ln">251  </span></a>    <span class="s2">def </span>param_prepare_request_handler(
+<a name="l252"><span class="ln">252  </span></a>            self,
+<a name="l253"><span class="ln">253  </span></a>            data: <span class="s3">&quot;TearDown&quot;</span>,
+<a name="l254"><span class="ln">254  </span></a>            resp_data: Dict) -&gt; <span class="s2">None</span>:
+<a name="l255"><span class="ln">255  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l256"><span class="ln">256  </span></a>        前置请求处理 
+<a name="l257"><span class="ln">257  </span></a>        @param data: 
+<a name="l258"><span class="ln">258  </span></a>        @param resp_data: 
+<a name="l259"><span class="ln">259  </span></a>        @return: 
+<a name="l260"><span class="ln">260  </span></a>        &quot;&quot;&quot;</span>
+<a name="l261"><span class="ln">261  </span></a>        _case_id = data.case_id
+<a name="l262"><span class="ln">262  </span></a>        <span class="s0"># _teardown_case = ast.literal_eval(Cache('case_process').get_cache())[_case_id]</span>
+<a name="l263"><span class="ln">263  </span></a>        _teardown_case = CacheHandler.get_cache(_case_id)
+<a name="l264"><span class="ln">264  </span></a>        _param_prepare = data.param_prepare
+<a name="l265"><span class="ln">265  </span></a>        res = self.teardown_http_requests(_teardown_case)
+<a name="l266"><span class="ln">266  </span></a>        <span class="s2">for </span>i <span class="s2">in </span>_param_prepare:
+<a name="l267"><span class="ln">267  </span></a>            <span class="s0"># 判断请求类型为自己,拿到当前case_id自己的响应</span>
+<a name="l268"><span class="ln">268  </span></a>            <span class="s2">if </span>i.dependent_type == <span class="s3">'self_response'</span>:
+<a name="l269"><span class="ln">269  </span></a>                self.dependent_self_response(
+<a name="l270"><span class="ln">270  </span></a>                    teardown_case_data=i,
+<a name="l271"><span class="ln">271  </span></a>                    resp_data=resp_data,
+<a name="l272"><span class="ln">272  </span></a>                    res=json.loads(res.response_data)
+<a name="l273"><span class="ln">273  </span></a>                )
+<a name="l274"><span class="ln">274  </span></a>
+<a name="l275"><span class="ln">275  </span></a>    <span class="s2">def </span>teardown_handle(self) -&gt; <span class="s2">None</span>:
+<a name="l276"><span class="ln">276  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l277"><span class="ln">277  </span></a>        为什么在这里需要单独区分 param_prepare 和 send_request 
+<a name="l278"><span class="ln">278  </span></a>        假设此时我们有用例A，teardown中我们需要执行用例B 
+<a name="l279"><span class="ln">279  </span></a>        那么考虑用户可能需要获取获取teardown的用例B的响应内容，也有可能需要获取用例A的响应内容， 
+<a name="l280"><span class="ln">280  </span></a>        因此我们这里需要通过关键词去做区分。这里需要考虑到，假设我们需要拿到B用例的响应，那么就需要先发送请求然后在拿到响应数据 
+<a name="l281"><span class="ln">281  </span></a>        那如果我们需要拿到A接口的响应，此时我们就不需要在额外发送请求了，因此我们需要区分一个是前置准备param_prepare， 
+<a name="l282"><span class="ln">282  </span></a>        一个是发送请求send_request 
+<a name="l283"><span class="ln">283  </span></a>        @return: 
+<a name="l284"><span class="ln">284  </span></a>        &quot;&quot;&quot;</span>
+<a name="l285"><span class="ln">285  </span></a>        <span class="s0"># 拿到用例信息</span>
+<a name="l286"><span class="ln">286  </span></a>        _teardown_data = self._res.teardown
+<a name="l287"><span class="ln">287  </span></a>        <span class="s0"># 获取接口的响应内容</span>
+<a name="l288"><span class="ln">288  </span></a>        _resp_data = self._res.response_data
+<a name="l289"><span class="ln">289  </span></a>        <span class="s0"># 获取接口的请求参数</span>
+<a name="l290"><span class="ln">290  </span></a>        _request_data = self._res.yaml_data.data
+<a name="l291"><span class="ln">291  </span></a>        <span class="s0"># 判断如果没有 teardown</span>
+<a name="l292"><span class="ln">292  </span></a>        <span class="s2">if </span>_teardown_data <span class="s2">is not None</span>:
+<a name="l293"><span class="ln">293  </span></a>            <span class="s0"># 循环 teardown中的接口</span>
+<a name="l294"><span class="ln">294  </span></a>            <span class="s2">for </span>_data <span class="s2">in </span>_teardown_data:
+<a name="l295"><span class="ln">295  </span></a>                <span class="s2">if </span>_data.param_prepare <span class="s2">is not None</span>:
+<a name="l296"><span class="ln">296  </span></a>                    self.param_prepare_request_handler(
+<a name="l297"><span class="ln">297  </span></a>                        data=_data,
+<a name="l298"><span class="ln">298  </span></a>                        resp_data=json.loads(_resp_data)
+<a name="l299"><span class="ln">299  </span></a>                    )
+<a name="l300"><span class="ln">300  </span></a>                <span class="s2">elif </span>_data.send_request <span class="s2">is not None</span>:
+<a name="l301"><span class="ln">301  </span></a>                    self.send_request_handler(
+<a name="l302"><span class="ln">302  </span></a>                        data=_data,
+<a name="l303"><span class="ln">303  </span></a>                        request_data=_request_data,
+<a name="l304"><span class="ln">304  </span></a>                        resp_data=json.loads(_resp_data)
+<a name="l305"><span class="ln">305  </span></a>                    )
+<a name="l306"><span class="ln">306  </span></a>        self.teardown_sql()
+<a name="l307"><span class="ln">307  </span></a>
+<a name="l308"><span class="ln">308  </span></a>    <span class="s2">def </span>teardown_sql(self) -&gt;<span class="s2">None</span>:
+<a name="l309"><span class="ln">309  </span></a>        _response_data = self._res.response_data
+<a name="l310"><span class="ln">310  </span></a>        sql_data =self._res.teardown_sql
+<a name="l311"><span class="ln">311  </span></a>        <span class="s2">if </span>sql_data <span class="s2">is not None</span>:
+<a name="l312"><span class="ln">312  </span></a>            <span class="s2">for </span>i <span class="s2">in </span>sql_data:
+<a name="l313"><span class="ln">313  </span></a>                <span class="s2">if </span>config.mysql_db.switch:
+<a name="l314"><span class="ln">314  </span></a>                    _sql_data = sql_regular(value =i, res =json.loads(_response_data))
+<a name="l315"><span class="ln">315  </span></a>                    MysqlDB().execute(cache_regular(_sql_data))
+<a name="l316"><span class="ln">316  </span></a>                <span class="s2">else</span>:
+<a name="l317"><span class="ln">317  </span></a>                    WARNING.logeer.waring(<span class="s3">&quot;程序中检查到您数据库开关为关闭状态，已为您跳过删除sql：%s&quot;</span>,i)
+<a name="l318"><span class="ln">318  </span></a>
+<a name="l319"><span class="ln">319  </span></a>
+<a name="l320"><span class="ln">320  </span></a>
+<a name="l321"><span class="ln">321  </span></a></pre>
+</body>
+</html>

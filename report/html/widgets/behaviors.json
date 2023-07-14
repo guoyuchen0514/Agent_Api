@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "b80f399ff7d1d23fbe0750c45269bf89",
+    "name" : "服务商后台接口",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 16
+    }
+  } ]
+}

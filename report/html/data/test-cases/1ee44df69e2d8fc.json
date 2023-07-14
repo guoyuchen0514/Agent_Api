@@ -1,0 +1,246 @@
+{
+  "uid" : "1ee44df69e2d8fc",
+  "name" : "test_Agent_Ranking[近三十天商户交易排行]",
+  "fullName" : "test_case.Agent_Homepage.test_Agent_Ranking.TestAgentRanking#test_Agent_Ranking",
+  "historyId" : "59a13156633b0d82b21f88b191e2c62e",
+  "time" : {
+    "start" : 1689065365358,
+    "stop" : 1689065365502,
+    "duration" : 144
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065365357,
+      "stop" : 1689065365357,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/overData/agentRanking",
+      "time" : {
+        "start" : 1689065365500,
+        "stop" : 1689065365500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1689065365500,
+        "stop" : 1689065365500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065365500,
+        "stop" : 1689065365500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7dbc9698ea2864a3",
+        "name" : "请求头: ",
+        "source" : "7dbc9698ea2864a3.json",
+        "type" : "application/json",
+        "size" : 235
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065365500,
+        "stop" : 1689065365500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "95aa6ef9bc8a689e",
+        "name" : "请求数据: ",
+        "source" : "95aa6ef9bc8a689e.json",
+        "type" : "application/json",
+        "size" : 102
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065365500,
+        "stop" : 1689065365501,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "34d69833b8aff039",
+        "name" : "预期数据: ",
+        "source" : "34d69833b8aff039.json",
+        "type" : "application/json",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 139",
+      "time" : {
+        "start" : 1689065365501,
+        "stop" : 1689065365501,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065365501,
+        "stop" : 1689065365501,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5f5cd1cf6b7d1151",
+        "name" : "响应结果: ",
+        "source" : "5f5cd1cf6b7d1151.json",
+        "type" : "application/json",
+        "size" : 2629
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "63971908f0293faf",
+      "name" : "log",
+      "source" : "63971908f0293faf.txt",
+      "type" : "text/plain",
+      "size" : 3056
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "story",
+    "value" : "商户排行"
+  }, {
+    "name" : "feature",
+    "value" : "首页模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Agent_Homepage"
+  }, {
+    "name" : "suite",
+    "value" : "test_Agent_Ranking"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAgentRanking"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Agent_Homepage.test_Agent_Ranking"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '近三十天商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1ee44df69e2d8fc.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '近三十天商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

@@ -1,0 +1,7 @@
+ERROR2023-04-17 17:23:30,656D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:mysql_control.py:142 数据库连接失败，失败原因 sql数据类型不正确，接受的是list
+ERROR2023-04-17 17:30:45,447D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:mysql_control.py:142 数据库连接失败，失败原因 sql数据类型不正确，接受的是list
+ERROR2023-04-17 17:42:14,508D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:assertion_control.py:159 JsonPath值获取失败 $.errorCode 
+ERROR2023-04-17 17:44:17,904D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:assertion_control.py:159 JsonPath值获取失败 $.errorCode 
+ERROR2023-04-17 17:45:35,487D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:assertion_control.py:160 JsonPath值获取失败 $.errorCode 
+ERROR2023-04-17 17:46:56,729D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:assertion_control.py:161 JsonPath值获取失败 $.errorCode 
+ERROR2023-04-17 18:06:30,571D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-17.log:assertion_control.py:160 JsonPath值获取失败 $.errorCode 

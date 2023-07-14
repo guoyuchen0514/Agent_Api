@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>error-2023-06-03.log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #660e7a; font-weight: bold; font-style: italic;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008000; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+error-2023-06-03.log</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a>ERROR2023-<span class="s1">06</span>-<span class="s1">03 </span><span class="s2">13:51:28</span>,123D:\Agent_Api\logs\error-<span class="s2">2023-06-03</span>.log:<span class="s1">log_decorator.py</span>:<span class="s1">48 </span>
+<a name="l2"><span class="ln">2    </span></a>====================================================== 
+<a name="l3"><span class="ln">3    </span></a>用例标题: 查询活动列表 
+<a name="l4"><span class="ln">4    </span></a>请求路径: <span class="s1">https://api.pre.lianok.com/agent/v1/activity/selectActivityByPage</span>
+<a name="l5"><span class="ln">5    </span></a>请求方式: POST 
+<a name="l6"><span class="ln">6    </span></a>请求头:   {<span class="s3">'User-Agent'</span>: <span class="s3">'python-requests/2.24.0'</span>, <span class="s3">'Accept-Encoding'</span>: <span class="s3">'gzip, deflate'</span>, <span class="s3">'Accept'</span>: <span class="s3">'*/*'</span>, <span class="s3">'Connection'</span>: <span class="s3">'keep-alive'</span>, <span class="s3">'Content-Type'</span>: <span class="s3">'application/json'</span>, <span class="s3">'accesstoken'</span>: <span class="s3">'4a9bae4247b04e068e794d4216f5c7e1'</span>, <span class="s3">'Content-Length'</span>: <span class="s3">'27'</span>} 
+<a name="l7"><span class="ln">7    </span></a>请求内容: {<span class="s3">'activityStatus'</span>: <span class="s3">'[0,1]'</span>} 
+<a name="l8"><span class="ln">8    </span></a>接口响应内容: {<span class="s3">&quot;timestamp&quot;</span>:<span class="s3">&quot;2023-06-03T05:51:28.768+0000&quot;</span>,<span class="s3">&quot;status&quot;</span>:<span class="s1">400</span>,<span class="s3">&quot;error&quot;</span>:<span class="s3">&quot;Bad Request&quot;</span>,<span class="s3">&quot;message&quot;</span>:<span class="s3">&quot;JSON parse error: Cannot deserialize instance of `java.util.ArrayList` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.ArrayList` out of VALUE_STRING token\n at [Source: (PushbackInputStream); line: 1, column: 20] (through reference chain: com.aduer.business.agent.api.entity.vo.request.ActivityPageRequestVO[\&quot;</span>activityStatus\<span class="s3">&quot;])&quot;</span>,<span class="s3">&quot;path&quot;</span>:<span class="s3">&quot;/agent/v1/activity/selectActivityByPage&quot;</span>} 
+<a name="l9"><span class="ln">9    </span></a>接口响应时长: <span class="s1">321 </span>ms 
+<a name="l10"><span class="ln">10   </span></a>Http状态码: <span class="s1">400</span>
+<a name="l11"><span class="ln">11   </span></a>===================================================== 
+<a name="l12"><span class="ln">12   </span></a></pre>
+</body>
+</html>

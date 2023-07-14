@@ -1,0 +1,11 @@
+ERROR2023-06-03 13:51:28,123D:\Agent_Api\logs\error-2023-06-03.log:log_decorator.py:48 
+======================================================
+用例标题: 查询活动列表
+请求路径: https://api.pre.lianok.com/agent/v1/activity/selectActivityByPage
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '4a9bae4247b04e068e794d4216f5c7e1', 'Content-Length': '27'}
+请求内容: {'activityStatus': '[0,1]'}
+接口响应内容: {"timestamp":"2023-06-03T05:51:28.768+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize instance of `java.util.ArrayList` out of VALUE_STRING token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.ArrayList` out of VALUE_STRING token\n at [Source: (PushbackInputStream); line: 1, column: 20] (through reference chain: com.aduer.business.agent.api.entity.vo.request.ActivityPageRequestVO[\"activityStatus\"])","path":"/agent/v1/activity/selectActivityByPage"}
+接口响应时长: 321 ms
+Http状态码: 400
+=====================================================

@@ -1,0 +1,88 @@
+ERROR2023-06-02 14:13:31,480D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '14936aa612ae49299ec3f4c5071327d1'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:13:31.904+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 73 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:14:02,689D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': 'cd1473bad3cb4b57b1524c26a9db4b83'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:14:03.138+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 45 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:17:18,092D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '7531fb2513474f6da2a790f98396747a'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:17:18.535+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 317 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:19:43,450D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '6191e0eece014c389d01f3d265e351f4'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:19:43.897+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 58 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:20:27,491D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '20c1302ed4eb47eb8bd1d76b0f6eeac3'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:20:27.939+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 47 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:21:16,731D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': 'f910aaf5434e436ab2858037193bd928'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:21:17.175+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 57 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:23:54,770D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '24cf1f4bea2041fbb53d81cec4719b20'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:23:55.214+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 59 ms
+Http状态码: 500
+=====================================================
+ERROR2023-06-02 14:24:44,345D:\Agent_Api\logs\error-2023-06-02.log:log_decorator.py:48 
+======================================================
+用例标题: 解决方案
+请求路径: https://api.pre.lianok.com/agent/v1/solution/queryList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '77c72ff6a4194a86ae642142c890b7c2'}
+请求内容: None
+接口响应内容: {"timestamp":"2023-06-02T06:24:44.793+0000","path":"/agent/v1/solution/queryList","status":500,"error":"Internal Server Error","message":"Invalid mime type \"application/json,multipart/form-data\": Invalid token character ',' in token \"json,multipart/form-data\""}
+接口响应时长: 57 ms
+Http状态码: 500
+=====================================================

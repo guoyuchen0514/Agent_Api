@@ -1,0 +1,2028 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "puti",
+    "children" : [ {
+      "name" : "3416-MainThread",
+      "children" : [ {
+        "name" : "test_Query_AgentUser[筛选条件为部分的账户名称]",
+        "uid" : "8d0d4ac8e5df854",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373180,
+          "stop" : 1689065373264,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选条件为部分的账户名称', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Name': {'jsonpath': '$.data[?(@.id==1260)].name', 'type': '==', 'value': '小熊', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': None, 'name': '小'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Commission_StaticsInfo[查询佣金总额]",
+        "uid" : "402b3091c6a56384",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369742,
+          "stop" : 1689065369834,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/commissionStaticsInfo', 'method': 'GET', 'detail': '查询佣金总额', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'BankAccountHolder': {'jsonpath': '$.data.bankAccountHolder', 'type': '==', 'value': '小熊', 'AssertType': None, 'bankAccountHolder': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'ids': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_AgentChannelConfigs[获取服务商通道配置信息]",
+        "uid" : "7643408d9732a781",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379809,
+          "stop" : 1689065379900,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentInfo/getAgentChannelConfigs', 'method': 'GET', 'detail': '获取服务商通道配置信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'agentNo': '285171'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_OpenDcpayStatus[查询商户数字人民币开通状态]",
+        "uid" : "86b72e40fc98bc06",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383553,
+          "stop" : 1689065383651,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryOpenDcpayStatus', 'method': 'POST', 'detail': '查询商户数字人民币开通状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Shop_Update[启用门店]",
+        "uid" : "fe5c57866e353708",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384986,
+          "stop" : 1689065385107,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/update', 'method': 'POST', 'detail': '启用门店', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '440', 'isDisabled': '0', 'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Apply_QueryDetails[查询对接商详情]",
+        "uid" : "ecee3b874c8f83e2",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386355,
+          "stop" : 1689065386437,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/apply/queryDetails', 'method': 'GET', 'detail': '查询对接商详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'id': '3'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Device_Recall_Flow[设备划拨]",
+        "uid" : "71d31783ed2ca5f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374341,
+          "stop" : 1689065374454,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/merchant/flow', 'method': 'POST', 'detail': '设备划拨', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'deviceNo': '4023080140000001', 'toOperator': '100018', 'transferType': '2'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ActivityByPage[查询历史活动]",
+        "uid" : "c9853f371f8fec2d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065364742,
+          "stop" : 1689065364860,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/activity/selectActivityByPage', 'method': 'POST', 'detail': '查询历史活动', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'activityStatus': [2]}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_AgentSettleConfigs[获取服务商结算配置]",
+        "uid" : "b9823da28a2b23d5",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065370816,
+          "stop" : 1689065370932,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/getAgentSettleConfigs', 'method': 'POST', 'detail': '获取服务商结算配置', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '1000', 'settleTypeName': ''}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Open_Dcpay[开通数字人民币]",
+        "uid" : "e506099950821882",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065382210,
+          "stop" : 1689065382669,
+          "duration" : 459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/openDcpay', 'method': 'POST', 'detail': '开通数字人民币', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'leShua', 'agentNo': '285171', 'dcpayNumber': '1562431562435612', 'dcpayWalletType': 'private', 'phone': '13455456867', 'validCode': '744905'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Update_SwipeRate[修改商户POS刷卡D1到账费率]",
+        "uid" : "f24d4ed6244738fe",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065385111,
+          "stop" : 1689065385242,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/agentUpdateSwipeRate', 'method': 'POST', 'detail': '修改商户POS刷卡D1到账费率', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'merchantNo': '100018', 'shopNo': '100036', 'swipeType': '1', 'channelCode': 'leShua', 'unionDebitRate': '0.0052', 'unionCreditRate': '0.0052'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取十一位正确手机号验证码信息]",
+        "uid" : "82172faf6c78f430",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376002,
+          "stop" : 1689065376132,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取十一位正确手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': '15617886089', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_platformRole[新增权限组]",
+        "uid" : "52c9610e0978c0a6",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689065371966,
+          "stop" : 1689065372093,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/add', 'method': 'POST', 'detail': '新增权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': None, 'data': {'platformType': 2, 'roleName': '自动化测试权限组', 'menuIds': [273, 242, 240, 244, 267, 246, 333, 334, 322, 305, 328, 331, 332, 248, 249, 236, 241, 243, 266, 245, 321, 304, 327, 330, 247]}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取十二位手机号验证码信息]",
+        "uid" : "b9f808ef29540692",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376268,
+          "stop" : 1689065376348,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取十二位手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'Msg': {'jsonpath': '$.message', 'type': '==', 'value': '手机号码未注册', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': '156178860899', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_WxRealAuditInfo[商户实名认证]",
+        "uid" : "19f8a8ea0e71c694",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384013,
+          "stop" : 1689065384129,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryWxRealAuditInfo', 'method': 'GET', 'detail': '商户实名认证', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Download_AgentCommissionSettleDetailExcel[佣金明细导出]",
+        "uid" : "87c1e851c03653ff",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369837,
+          "stop" : 1689065369988,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleDetailExcel', 'method': 'POST', 'detail': '佣金明细导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'settleConfigId': '2910', 'tradeMonth': '2023-04-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取非1开头的手机号验证码信息]",
+        "uid" : "640dbb99113109f8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376351,
+          "stop" : 1689065376415,
+          "duration" : 64
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取非1开头的手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'Msg': {'jsonpath': '$.message', 'type': '==', 'value': '手机号码未注册', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': '25617886089', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_WayProportion[近七日收款渠道统计]",
+        "uid" : "d71fbe4b49cd7f56",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366964,
+          "stop" : 1689065367090,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payWayProportion', 'method': 'POST', 'detail': '近七日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ByPage[查询昨日订单流水]",
+        "uid" : "ae2788c2dab4d458",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386971,
+          "stop" : 1689065387187,
+          "duration" : 216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectByPage', 'method': 'GET', 'detail': '查询昨日订单流水', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-10 00:00:00', 'queryEndPayTime': '2023-07-10 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询绑定时间为当月第一天的设备列表]",
+        "uid" : "203455ab0b627bd8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374657,
+          "stop" : 1689065374772,
+          "duration" : 115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询绑定时间为当月第一天的设备列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'bindDate': '2023-07-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_RoleListByPage[模糊查询test权限组列表]",
+        "uid" : "18901bccb301f32d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373994,
+          "stop" : 1689065374108,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage', 'method': 'GET', 'detail': '模糊查询test权限组列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'platformType': 2, 'roleName': 'test'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_Detail[商户账号下拉数据展示]",
+        "uid" : "ed16dad24083cd36",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383189,
+          "stop" : 1689065383437,
+          "duration" : 248
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryDetail', 'method': 'GET', 'detail': '商户账号下拉数据展示', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'leShua'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_DetailStatistic[查询商户交易数据]",
+        "uid" : "10bf0dc0b1862974",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065380058,
+          "stop" : 1689065380165,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getDetailStatistic', 'method': 'GET', 'detail': '查询商户交易数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_PageByCondition[查询小熊测试拓展组]",
+        "uid" : "6aaac2357d7224a7",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369043,
+          "stop" : 1689065369132,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/queryPageByCondition', 'method': 'POST', 'detail': '查询小熊测试拓展组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'PartnerNo': {'jsonpath': '$.data[0].partnerNo', 'type': '==', 'value': '100017', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'userType': '13', 'partnerName': '小熊测试拓展组'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_ReceiptRecord[录入发票]",
+        "uid" : "128860142d5ee6d3",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369434,
+          "stop" : 1689065369740,
+          "duration" : 306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/receipt/addReceiptRecord', 'method': 'POST', 'detail': '录入发票', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'ossHost': '//horse-pay-develop-back.oss-cn-hangzhou.aliyuncs.com', 'receiptAmount': '0.01', 'receiptImg': 'common/20230601165414388_SGavZvV8Cgnb.jpg'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Agent_Ranking[近七日商户交易排行]",
+        "uid" : "b4c711794db25681",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365243,
+          "stop" : 1689065365355,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '近七日商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_PageRefundOrder[今日退款订单]",
+        "uid" : "8107c9aaa4a70eec",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065388854,
+          "stop" : 1689065388954,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectPageRefundOrder', 'method': 'GET', 'detail': '今日退款订单', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-11 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入错误的密码]",
+        "uid" : "3ab3579ecb98f7b",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378546,
+          "stop" : 1689065378641,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入错误的密码', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': 'startswith', 'value': '密码输入不正确', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '15617886089', 'password': 'hl12345', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Download_AgentPartnerCommissionSettleToExcel[拓展组佣金导出]",
+        "uid" : "95ffcbfe6def5ce2",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065370227,
+          "stop" : 1689065370492,
+          "duration" : 265
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentPartnerCommissionSettleToExcel', 'method': 'POST', 'detail': '拓展组佣金导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01', 'commissionType': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[查询员工列表]",
+        "uid" : "bde59d5081a16bc1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065372976,
+          "stop" : 1689065373076,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '查询员工列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Name': {'jsonpath': '$.data[?(@.id==1260)].name', 'type': '==', 'value': '小熊', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选所属权限组为顶代员工的员工]",
+        "uid" : "6b53a99ab2b792a4",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373655,
+          "stop" : 1689065373735,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选所属权限组为顶代员工的员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': None, 'roleId': 159}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_MerchantChannelConfigs[查询商户费率]",
+        "uid" : "430042fe35d33711",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065380168,
+          "stop" : 1689065380427,
+          "duration" : 259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getMerchantChannelConfigs', 'method': 'GET', 'detail': '查询商户费率', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'merchantNo': '100018'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_SubMerchantNoInfo[查询商户号]",
+        "uid" : "e8e3d16d61ad8e11",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383732,
+          "stop" : 1689065383831,
+          "duration" : 99
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/querySubMerchantNoInfo', 'method': 'GET', 'detail': '查询商户号', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选条件不存在的账户名称]",
+        "uid" : "3163ea69556dfa7a",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373267,
+          "stop" : 1689065373343,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选条件不存在的账户名称', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Data': {'jsonpath': '$.data', 'type': '==', 'value': [], 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': None, 'name': '空的账户名称'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Apply_SelectByPage[开放平台]",
+        "uid" : "5414af7b10c715ce",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386448,
+          "stop" : 1689065386593,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/apply/selectByPage', 'method': 'POST', 'detail': '开放平台', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Agent_Ranking[近三日商户交易排行]",
+        "uid" : "246e4e8d50557b6b",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365127,
+          "stop" : 1689065365233,
+          "duration" : 106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '近三日商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_BizProportion[近七日收款渠道统计]",
+        "uid" : "164ff247bc6dbd1d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365779,
+          "stop" : 1689065365880,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payBizProportion', 'method': 'POST', 'detail': '近七日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询设备类型为POS的设备]",
+        "uid" : "b93b09c27398498c",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374979,
+          "stop" : 1689065375110,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询设备类型为POS的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'deviceType': '101'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询设备型号为CG10的设备]",
+        "uid" : "46bc72842e3ed6f9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375113,
+          "stop" : 1689065375240,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询设备型号为CG10的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'deviceModelId': '6', 'id': '6'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceNo[查询设备详情]",
+        "uid" : "ed6a2dfe0b65b954",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375852,
+          "stop" : 1689065375943,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/bydeviceno/query', 'method': 'GET', 'detail': '查询设备详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'deviceNo': '4023080140000001'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_ByPage[商户列表信息展示]",
+        "uid" : "98cd55c7ee841b6c",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065385457,
+          "stop" : 1689065385954,
+          "duration" : 497
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryByPage', 'method': 'GET', 'detail': '商户列表信息展示', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_RateTemplateInfo[选择费率模板]",
+        "uid" : "6d926696bbd30734",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368719,
+          "stop" : 1689065368843,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/rate/getRateTemplateInfo', 'method': 'POST', 'detail': '选择费率模板', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'templateId': '45'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_UnionCardRate[查询商户POS刷卡D0到账详情]",
+        "uid" : "54dafbed50cbcc10",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383921,
+          "stop" : 1689065384009,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryUnionCardRate', 'method': 'POST', 'detail': '查询商户POS刷卡D0到账详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'channelCode': 'leShua', 'shopNo': '100036', 'swipeType': '2'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_User[新增员工]",
+        "uid" : "c8a2f42ba8cb5d7e",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689065371359,
+          "stop" : 1689065371423,
+          "duration" : 64
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/addUser', 'method': 'POST', 'detail': '新增员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Shop_Update[禁用门店]",
+        "uid" : "26c6e0e6242124e8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384879,
+          "stop" : 1689065384983,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/update', 'method': 'POST', 'detail': '禁用门店', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '440', 'isDisabled': '1', 'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_OssToken[获取OSS token]",
+        "uid" : "22a199239ede661f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383655,
+          "stop" : 1689065383729,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/oss/queryOssToken', 'method': 'POST', 'detail': '获取OSS token', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'type': 'common'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentConfig[查询服务商配置信息]",
+        "uid" : "4eef17aed05f86f4",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065382672,
+          "stop" : 1689065382865,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryAgentConfig', 'method': 'POST', 'detail': '查询服务商配置信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'channelCode': 'leShua'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AllAreaByChannelCode[查询通道地区code码]",
+        "uid" : "f3551f19b154888d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367203,
+          "stop" : 1689065367423,
+          "duration" : 220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/merchant/queryAllAreaByChannelCode', 'method': 'GET', 'detail': '查询通道地区code码', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Title': {'jsonpath': '$.data[0].adcode', 'type': '==', 'value': '110000', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'channelCode': 'leShua'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_MerchantAccredit[商户分账授权状态]",
+        "uid" : "7bd60a8cfdd32272",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383440,
+          "stop" : 1689065383550,
+          "duration" : 110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/share/queryMerchantAccredit', 'method': 'GET', 'detail': '商户分账授权状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'leShua', 'merchantNo': '100018'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取十位手机号验证码信息]",
+        "uid" : "59b442a94f4db8c3",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376187,
+          "stop" : 1689065376266,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取十位手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'Msg': {'jsonpath': '$.message', 'type': '==', 'value': '手机号码未注册', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': '1561788608', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_BizProportion[昨日收款渠道统计]",
+        "uid" : "dc4f27b9ee347225",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365504,
+          "stop" : 1689065365650,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payBizProportion', 'method': 'POST', 'detail': '昨日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_User[查询员工列表]",
+        "uid" : "fc0d42622dee5249",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065371541,
+          "stop" : 1689065371642,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '查询员工列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'name': '自动化测试员工'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_RoleList[获取权限组数据]",
+        "uid" : "41194ae47c0ddb9f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065372867,
+          "stop" : 1689065372973,
+          "duration" : 106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/role/getRoleList', 'method': 'GET', 'detail': '获取权限组数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'RoleName': {'jsonpath': '$.data[0].roleName', 'type': '==', 'value': '顶代员工', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_OrderStatic[交易流水昨日顶部统计数据]",
+        "uid" : "6f9d4c162b51e241",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065388122,
+          "stop" : 1689065388497,
+          "duration" : 375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectOrderStatic', 'method': 'GET', 'detail': '交易流水昨日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'beginTime': '2023-07-10 00:00:00', 'endTime': '2023-07-10 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_OpenChannel[查询商户通道开通状态]",
+        "uid" : "ae42b0437ccb9dee",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065382003,
+          "stop" : 1689065382103,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getOpenChannel', 'method': 'GET', 'detail': '查询商户通道开通状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'merchantNo': '100018'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询绑定到百果园水果100036的设备]",
+        "uid" : "61123bb0049e9869",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374775,
+          "stop" : 1689065374866,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询绑定到百果园水果100036的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_User[删除员工]",
+        "uid" : "6853a0e161cc156",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065371881,
+          "stop" : 1689065371963,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/delete', 'method': 'POST', 'detail': '删除员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '$cache{Query_AgentUserId}'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_platformRole[查询权限组]",
+        "uid" : "29af590b1b8f4772",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065372125,
+          "stop" : 1689065372245,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage', 'method': 'GET', 'detail': '查询权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'platformType': 2, 'roleName': '自动化测试权限组'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入空的手机号]",
+        "uid" : "fade3f8b1696a06d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378643,
+          "stop" : 1689065378711,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入空的手机号', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': 'startswith', 'value': '密码输入不正确', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_platformRole[删除权限组]",
+        "uid" : "1224aba7aea4a8c1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065372746,
+          "stop" : 1689065372860,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/delete', 'method': 'POST', 'detail': '删除权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Data': {'jsonpath': '$.data', 'type': '==', 'value': True, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': None, 'data': {'id': '$cache{Query_RoleListByPageID}'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_solution[解决方案]",
+        "uid" : "d657cee0464fb5e6",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386596,
+          "stop" : 1689065386668,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/solution/queryList', 'method': 'GET', 'detail': '解决方案', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_User[禁用员工]",
+        "uid" : "5dc6e0f4e8b30292",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065371645,
+          "stop" : 1689065371878,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/freezeUser', 'method': 'POST', 'detail': '禁用员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'id': '$cache{Query_AgentUserId}'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'Query_AgentUserId', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data[0].id', 'set_cache': 'Query_AgentUserId', 'replace_key': None}]}], 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选不存在手机号的员工]",
+        "uid" : "d970214d7b7483f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373457,
+          "stop" : 1689065373548,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选不存在手机号的员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Data': {'jsonpath': '$.data', 'type': '==', 'value': [], 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': 1981687235}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_UserVueRouterList[查询服务商角色菜单权限]",
+        "uid" : "f1929c17702a8c0a",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367427,
+          "stop" : 1689065367584,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/systemMenu/queryUserVueRouterList', 'method': 'GET', 'detail': '查询服务商角色菜单权限', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Title': {'jsonpath': '$.data[6].meta.title', 'type': '==', 'value': '活动管理', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'system': 'agent', 'userId': '1108', 'roleId': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_WayProportion[昨日收款渠道统计]",
+        "uid" : "d5c225190fd5f54d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366738,
+          "stop" : 1689065366859,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payWayProportion', 'method': 'POST', 'detail': '昨日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取空手机号验证码信息]",
+        "uid" : "cea7506cad76b08c",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376135,
+          "stop" : 1689065376184,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取空手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'Msg': {'jsonpath': '$.message', 'type': '==', 'value': '手机号不能为空', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': None, 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入少于11位的手机号]",
+        "uid" : "bd677412c9e4def8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378470,
+          "stop" : 1689065378542,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入少于11位的手机号', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '1561788608', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_PageRefundOrder[近七日退款订单]",
+        "uid" : "7703721c8f61f9f9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065389052,
+          "stop" : 1689065389181,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectPageRefundOrder', 'method': 'GET', 'detail': '近七日退款订单', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-05 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Update_SwipeRate[修改商户POS刷卡D0到账费率]",
+        "uid" : "b56768c87fddeb51",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065385245,
+          "stop" : 1689065385379,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/agentUpdateSwipeRate', 'method': 'POST', 'detail': '修改商户POS刷卡D0到账费率', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'merchantNo': '100018', 'shopNo': '100036', 'swipeType': '2', 'channelCode': 'leShua', 'unionDebitRate': '0.0055', 'unionCreditRate': '0.0055'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_MultipleCanUserChannelConfigs[获取批量可使用通道配置]",
+        "uid" : "90c8b9d6543b7806",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065380430,
+          "stop" : 1689065382000,
+          "duration" : 1570
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/shop/getMultipleCanUserChannelConfigs', 'method': 'GET', 'detail': '获取批量可使用通道配置', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_AgentPartnerCommissionSettleMonth[获取拓展组佣金数据]",
+        "uid" : "26bec467cfbf4f2",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065370625,
+          "stop" : 1689065370812,
+          "duration" : 187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/getAgentPartnerCommissionSettleMonth', 'method': 'POST', 'detail': '获取拓展组佣金数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01', 'commissionType': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Disabled_Merchant[禁用商户账号]",
+        "uid" : "db701d5a45facabb",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379177,
+          "stop" : 1689065379288,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/merchantNew/disabeldMerchant', 'method': 'POST', 'detail': '禁用商户账号', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'merchantNo': '100018', 'isDisabled': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入空的密码]",
+        "uid" : "c1c9c606ac7336cf",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378714,
+          "stop" : 1689065378792,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入空的密码', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': 'startswith', 'value': '密码输入不正确', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '15617886089', 'password': '', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_OrderStatic[交易流水今日顶部统计数据]",
+        "uid" : "d78a82879fad8961",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065387969,
+          "stop" : 1689065388119,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectOrderStatic', 'method': 'GET', 'detail': '交易流水今日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'beginTime': '2023-07-11 00:00:00', 'endTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ByPage[查询近三十日订单流水]",
+        "uid" : "4f62187731b60592",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065387517,
+          "stop" : 1689065387839,
+          "duration" : 322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectByPage', 'method': 'GET', 'detail': '查询近三十日订单流水', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-06-12 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_TypeProportion[近七日收款方式统计]",
+        "uid" : "b307014092f783d6",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366427,
+          "stop" : 1689065366598,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payTypeProportion', 'method': 'POST', 'detail': '近七日收款方式统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询属于百果园水果商户账号的设备]",
+        "uid" : "fb9abfdbb4e9ee7",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375247,
+          "stop" : 1689065375374,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询属于百果园水果商户账号的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'merchantNo': '100018'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ByPage[查询今日订单流水]",
+        "uid" : "f26158635c85d1c9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386670,
+          "stop" : 1689065386969,
+          "duration" : 299
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectByPage', 'method': 'GET', 'detail': '查询今日订单流水', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-11 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选条件为正确的账户名称]",
+        "uid" : "b549509559c68061",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373079,
+          "stop" : 1689065373177,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选条件为正确的账户名称', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Name': {'jsonpath': '$.data[?(@.id==1260)].name', 'type': '==', 'value': '小熊', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': None, 'name': '小熊'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_TypeProportion[近三十天收款方式统计]",
+        "uid" : "9839223769d13913",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366601,
+          "stop" : 1689065366734,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payTypeProportion', 'method': 'POST', 'detail': '近三十天收款方式统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[设备列表]",
+        "uid" : "7893fc9da4c3e95e",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374457,
+          "stop" : 1689065374654,
+          "duration" : 197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '设备列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_MerchantByCondition[商户账号下拉数据展示]",
+        "uid" : "9cf52a58ce3668f1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386271,
+          "stop" : 1689065386352,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/merchantNew/selectMerchantByCondition', 'method': 'POST', 'detail': '商户账号下拉数据展示', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '1000', 'merchantNameOrPhone': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Trade_Trend[近三十日交易趋势]",
+        "uid" : "54c38be777b76510",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368390,
+          "stop" : 1689065368521,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '近三十日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_SmsCode[获取验证码]",
+        "uid" : "44abbc470015cb86",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1689065364498,
+          "stop" : 1689065364498,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendSmsCode', 'method': 'POST', 'detail': '获取验证码', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': False, 'data': {'businessCode': 'commonSms', 'phone': '15617886089', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_PartnerGroupList[所属拓展组下拉数据展示]",
+        "uid" : "7e7209d25ce55634",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386086,
+          "stop" : 1689065386181,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/queryPartnerGroupList', 'method': 'GET', 'detail': '所属拓展组下拉数据展示', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'nameOrPhone': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ActivityByPage[查询热门活动]",
+        "uid" : "5832752ae23ec2d9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065364633,
+          "stop" : 1689065364737,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/activity/selectActivityByPage', 'method': 'POST', 'detail': '查询热门活动', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'activityStatus': [0, 1]}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_AgentCommissionSettleMonth[获取服务商佣金数据]",
+        "uid" : "9ccf1ed38fdaa5e",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065370495,
+          "stop" : 1689065370623,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/getAgentCommissionSettleMonth', 'method': 'POST', 'detail': '获取服务商佣金数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_YsepayD0[银盛D0]",
+        "uid" : "c475b314b497ada6",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384133,
+          "stop" : 1689065384247,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/config/rate/config/query', 'method': 'POST', 'detail': '银盛D0', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'agentNo': '285171', 'channelCode': 'ysepay', 'shopNo': '100036', 'topAgentCode': 'zicai'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceTypes[查询设备类型]",
+        "uid" : "73a620cfcc83b0a6",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375946,
+          "stop" : 1689065375999,
+          "duration" : 53
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/devicetyps/query', 'method': 'GET', 'detail': '查询设备类型', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Disabled_Merchant[启用商户账号]",
+        "uid" : "9ecad98b64f21216",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379291,
+          "stop" : 1689065379360,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/merchantNew/disabeldMerchant', 'method': 'POST', 'detail': '启用商户账号', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'merchantNo': '100018', 'isDisabled': '0'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_OrderStatic[交易流水近七日顶部统计数据]",
+        "uid" : "ae07daffac5fecd1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065388501,
+          "stop" : 1689065388660,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectOrderStatic', 'method': 'GET', 'detail': '交易流水近七日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'beginTime': '2023-07-05 00:00:00', 'endTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ByPage[查询近七日订单流水]",
+        "uid" : "2239223e29c4af76",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065387190,
+          "stop" : 1689065387515,
+          "duration" : 325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectByPage', 'method': 'GET', 'detail': '查询近七日订单流水', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-05 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Top_Date[昨日顶部统计数据]",
+        "uid" : "a7eaf89b255a0e1c",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367587,
+          "stop" : 1689065367689,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/topDate', 'method': 'POST', 'detail': '昨日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Change_MerchantChannel[修改商户微信被扫支付通道]",
+        "uid" : "baa5fb7539a436b7",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378991,
+          "stop" : 1689065379174,
+          "duration" : 183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/changeMerchantChannel', 'method': 'POST', 'detail': '修改商户微信被扫支付通道', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json,multipart/form-data', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'beforeChannelId': '647', 'shopNo': '100036', 'platformPayWay': 'wechatPassiveScan', 'afterChannelId': '647'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Trade_Trend[近三日交易趋势]",
+        "uid" : "6eac8e13e66dec24",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368185,
+          "stop" : 1689065368285,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '近三日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_RegisterCode[获取未注册的十一位手机号验证码信息]",
+        "uid" : "d7b63a7bb277135e",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376418,
+          "stop" : 1689065376468,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/sendRegisterCode', 'method': 'GET', 'detail': '获取未注册的十一位手机号验证码信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'Msg': {'jsonpath': '$.message', 'type': '==', 'value': '手机号码未注册', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'phone': '15617889809', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_PartnerNoList[拓展员下拉列表展示]",
+        "uid" : "b68f006b1d40afce",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065386184,
+          "stop" : 1689065386269,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/queryPartnerNoList', 'method': 'GET', 'detail': '拓展员下拉列表展示', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'nameOrPhone': None, 'currentPage': '1', 'pageSize': '20'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_OrderDetails[查看订单详情]",
+        "uid" : "9272168d4bee3a39",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065387842,
+          "stop" : 1689065387966,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectOrderDetails', 'method': 'GET', 'detail': '查看订单详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'merchantNo': '100018', 'shopNo': '100036', 'orderNo': '81023151150000001'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入大于11位的手机号]",
+        "uid" : "cbde5f9e7393f867",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378889,
+          "stop" : 1689065378988,
+          "duration" : 99
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入大于11位的手机号', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '156178860890', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Top_Date[近七日顶部统计数据]",
+        "uid" : "2d35bc8ab728c655",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367806,
+          "stop" : 1689065367921,
+          "duration" : 115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/topDate', 'method': 'POST', 'detail': '近七日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_RateTemplateList[获取\"测试服务商模板-1\"费率模板]",
+        "uid" : "cfb48e1e6cd7bff5",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369335,
+          "stop" : 1689065369431,
+          "duration" : 96
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList', 'method': 'GET', 'detail': '获取\"测试服务商模板-1\"费率模板', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'TemplateName': {'jsonpath': '$.data[0].templateName', 'type': '==', 'value': '测试服务商模板-1', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'agentNo': None, 'currentPage': '1', 'pageSize': '1000', 'merchantNameOrPhone': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_WayProportion[近三日收款渠道统计]",
+        "uid" : "b17d9558ecde9ae3",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366862,
+          "stop" : 1689065366961,
+          "duration" : 99
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payWayProportion', 'method': 'POST', 'detail': '近三日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_ByPage[搜索百果园商户]",
+        "uid" : "f2ab1fa13e6fcc5e",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065385957,
+          "stop" : 1689065386084,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryByPage', 'method': 'GET', 'detail': '搜索百果园商户', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'MerchantNo': {'jsonpath': '$.data[0].merchantNo', 'type': '==', 'value': '100018', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'shopShortName': '百果园'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_PageRefundOrder[昨日退款订单]",
+        "uid" : "e0749a9481058ce1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065388957,
+          "stop" : 1689065389050,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectPageRefundOrder', 'method': 'GET', 'detail': '昨日退款订单', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-07-10 00:00:00', 'queryEndPayTime': '2023-07-10 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Trade_Trend[近七日交易趋势]",
+        "uid" : "8479ddc8940c4c2a",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368287,
+          "stop" : 1689065368387,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '近七日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-04', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_CanUseChannelConfigs[获取可使用通道配置]",
+        "uid" : "9aac72cdad8125ac",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379903,
+          "stop" : 1689065380054,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getCanUseChannelConfigs', 'method': 'GET', 'detail': '获取可使用通道配置', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'shopNo': '100036', 'platformPayWay': 'wechatPassiveScan'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[正常登录]",
+        "uid" : "b5f3e76933ced62d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065376470,
+          "stop" : 1689065378466,
+          "duration" : 1996
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '正常登录', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Msg': {'jsonpath': '$.data.user.company', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': True, 'data': {'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Top_Date[近三日顶部统计数据]",
+        "uid" : "65a14c218f7f9291",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367692,
+          "stop" : 1689065367796,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/topDate', 'method': 'POST', 'detail': '近三日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_AgentBaseInfo[获取服务商账户信息]",
+        "uid" : "2b813c0a9184c0c0",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065364074,
+          "stop" : 1689065364496,
+          "duration" : 422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo', 'method': 'GET', 'detail': '获取服务商账户信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'AgentName': {'jsonpath': '$.data.agentName', 'type': '==', 'value': '小熊测试服务商', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Device_Recall_Flow[设备回拨]",
+        "uid" : "b5a2a5a1b8a30f06",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374220,
+          "stop" : 1689065374338,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/recall', 'method': 'POST', 'detail': '设备回拨', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'deviceNo': '4023080140000001'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_TypeProportion[昨日收款方式统计]",
+        "uid" : "4aa06fb0971a518",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366058,
+          "stop" : 1689065366193,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payTypeProportion', 'method': 'POST', 'detail': '昨日收款方式统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[组合查询]",
+        "uid" : "c60f6483ce8d62b9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373738,
+          "stop" : 1689065373836,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '组合查询', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': 14700000001, 'roleId': 159, 'name': '顶代员工'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_OrderStatic[交易流水近三十日顶部统计数据]",
+        "uid" : "392c84d63802fbd8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065388664,
+          "stop" : 1689065388844,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectOrderStatic', 'method': 'GET', 'detail': '交易流水近三十日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'beginTime': '2023-06-12 00:00:00', 'endTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_MerchantState[查询商户乐刷分账开通状态]",
+        "uid" : "bbe72faebaad1258",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384411,
+          "stop" : 1689065384487,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/share/selectMerchantState', 'method': 'GET', 'detail': '查询商户乐刷分账开通状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'merchantNo': '100018'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ActivityMerchantList[查询参与活动商户列表]",
+        "uid" : "2f50885f89801b5a",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065364872,
+          "stop" : 1689065365012,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/activity/selectActivityMerchantList', 'method': 'POST', 'detail': '查询参与活动商户列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'activityId': '32', 'currentPage': '1', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ShopByConditon[搜索100153收款门店]",
+        "uid" : "6b938df716ab7b8",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065389309,
+          "stop" : 1689065389392,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/selectShopByConditon', 'method': 'GET', 'detail': '搜索100153收款门店', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'shopSearchInfo': '100153'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Edit_QuickPayConfig[关闭银盛D0]",
+        "uid" : "c54371dcaa854753",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379508,
+          "stop" : 1689065379662,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/editQuickPayConfig', 'method': 'POST', 'detail': '关闭银盛D0', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'ysepay', 'scanCodeQuickPayStatus': 'close', 'scanCodeQuickPayRate': '0.001'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Agent_Ranking[近三十天商户交易排行]",
+        "uid" : "1ee44df69e2d8fc",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365358,
+          "stop" : 1689065365502,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '近三十天商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_ChannelSwitchByPage[查询商户支付方式通道配置]",
+        "uid" : "dd04f3f874f321c5",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383080,
+          "stop" : 1689065383185,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryChannelSwitchByPage', 'method': 'GET', 'detail': '查询商户支付方式通道配置', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'shopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询归属于小熊测试拓展组的设备]",
+        "uid" : "9610022cb5a698ff",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374870,
+          "stop" : 1689065374976,
+          "duration" : 106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询归属于小熊测试拓展组的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'partnerGroupNo': '100017'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_ShopCommissionSettleMonthByPage[佣金明细-佣金明细]",
+        "uid" : "fe1988f85133b5c0",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065371196,
+          "stop" : 1689065371356,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/getShopCommissionSettleMonthByPage', 'method': 'POST', 'detail': '佣金明细-佣金明细', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'settleConfigId': '2910', 'tradeMonth': '2023-04-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_BizProportion[近三十日收款渠道统计]",
+        "uid" : "c78de14862f0d017",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365884,
+          "stop" : 1689065366055,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payBizProportion', 'method': 'POST', 'detail': '近三十日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_PageByCondition[拓展组列表]",
+        "uid" : "e84d1e99f0749fcc",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368937,
+          "stop" : 1689065369040,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/queryPageByCondition', 'method': 'POST', 'detail': '拓展组列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'userType': '13'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_PageRefundOrder[近三十日退款订单]",
+        "uid" : "1b0fa1c82f37e3f4",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065389184,
+          "stop" : 1689065389306,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/order/selectPageRefundOrder', 'method': 'GET', 'detail': '近三十日退款订单', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'queryBeginPayTime': '2023-06-12 00:00:00', 'queryEndPayTime': '2023-07-11 23:59:59'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选手机号以156开头的员工]",
+        "uid" : "5eea643c8bb3091b",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373551,
+          "stop" : 1689065373652,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选手机号以156开头的员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Name': {'jsonpath': '$.data[?(@.id==1260)].name', 'type': '==', 'value': '小熊', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': 156}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Download_AgentCommissionSettleToExcel[佣金数据导出]",
+        "uid" : "5100c31435821ac9",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369998,
+          "stop" : 1689065370224,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleToExcel', 'method': 'POST', 'detail': '佣金数据导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Agent_Ranking[昨日商户交易排行]",
+        "uid" : "4a47a737924705fa",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365016,
+          "stop" : 1689065365124,
+          "duration" : 108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/agentRanking', 'method': 'POST', 'detail': '昨日商户交易排行', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'currentPage': '1', 'endTradeDate': '2023-07-10', 'pageSize': '10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_RoleListByPage[查询全部权限组]",
+        "uid" : "eb0049c86dad4454",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373839,
+          "stop" : 1689065373991,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage', 'method': 'GET', 'detail': '查询全部权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'platformType': 2}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_QuickPayRateDetail[查询商户云闪付状态]",
+        "uid" : "89d30476c85fc803",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065382106,
+          "stop" : 1689065382207,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getQuickPayRateDetail', 'method': 'GET', 'detail': '查询商户云闪付状态', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'ysepay'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Send_DcpaySmsCode[获取短信验证码]",
+        "uid" : "cb644ef69c718b81",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384490,
+          "stop" : 1689065384876,
+          "duration" : 386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/sendDcpaySmsCode', 'method': 'POST', 'detail': '获取短信验证码', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'leShua', 'agentNo': '285171', 'phone': '13455456867'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_login[输入非1开头的手机号]",
+        "uid" : "3570401368af4552",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065378795,
+          "stop" : 1689065378887,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/common/v1/user/login', 'method': 'POST', 'detail': '输入非1开头的手机号', 'assert_data': {'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'is_run': None, 'data': {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询授权码为空的设备]",
+        "uid" : "bb0cb8d440230896",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375545,
+          "stop" : 1689065375754,
+          "duration" : 209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询授权码为空的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'deviceLicenseEmpty': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_BranchDetail[查看门店详情]",
+        "uid" : "7e8b06925be8ee4f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065382868,
+          "stop" : 1689065383077,
+          "duration" : 209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryBranchDetail', 'method': 'GET', 'detail': '查看门店详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'shopNo': '100153'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_ApplyInfo[查询结算明细]",
+        "uid" : "993db0bb64dae8b5",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065370935,
+          "stop" : 1689065371064,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentSettle/getApplyInfo', 'method': 'POST', 'detail': '查询结算明细', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'ids': ['5040']}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_ByPage[查看商户门店列表]",
+        "uid" : "e5c96b5c75683f7a",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065384250,
+          "stop" : 1689065384408,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryByPage', 'method': 'GET', 'detail': '查看商户门店列表', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'parentShopNo': '100036'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_UnionCardRate[查询商户POS刷卡D1到账详情]",
+        "uid" : "24ceaf703cacac78",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065383835,
+          "stop" : 1689065383918,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/queryUnionCardRate', 'method': 'POST', 'detail': '查询商户POS刷卡D1到账详情', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'channelCode': 'leShua', 'shopNo': '100036', 'swipeType': '1'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_TypeProportion[近三日收款方式统计]",
+        "uid" : "2573b991131b775",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065366202,
+          "stop" : 1689065366424,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payTypeProportion', 'method': 'POST', 'detail': '近三日收款方式统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentRateConfigList[查询拓展组通道费率限制]",
+        "uid" : "1cb066219047bddb",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368845,
+          "stop" : 1689065368933,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/rate/queryAgentRateConfigList', 'method': 'GET', 'detail': '查询拓展组通道费率限制', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'userType': '13'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_ListStatistic[顶部商户统计信息]",
+        "uid" : "ece17184624aaf48",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065385382,
+          "stop" : 1689065385454,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/getListStatistic', 'method': 'GET', 'detail': '顶部商户统计信息', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': None, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Top_Date[近三十日顶部统计数据]",
+        "uid" : "f35f504a9044c3c3",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367926,
+          "stop" : 1689065368044,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/topDate', 'method': 'POST', 'detail': '近三十日顶部统计数据', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_AgentUser[筛选正确手机号的员工]",
+        "uid" : "2c356f78b1a7690c",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065373347,
+          "stop" : 1689065373454,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/queryAgentUser', 'method': 'GET', 'detail': '筛选正确手机号的员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'phone': 15617000001}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_platformRole[编辑权限组]",
+        "uid" : "875ebc007a2bbdb1",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065372248,
+          "stop" : 1689065372743,
+          "duration" : 495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/editRoleAndMenu', 'method': 'POST', 'detail': '编辑权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': None, 'data': {'roleId': '$cache{Query_RoleListByPageID}', 'roleName': '自动化测试权限组4', 'platformType': 2, 'menuIds': [236, 273, 241, 242, 240, 243, 244, 266, 267, 245, 246, 333, 334, 321, 322, 304, 305, 327, 328, 330, 331, 332, 247, 248, 249]}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'Query_RoleListByPageID', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data[0].id', 'set_cache': 'Query_RoleListByPageID', 'replace_key': None}]}], 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Export_Partner[拓展组列表导出]",
+        "uid" : "53ecc6d1186a8a1b",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368524,
+          "stop" : 1689065368716,
+          "duration" : 192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/exportPartner', 'method': 'GET', 'detail': '拓展组列表导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'userType': '13'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_ShopByConditon[展示全部收款门店]",
+        "uid" : "9ba62c0edec52cdb",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065389394,
+          "stop" : 1689065389508,
+          "duration" : 114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/selectShopByConditon', 'method': 'GET', 'detail': '展示全部收款门店', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'shopSearchInfo': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Select_RateTemplateList[获取费率模板]",
+        "uid" : "1ebd9577c2786638",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369240,
+          "stop" : 1689065369332,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList', 'method': 'GET', 'detail': '获取费率模板', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'agentNo': None, 'currentPage': '1', 'pageSize': '1000', 'merchantNameOrPhone': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_BizProportion[近三日收款渠道统计]",
+        "uid" : "d1148474d2b39dd4",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065365653,
+          "stop" : 1689065365776,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payBizProportion', 'method': 'POST', 'detail': '近三日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-08', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_RoleListByPage[查询不存在的权限组]",
+        "uid" : "4faed05fb1914d16",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065374111,
+          "stop" : 1689065374216,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage', 'method': 'GET', 'detail': '查询不存在的权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': 1, 'pageSize': 10, 'platformType': 2, 'roleName': 'agsduyfdgajh'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_ActivityDetailById[获取活动规则]",
+        "uid" : "3eff4542b210ba74",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379664,
+          "stop" : 1689065379806,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/activity/getActivityDetailById', 'method': 'GET', 'detail': '获取活动规则', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'activityId': '31'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Trade_Trend[昨日交易趋势]",
+        "uid" : "cb7180e9ae892b21",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065368055,
+          "stop" : 1689065368182,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '昨日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-07-10', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_PageByCondition[查询登录手机号为14765432189的拓展组]",
+        "uid" : "7dda8b3f9316013f",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065369144,
+          "stop" : 1689065369237,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/agentPartner/queryPageByCondition', 'method': 'POST', 'detail': '查询登录手机号为14765432189的拓展组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'PartnerName': {'jsonpath': '$.data[0].partnerName', 'type': '==', 'value': '小熊测试二号拓展组', 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '10', 'userType': '13', 'mobile': '14765432189'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Pay_WayProportion[近三十日收款渠道统计]",
+        "uid" : "44c653b2eea9909d",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065367092,
+          "stop" : 1689065367201,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/payWayProportion', 'method': 'POST', 'detail': '近三十日收款渠道统计', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Edit_QuickPayConfig[开通银盛D0]",
+        "uid" : "d4ff2ddf6aa89303",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065379363,
+          "stop" : 1689065379505,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/shop/editQuickPayConfig', 'method': 'POST', 'detail': '开通银盛D0', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'DATA', 'is_run': True, 'data': {'shopNo': '100036', 'channelCode': 'ysepay', 'scanCodeQuickPayStatus': 'open', 'scanCodeQuickPayRate': '0.001'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Get_CommissionSettleStatistical[佣金明细-佣金类型]",
+        "uid" : "bb2073978f8ff5ce",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065371067,
+          "stop" : 1689065371193,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/getCommissionSettleStatistical', 'method': 'POST', 'detail': '佣金明细-佣金类型', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'agentNo': '285171', 'settleConfigId': '2910', 'tradeMonth': '2023-04-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceList[查询绑定状态为已绑定的设备]",
+        "uid" : "e198a26f2f0d4ad3",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375386,
+          "stop" : 1689065375543,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/page/query', 'method': 'GET', 'detail': '查询绑定状态为已绑定的设备', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'currentStatus': '3'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Query_DeviceModel[查询设备型号]",
+        "uid" : "9ba65ae8a941e8ae",
+        "parentUid" : "96f4860932807f894c7823b97413d2a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1689065375757,
+          "stop" : 1689065375848,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/deviceinfo/model/page/query', 'method': 'GET', 'detail': '查询设备型号', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'PARAMS', 'is_run': True, 'data': {'currentPage': '1', 'pageSize': '20', 'deviceModel': None}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      } ],
+      "uid" : "96f4860932807f894c7823b97413d2a0"
+    } ],
+    "uid" : "67eecc98e6786e0a35a33adf0c56faf9"
+  } ]
+}

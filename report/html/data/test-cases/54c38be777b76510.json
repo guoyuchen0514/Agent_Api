@@ -1,0 +1,246 @@
+{
+  "uid" : "54c38be777b76510",
+  "name" : "test_Trade_Trend[近三十日交易趋势]",
+  "fullName" : "test_case.Agent_Homepage.test_Trade_Trend.TestTradeTrend#test_Trade_Trend",
+  "historyId" : "466fe9a79f550fb3ad71d291049bd832",
+  "time" : {
+    "start" : 1689065368390,
+    "stop" : 1689065368521,
+    "duration" : 131
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065368389,
+      "stop" : 1689065368390,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/overData/tradeTrend",
+      "time" : {
+        "start" : 1689065368519,
+        "stop" : 1689065368519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1689065368519,
+        "stop" : 1689065368519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065368519,
+        "stop" : 1689065368520,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "717045a2f7eb7a58",
+        "name" : "请求头: ",
+        "source" : "717045a2f7eb7a58.json",
+        "type" : "application/json",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065368520,
+        "stop" : 1689065368520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2df63040417fc136",
+        "name" : "请求数据: ",
+        "source" : "2df63040417fc136.json",
+        "type" : "application/json",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065368520,
+        "stop" : 1689065368521,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8d7775728fc611f",
+        "name" : "预期数据: ",
+        "source" : "8d7775728fc611f.json",
+        "type" : "application/json",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 124",
+      "time" : {
+        "start" : 1689065368521,
+        "stop" : 1689065368521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065368521,
+        "stop" : 1689065368521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8afc10cd9196db42",
+        "name" : "响应结果: ",
+        "source" : "8afc10cd9196db42.json",
+        "type" : "application/json",
+        "size" : 3586
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "21dc31ec91900739",
+      "name" : "log",
+      "source" : "21dc31ec91900739.txt",
+      "type" : "text/plain",
+      "size" : 3784
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "交易趋势"
+  }, {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "feature",
+    "value" : "首页模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Agent_Homepage"
+  }, {
+    "name" : "suite",
+    "value" : "test_Trade_Trend"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTradeTrend"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Agent_Homepage.test_Trade_Trend"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '近三十日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54c38be777b76510.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/overData/tradeTrend', 'method': 'POST', 'detail': '近三十日交易趋势', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

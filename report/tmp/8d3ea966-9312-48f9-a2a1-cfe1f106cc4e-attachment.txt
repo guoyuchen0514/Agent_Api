@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":1,"code":0,"message":"登录手机号已存在!","param":null,"data":null}
+接口响应时长: 59 ms
+Http状态码: 200
+=====================================================

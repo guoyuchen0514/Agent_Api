@@ -1,0 +1,34 @@
+ERROR2023-04-14 10:56:35,086D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-14.log:log_decorator.py:47 
+======================================================
+用例标题: 正常登录
+请求路径: http://operation.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '13855047858', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Http状态码: 502
+=====================================================
+ERROR2023-04-14 11:04:46,453D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-14.log:log_decorator.py:47 
+======================================================
+用例标题: 正常登录
+请求路径: http://operation.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Http状态码: 502
+=====================================================

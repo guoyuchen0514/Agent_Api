@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>__init__.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008080; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+__init__.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">from </span>common.setting <span class="s0">import </span>ensure_path_sep
+<a name="l2"><span class="ln">2    </span></a><span class="s0">from </span>utils.read_file_tools.get_yaml_data_analysis <span class="s0">import </span>CaseData
+<a name="l3"><span class="ln">3    </span></a><span class="s0">from </span>utils.read_file_tools.get_all_files_path <span class="s0">import </span>get_all_files
+<a name="l4"><span class="ln">4    </span></a><span class="s0">from </span>utils.cache_process.cache_control <span class="s0">import </span>CacheHandler, _cache_config
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">def </span>write_case_process():
+<a name="l8"><span class="ln">8    </span></a>    <span class="s2">&quot;&quot;&quot; 
+<a name="l9"><span class="ln">9    </span></a>    获取所有用例，写入用例池中 
+<a name="l10"><span class="ln">10   </span></a>    :return: 
+<a name="l11"><span class="ln">11   </span></a>    &quot;&quot;&quot;</span>
+<a name="l12"><span class="ln">12   </span></a>    <span class="s2"># 循环拿到所有存放用例的文件路径</span>
+<a name="l13"><span class="ln">13   </span></a>    <span class="s0">for </span>i <span class="s0">in </span>get_all_files(file_path=ensure_path_sep(<span class="s3">&quot;</span><span class="s0">\\</span><span class="s3">data&quot;</span>), yaml_data_switch=<span class="s0">True</span>):
+<a name="l14"><span class="ln">14   </span></a>        <span class="s2">#循环读取文件中的数据</span>
+<a name="l15"><span class="ln">15   </span></a>        case_process = CaseData(i).case_process(case_id_switch=<span class="s0">True</span>)
+<a name="l16"><span class="ln">16   </span></a>        <span class="s0">if </span>case_process <span class="s0">is not None</span>:
+<a name="l17"><span class="ln">17   </span></a>            <span class="s2"># 转换数据类型</span>
+<a name="l18"><span class="ln">18   </span></a>            <span class="s0">for </span>case <span class="s0">in </span>case_process:
+<a name="l19"><span class="ln">19   </span></a>                <span class="s0">for </span>k, v <span class="s0">in </span>case.items():
+<a name="l20"><span class="ln">20   </span></a>                    print(k,v)
+<a name="l21"><span class="ln">21   </span></a>                    <span class="s2"># 判断 case_id 是否已存在</span>
+<a name="l22"><span class="ln">22   </span></a>                    case_id_exit = k <span class="s0">in </span>_cache_config.keys()
+<a name="l23"><span class="ln">23   </span></a>                    <span class="s3">&quot;&quot;&quot; 
+<a name="l24"><span class="ln">24   </span></a>                    return:bool 
+<a name="l25"><span class="ln">25   </span></a>                    &quot;&quot;&quot;</span>
+<a name="l26"><span class="ln">26   </span></a>                    <span class="s2"># 如果case_id 不存在，则将用例写入缓存池中</span>
+<a name="l27"><span class="ln">27   </span></a>                    <span class="s0">if </span>case_id_exit <span class="s0">is False</span>:
+<a name="l28"><span class="ln">28   </span></a>                        CacheHandler.update_cache(cache_name=k, value=v)
+<a name="l29"><span class="ln">29   </span></a>                    <span class="s2"># 当 case_id 为 True 存在时，则抛出异常,用例中不能有重复的case_id</span>
+<a name="l30"><span class="ln">30   </span></a>                    <span class="s0">elif </span>case_id_exit <span class="s0">is True</span>:
+<a name="l31"><span class="ln">31   </span></a>                        <span class="s0">raise </span>ValueError(<span class="s3">f&quot;case_id: </span><span class="s0">{</span>k<span class="s0">} </span><span class="s3">存在重复项, 请修改case_id</span><span class="s0">\n</span><span class="s3">&quot;</span>
+<a name="l32"><span class="ln">32   </span></a>                                         <span class="s3">f&quot;文件路径: </span><span class="s0">{</span>i<span class="s0">}</span><span class="s3">&quot;</span>)
+<a name="l33"><span class="ln">33   </span></a>write_case_process()
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>
+<a name="l36"><span class="ln">36   </span></a></pre>
+</body>
+</html>

@@ -1,0 +1,332 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 账户中心
+  allureStory: 账户中心
+
+Get_AgentBaseInfo_01:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商账户信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+
+      AgentName:
+        jsonpath: $.data.agentName
+        type: ==
+        sql:
+        value: $.agent_name
+        AssertType: SQL
+
+#      LeShua_WechatPayRate:
+#        jsonpath: $.data.agentRateConfigs[3].wechatPayRate
+#        type: ==
+#        value: $.wechat_pay_rate
+#        AssertType: SQL
+
+
+#      SuiXingFu_AlipayRate:
+#        jsonpath: $.data.agentRateConfigs[5].alipayRate
+#        type: ==
+#        value: $.alipay_rate
+#        AssertType: SQL
+#        sql:  SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'suiXingFu'
+#
+#      HeLiBao_CloudPayGt1000Rate:
+#        jsonpath: $.data.agentRateConfigs[2].cloudPayGt1000Rate
+#        sql: SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'heLiBao'
+#        type: ==
+#        value: $.cloud_pay_gt1000_rate
+#        AssertType: SQL
+
+#      LeShuaOnline_CloudPayLe1000Rate:
+#        jsonpath: $.data.agentRateConfigs[4].cloudPayLe1000Rate
+#        type: ==
+#        value: $.cloud_pay_le1000_rate
+#        AssertType: SQL
+
+#      Fuiou_CardPay:
+#        jsonpath: $.data.agentRateConfigs[1].quickPaymentRate
+#        type: ==
+#        value: $.quick_payment_rate
+#        AssertType: SQL
+
+    sql:
+#        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171'
+        - SELECT * FROM `platform_basic`.`agent` WHERE `agent_no` = '285171'
+
+Get_AgentBaseInfo_02:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商乐刷通道费率信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+      LeShua_WechatPayRate:
+        jsonpath: $.data.agentRateConfigs[3].wechatPayRate
+        type: ==
+        value: $.wechat_pay_rate
+        AssertType: SQL
+      LeShua_AlipayRate:
+        jsonpath: $.data.agentRateConfigs[3].alipayRate
+        type: ==
+        value: $.alipay_rate
+        AssertType: SQL
+      LeShua_CloudPayGt1000Rate:
+        jsonpath: $.data.agentRateConfigs[3].cloudPayGt1000Rate
+        type: ==
+        value: $.cloud_pay_gt1000_rate
+        AssertType: SQL
+      LeShua_CloudPayLe1000Rate:
+        jsonpath: $.data.agentRateConfigs[3].cloudPayLe1000Rate
+        type: ==
+        value: $.cloud_pay_le1000_rate
+        AssertType: SQL
+      LeShua_ChargeFeePercent:
+        jsonpath: $.data.agentRateConfigs[3].chargeFeePercent
+        type: ==
+        value: $.charge_fee_percent
+        AssertType: SQL
+    sql:
+        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'leShua'
+
+Get_AgentBaseInfo_03:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商随行付通道费率信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+      SuiXingFu_WechatPayRate:
+        jsonpath: $.data.agentRateConfigs[5].wechatPayRate
+        type: ==
+        value: $.wechat_pay_rate
+        AssertType: SQL
+      SuiXingFu_AlipayRate:
+        jsonpath: $.data.agentRateConfigs[5].alipayRate
+        type: ==
+        value: $.alipay_rate
+        AssertType: SQL
+      SuiXingFu_CloudPayGt1000Rate:
+        jsonpath: $.data.agentRateConfigs[5].cloudPayGt1000Rate
+        type: ==
+        value: $.cloud_pay_gt1000_rate
+        AssertType: SQL
+      SuiXingFu_CloudPayLe1000Rate:
+        jsonpath: $.data.agentRateConfigs[5].cloudPayLe1000Rate
+        type: ==
+        value: $.cloud_pay_le1000_rate
+        AssertType: SQL
+      SuiXingFu_ChargeFeePercent:
+        jsonpath: $.data.agentRateConfigs[5].chargeFeePercent
+        type: ==
+        value: $.charge_fee_percent
+        AssertType: SQL
+    sql:
+        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'suiXingFu'
+
+Get_AgentBaseInfo_04:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商合利宝通道费率信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+      HeLiBao_WechatPayRate:
+        jsonpath: $.data.agentRateConfigs[2].wechatPayRate
+        type: ==
+        value: $.wechat_pay_rate
+        AssertType: SQL
+      HeLiBao_AlipayRate:
+        jsonpath: $.data.agentRateConfigs[2].alipayRate
+        type: ==
+        value: $.alipay_rate
+        AssertType: SQL
+      HeLiBao_CloudPayGt1000Rate:
+        jsonpath: $.data.agentRateConfigs[2].cloudPayGt1000Rate
+        type: ==
+        value: $.cloud_pay_gt1000_rate
+        AssertType: SQL
+      HeLiBao_CloudPayLe1000Rate:
+        jsonpath: $.data.agentRateConfigs[2].cloudPayLe1000Rate
+        type: ==
+        value: $.cloud_pay_le1000_rate
+        AssertType: SQL
+      HeLiBao_ChargeFeePercent:
+        jsonpath: $.data.agentRateConfigs[2].chargeFeePercent
+        type: ==
+        value: $.charge_fee_percent
+        AssertType: SQL
+    sql:
+        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'HeLiBao'
+
+Get_AgentBaseInfo_05:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商乐刷线上通道费率信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+      LeShuaOnline_WechatPayRate:
+        jsonpath: $.data.agentRateConfigs[4].wechatPayRate
+        type: ==
+        value: $.wechat_pay_rate
+        AssertType: SQL
+      LeShuaOnline_AlipayRate:
+        jsonpath: $.data.agentRateConfigs[4].alipayRate
+        type: ==
+        value: $.alipay_rate
+        AssertType: SQL
+      LeShuaOnline_CloudPayGt1000Rate:
+        jsonpath: $.data.agentRateConfigs[4].cloudPayGt1000Rate
+        type: ==
+        value: $.cloud_pay_gt1000_rate
+        AssertType: SQL
+      LeShuaOnline_CloudPayLe1000Rate:
+        jsonpath: $.data.agentRateConfigs[4].cloudPayLe1000Rate
+        type: ==
+        value: $.cloud_pay_le1000_rate
+        AssertType: SQL
+      LeShuaOnline_ChargeFeePercent:
+        jsonpath: $.data.agentRateConfigs[4].chargeFeePercent
+        type: ==
+        value: $.charge_fee_percent
+        AssertType: SQL
+    sql:
+        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'leShuaOnline'
+
+Get_AgentBaseInfo_06:
+    host: ${{host()}}
+    url: /agent/v1/agentInfo/getAgentBaseInfo
+    method: GET
+    detail: 获取服务商富友通道费率信息
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+      Fuiou_WechatPayRate:
+        jsonpath: $.data.agentRateConfigs[1].wechatPayRate
+        type: ==
+        value: $.wechat_pay_rate
+        AssertType: SQL
+      Fuiou_AlipayRate:
+        jsonpath: $.data.agentRateConfigs[1].alipayRate
+        type: ==
+        value: $.alipay_rate
+        AssertType: SQL
+      Fuiou_cloudCreditcardRate:
+        jsonpath: $.data.agentRateConfigs[1].cloudCreditcardRate
+        type: ==
+        value: $.cloud_creditcard_rate
+        AssertType: SQL
+      Fuiou_cloudDebitcardRate:
+        jsonpath: $.data.agentRateConfigs[1].cloudDebitcardRate
+        type: ==
+        value: $.cloud_debitcard_rate
+        AssertType: SQL
+      Fuiou_ChargeFeePercent:
+        jsonpath: $.data.agentRateConfigs[1].chargeFeePercent
+        type: ==
+        value: $.charge_fee_percent
+        AssertType: SQL
+      Fuiou_quickPaymentRate:
+        jsonpath: $.data.agentRateConfigs[1].quickPaymentRate
+        type: ==
+        value: $.quick_payment_rate
+        AssertType: SQL
+      Fuiou_personalOnlineBankRate:
+        jsonpath: $.data.agentRateConfigs[1].personalOnlineBankRate
+        type: ==
+        value: $.personal_online_bank_rate
+        AssertType: SQL
+      Fuiou_businessFixedFee:
+        jsonpath: $.data.agentRateConfigs[1].businessFixedFee
+        type: ==
+        value: $.business_fixed_fee
+        AssertType: SQL
+    sql:
+        - SELECT * FROM `platform_basic`.`agent_rate_config` WHERE `agent_no` = '285171' AND `channel_code` = 'fuiou'

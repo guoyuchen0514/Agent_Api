@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 获取活动规则
+请求路径: https://api.pre.lianok.com/agent/v1/activity/getActivityDetailById?activityId=31
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"id":31,"activityName":"合利宝活动","activityDesc":"交易返万1，最高返万2","ruleDesc":"交易通道需在合利宝通道","activityStatus":2,"activityStatusDesc":"已结束","activityType":0,"isOnline":1,"isOnTop":1,"startTime":"2022-10-27","endTime":"2022-10-28","applyStartTime":null,"applyEndTime":null,"createTime":"2022-10-26 11:33:47","updateTime":"2022-10-26 11:57:29","creator":"火脸科技","editor":"火脸科技","isDeleted":0,"totalNum":2,"unApplyNum":2,"auditNum":0,"rejectNum":0,"successNum":0}}
+接口响应时长: 137 ms
+Http状态码: 200
+=====================================================

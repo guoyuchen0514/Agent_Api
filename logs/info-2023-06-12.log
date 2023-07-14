@@ -1,0 +1,187 @@
+INFO2023-06-12 15:10:50,655D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 退出登录
+请求路径: https://api.pre.lianok.com/common/v1/user/logout
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'}
+请求内容: None
+接口响应内容: 
+接口响应时长: 47 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,062D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '15617886089', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"36bfada5db9c4a20b93eb0635f1d0f52","user":{"id":1108,"deleted":null,"createTime":"2022-10-13T09:53:41","updateTime":"2022-10-13T09:53:41","system":"agent","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"285171","company":"小熊测试服务商","name":"小熊测试服务商","phone":"15617886089","loginAccount":null,"password":"39ee488c7696d8f3ee3456218666a3c9","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":"330000","cityCode":"330100","areaCode":"330102","roleId":1,"managerId":null,"infoStatus":4,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":1,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"partnerGroupNo":null,"partnerNo":null,"agentNo":null,"shopQrCode":null}}}
+接口响应时长: 1702 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,141D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '1561788608', 'password': 'zxc123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 73 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,235D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '86'}
+请求内容: {'phone': '15617886089', 'password': 'hl12345', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+接口响应时长: 88 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,337D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '76'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+接口响应时长: 96 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,484D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '15617886089', 'password': '', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+接口响应时长: 141 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,559D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '87'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 67 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:14:23,629D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '88'}
+请求内容: {'phone': '156178860890', 'password': 'hl123456', 'type': 'password', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+接口响应时长: 64 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:59:11,726D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2d02c7ba2c5c403bb1c8b08ce1226cdd', 'Content-Length': '72'}
+请求内容: {'businessCode': 'commonSms', 'phone': '15617886089', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 333 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:59:11,939D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2d02c7ba2c5c403bb1c8b08ce1226cdd', 'Content-Length': '71'}
+请求内容: {'businessCode': 'commonSms', 'phone': '1561788608', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 206 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:59:46,804D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '005c461e38974b68b7ae29596bf82f25', 'Content-Length': '72'}
+请求内容: {'businessCode': 'commonSms', 'phone': '15617886089', 'system': 'agent'}
+接口响应内容: {"status":1,"code":0,"message":"一分钟内已经发过短信","param":null,"data":null}
+接口响应时长: 69 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 16:59:47,035D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '005c461e38974b68b7ae29596bf82f25', 'Content-Length': '71'}
+请求内容: {'businessCode': 'commonSms', 'phone': '1561788608', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 117 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 17:00:46,736D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'bbdcbf7f488b4addbdbfcadfeeaa42d8', 'Content-Length': '71'}
+请求内容: {'businessCode': 'commonSms', 'phone': '1561788608', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 107 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 17:01:35,736D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '5023901dced14dbcb396b817ddd0e103', 'Content-Length': '71'}
+请求内容: {'businessCode': 'commonSms', 'phone': '1561788608', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 113 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 17:02:20,646D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入少于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '038e5f299bcd40fe9f7baa750df31bd4', 'Content-Length': '71'}
+请求内容: {'businessCode': 'commonSms', 'phone': '1561788608', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 96 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 17:09:04,620D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 输入大于11位的手机号获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '72eb0f9b439f47d9adbdc5fc01a56fd4', 'Content-Length': '73'}
+请求内容: {'businessCode': 'commonSms', 'phone': '156178860899', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 113 ms
+Http状态码: 200
+=====================================================
+INFO2023-06-12 17:16:15,516D:\Agent_Api\logs\info-2023-06-12.log:log_decorator.py:45 
+======================================================
+用例标题: 获取验证码
+请求路径: https://api.pre.lianok.com/common/v1/user/sendSmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '5dff1c3323c041c2ae0e8e076cc8604e', 'Content-Length': '72'}
+请求内容: {'businessCode': 'commonSms', 'phone': '15617886089', 'system': 'agent'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"发送短信验证码成功"}
+接口响应时长: 485 ms
+Http状态码: 200
+=====================================================

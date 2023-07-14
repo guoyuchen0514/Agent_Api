@@ -1,0 +1,3 @@
+ERROR2023-05-15 13:40:34,187D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-15.log:assertion_control.py:160 JsonPath值获取失败 $.data[0].totalCount 
+ERROR2023-05-15 15:18:23,503D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-15.log:assertion_control.py:160 JsonPath值获取失败 $.totalAmount 
+ERROR2023-05-15 17:11:03,335D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-15.log:assertion_control.py:164 JsonPath值获取失败 $.totalAmount 

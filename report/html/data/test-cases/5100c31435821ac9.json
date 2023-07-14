@@ -1,0 +1,246 @@
+{
+  "uid" : "5100c31435821ac9",
+  "name" : "test_Download_AgentCommissionSettleToExcel[佣金数据导出]",
+  "fullName" : "test_case.Commission_settlement.test_Download_AgentCommissionSettleToExcel.TestDownloadAgentcommissionsettletoexcel#test_Download_AgentCommissionSettleToExcel",
+  "historyId" : "a02d8930bcddd6426624303b1b3d0a4f",
+  "time" : {
+    "start" : 1689065369998,
+    "stop" : 1689065370224,
+    "duration" : 226
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1689065364018,
+      "stop" : 1689065364073,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1689065369997,
+      "stop" : 1689065369997,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleToExcel",
+      "time" : {
+        "start" : 1689065370222,
+        "stop" : 1689065370222,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1689065370222,
+        "stop" : 1689065370222,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1689065370222,
+        "stop" : 1689065370222,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "572702c8120d109c",
+        "name" : "请求头: ",
+        "source" : "572702c8120d109c.json",
+        "type" : "application/json",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1689065370222,
+        "stop" : 1689065370223,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "22a950b396cc7f9b",
+        "name" : "请求数据: ",
+        "source" : "22a950b396cc7f9b.json",
+        "type" : "application/json",
+        "size" : 64
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1689065370223,
+        "stop" : 1689065370223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "16b546b55e6b8ad3",
+        "name" : "预期数据: ",
+        "source" : "16b546b55e6b8ad3.json",
+        "type" : "application/json",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(ms): 221",
+      "time" : {
+        "start" : 1689065370223,
+        "stop" : 1689065370223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1689065370223,
+        "stop" : 1689065370223,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e551305a47eafca8",
+        "name" : "响应结果: ",
+        "source" : "e551305a47eafca8.json",
+        "type" : "application/json",
+        "size" : 109
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "be8dcce139e7b9ac",
+      "name" : "log",
+      "source" : "be8dcce139e7b9ac.txt",
+      "type" : "text/plain",
+      "size" : 817
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 5,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "服务商后台接口"
+  }, {
+    "name" : "story",
+    "value" : "佣金结算"
+  }, {
+    "name" : "feature",
+    "value" : "佣金结算模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.Commission_settlement"
+  }, {
+    "name" : "suite",
+    "value" : "test_Download_AgentCommissionSettleToExcel"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDownloadAgentcommissionsettletoexcel"
+  }, {
+    "name" : "host",
+    "value" : "puti"
+  }, {
+    "name" : "thread",
+    "value" : "3416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.Commission_settlement.test_Download_AgentCommissionSettleToExcel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleToExcel', 'method': 'POST', 'detail': '佣金数据导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5100c31435821ac9.json",
+  "parameterValues" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleToExcel', 'method': 'POST', 'detail': '佣金数据导出', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'queryBeginTime': '2023-01-01', 'queryEndTime': '2023-07-01'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+}

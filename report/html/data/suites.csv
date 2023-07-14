@@ -1,0 +1,621 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jul 11 16:49:30 CST 2023","Tue Jul 11 16:49:30 CST 2023","265","test_case.Commission_settlement","test_Download_AgentPartnerCommissionSettleToExcel","TestDownloadAgentpartnercommissionsettletoexcel","","","test_Download_AgentPartnerCommissionSettleToExcel[拓展组佣金导出]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","101","test_case.Agent_Homepage","test_Pay_BizProportion","TestPayBizproportion","","","test_Pay_BizProportion[近七日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","222","test_case.Agent_Homepage","test_Pay_TypeProportion","TestPayTypeproportion","","","test_Pay_TypeProportion[近三日收款方式统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:45 CST 2023","Tue Jul 11 16:49:45 CST 2023","72","test_case.Merchant_Management","test_Get_ListStatistic","TestGetListstatistic","","","test_Get_ListStatistic[顶部商户统计信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:32 CST 2023","Tue Jul 11 16:49:32 CST 2023","495","test_case.Employee_Manage","test_Add_platformRole","TestAddPlatformrole","","","test_Add_platformRole[编辑权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","91","test_case.Equipment_Management","test_Query_DeviceModel","TestQueryDevicemodel","","","test_Query_DeviceModel[查询设备型号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","99","test_case.Merchant_Details","test_Query_SubMerchantNoInfo","TestQuerySubmerchantnoinfo","","","test_Query_SubMerchantNoInfo[查询商户号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:32 CST 2023","Tue Jul 11 16:49:32 CST 2023","120","test_case.Employee_Manage","test_Add_platformRole","TestAddPlatformrole","","","test_Add_platformRole[查询权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:32 CST 2023","Tue Jul 11 16:49:33 CST 2023","100","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[查询员工列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:45 CST 2023","Tue Jul 11 16:49:45 CST 2023","134","test_case.Merchant_Details","test_Update_SwipeRate","TestUpdateSwiperate","","","test_Update_SwipeRate[修改商户POS刷卡D0到账费率]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","209","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询授权码为空的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","76","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选条件不存在的账户名称]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:45 CST 2023","Tue Jul 11 16:49:45 CST 2023","497","test_case.Merchant_Management","test_Query_ByPage","TestQueryBypage","","","test_Query_ByPage[商户列表信息展示]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:30 CST 2023","Tue Jul 11 16:49:31 CST 2023","129","test_case.Commission_settlement","test_Get_ApplyInfo","TestGetApplyinfo","","","test_Get_ApplyInfo[查询结算明细]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","299","test_case.Transaction_Flow","test_Select_ByPage","TestSelectBypage","","","test_Select_ByPage[查询今日订单流水]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:47 CST 2023","216","test_case.Transaction_Flow","test_Select_ByPage","TestSelectBypage","","","test_Select_ByPage[查询昨日订单流水]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:32 CST 2023","Tue Jul 11 16:49:32 CST 2023","106","test_case.Employee_Manage","test_Get_RoleList","TestGetRolelist","","","test_Get_RoleList[获取权限组数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","142","test_case.Merchant_Details","test_Edit_QuickPayConfig","TestEditQuickpayconfig","","","test_Edit_QuickPayConfig[开通银盛D0]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","171","test_case.Agent_Homepage","test_Pay_TypeProportion","TestPayTypeproportion","","","test_Pay_TypeProportion[近七日收款方式统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","113","test_case.Equipment_Management","test_Device_Recall_Flow","TestDeviceRecallFlow","","","test_Device_Recall_Flow[设备划拨]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","89","test_case.Business_Development","test_Query_PageByCondition","TestQueryPagebycondition","","","test_Query_PageByCondition[查询小熊测试拓展组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","157","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询绑定状态为已绑定的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","233","test_case.Employee_Manage","test_Add_User","TestAddUser","","","test_Add_User[禁用员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","79","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取十位手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","127","test_case.Agent_Homepage","test_Trade_Trend","TestTradeTrend","","","test_Trade_Trend[昨日交易趋势]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","82","test_case.Open_Platform","test_Apply_QueryDetails","TestApplyQuerydetails","","","test_Apply_QueryDetails[查询对接商详情]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","306","test_case.Commission_settlement","test_Add_ReceiptRecord","TestAddReceiptrecord","","","test_Add_ReceiptRecord[录入发票]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","84","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选条件为部分的账户名称]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:45 CST 2023","121","test_case.Merchant_Details","test_Shop_Update","TestShopUpdate","","","test_Shop_Update[启用门店]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","248","test_case.Merchant_Details","test_Query_Detail","TestQueryDetail","","","test_Query_Detail[商户账号下拉数据展示]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:49 CST 2023","Tue Jul 11 16:49:49 CST 2023","122","test_case.Transaction_Flow","test_Select_PageRefundOrder","TestSelectPagerefundorder","","","test_Select_PageRefundOrder[近三十日退款订单]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","130","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取十一位正确手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:30 CST 2023","Tue Jul 11 16:49:30 CST 2023","187","test_case.Commission_settlement","test_Get_AgentPartnerCommissionSettleMonth","TestGetAgentpartnercommissionsettlemonth","","","test_Get_AgentPartnerCommissionSettleMonth[获取拓展组佣金数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:42 CST 2023","Tue Jul 11 16:49:42 CST 2023","459","test_case.Merchant_Details","test_Open_Dcpay","TestOpenDcpay","","","test_Open_Dcpay[开通数字人民币]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","92","test_case.Commission_settlement","test_Commission_StaticsInfo","TestCommissionStaticsinfo","","","test_Commission_StaticsInfo[查询佣金总额]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","72","test_case.Login","test_login","TestLogin","","","test_login[输入少于11位的手机号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","99","test_case.Agent_Homepage","test_Pay_WayProportion","TestPayWayproportion","","","test_Pay_WayProportion[近三日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:42 CST 2023","Tue Jul 11 16:49:42 CST 2023","193","test_case.Merchant_Details","test_Query_AgentConfig","TestQueryAgentconfig","","","test_Query_AgentConfig[查询服务商配置信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","80","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选所属权限组为顶代员工的员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","100","test_case.Agent_Homepage","test_Trade_Trend","TestTradeTrend","","","test_Trade_Trend[近三日交易趋势]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","126","test_case.Commission_settlement","test_Get_CommissionSettleStatistical","TestGetCommissionsettlestatistical","","","test_Get_CommissionSettleStatistical[佣金明细-佣金类型]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","112","test_case.Agent_Homepage","test_Agent_Ranking","TestAgentRanking","","","test_Agent_Ranking[近七日商户交易排行]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:24 CST 2023","Tue Jul 11 16:49:24 CST 2023","104","test_case.Activity_Management","test_Select_ActivityByPage","TestSelectActivitybypage","","","test_Select_ActivityByPage[查询热门活动]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","106","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询归属于小熊测试拓展组的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:44 CST 2023","88","test_case.Merchant_Details","test_Query_UnionCardRate","TestQueryUnioncardrate","","","test_Query_UnionCardRate[查询商户POS刷卡D0到账详情]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","104","test_case.Merchant_Details","test_Shop_Update","TestShopUpdate","","","test_Shop_Update[禁用门店]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","115","test_case.Agent_Homepage","test_Top_Date","TestTopDate","","","test_Top_Date[近七日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","105","test_case.Employee_Manage","test_Query_RoleListByPage","TestQueryRolelistbypage","","","test_Query_RoleListByPage[查询不存在的权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","69","test_case.Merchant_Details","test_Disabled_Merchant","TestDisabledMerchant","","","test_Disabled_Merchant[启用商户账号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","152","test_case.Employee_Manage","test_Query_RoleListByPage","TestQueryRolelistbypage","","","test_Query_RoleListByPage[查询全部权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:45 CST 2023","Tue Jul 11 16:49:45 CST 2023","131","test_case.Merchant_Details","test_Update_SwipeRate","TestUpdateSwiperate","","","test_Update_SwipeRate[修改商户POS刷卡D1到账费率]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","108","test_case.Agent_Homepage","test_Agent_Ranking","TestAgentRanking","","","test_Agent_Ranking[昨日商户交易排行]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","386","test_case.Merchant_Details","test_Send_DcpaySmsCode","TestSendDcpaysmscode","","","test_Send_DcpaySmsCode[获取短信验证码]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","124","test_case.Business_Development","test_Get_RateTemplateInfo","TestGetRatetemplateinfo","","","test_Get_RateTemplateInfo[选择费率模板]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:42 CST 2023","Tue Jul 11 16:49:43 CST 2023","209","test_case.Merchant_Details","test_Query_BranchDetail","TestQueryBranchdetail","","","test_Query_BranchDetail[查看门店详情]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","158","test_case.Merchant_Details","test_Queryshop_ByPage","TestQueryBypage","","","test_Query_ByPage[查看商户门店列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","98","test_case.Merchant_Details","test_Query_OpenDcpayStatus","TestQueryOpendcpaystatus","","","test_Query_OpenDcpayStatus[查询商户数字人民币开通状态]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:34 CST 2023","114","test_case.Employee_Manage","test_Query_RoleListByPage","TestQueryRolelistbypage","","","test_Query_RoleListByPage[模糊查询test权限组列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:40 CST 2023","Tue Jul 11 16:49:40 CST 2023","107","test_case.Merchant_Details","test_Get_DetailStatistic","TestGetDetailstatistic","","","test_Get_DetailStatistic[查询商户交易数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","127","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询设备型号为CG10的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","144","test_case.Agent_Homepage","test_Agent_Ranking","TestAgentRanking","","","test_Agent_Ranking[近三十天商户交易排行]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","107","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选正确手机号的员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","101","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选手机号以156开头的员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","92","test_case.Login","test_login","TestLogin","","","test_login[输入非1开头的手机号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","91","test_case.Merchant_Details","test_Get_AgentChannelConfigs","TestGetAgentchannelconfigs","","","test_Get_AgentChannelConfigs[获取服务商通道配置信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","85","test_case.Merchant_Management","test_Query_PartnerNoList","TestQueryPartnernolist","","","test_Query_PartnerNoList[拓展员下拉列表展示]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:35 CST 2023","131","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询设备类型为POS的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","145","test_case.Open_Platform","test_Apply_SelectByPage","TestApplySelectbypage","","","test_Apply_SelectByPage[开放平台]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:42 CST 2023","Tue Jul 11 16:49:42 CST 2023","101","test_case.Merchant_Details","test_Get_QuickPayRateDetail","TestGetQuickpayratedetail","","","test_Get_QuickPayRateDetail[查询商户云闪付状态]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:32 CST 2023","Tue Jul 11 16:49:32 CST 2023","114","test_case.Employee_Manage","test_Add_platformRole","TestAddPlatformrole","","","test_Add_platformRole[删除权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:42 CST 2023","Tue Jul 11 16:49:42 CST 2023","100","test_case.Merchant_Details","test_Get_OpenChannel","TestGetOpenchannel","","","test_Get_OpenChannel[查询商户通道开通状态]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","157","test_case.Agent_Homepage","test_Query_UserVueRouterList","TestQueryUservuerouterlist","","","test_Query_UserVueRouterList[查询服务商角色菜单权限]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","118","test_case.Equipment_Management","test_Device_Recall_Flow","TestDeviceRecallFlow","","","test_Device_Recall_Flow[设备回拨]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:48 CST 2023","Tue Jul 11 16:49:48 CST 2023","375","test_case.Transaction_Flow","test_Select_OrderStatic","TestSelectOrderstatic","","","test_Select_OrderStatic[交易流水昨日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:47 CST 2023","Tue Jul 11 16:49:47 CST 2023","322","test_case.Transaction_Flow","test_Select_ByPage","TestSelectBypage","","","test_Select_ByPage[查询近三十日订单流水]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","121","test_case.Agent_Homepage","test_Pay_WayProportion","TestPayWayproportion","","","test_Pay_WayProportion[昨日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","88","test_case.Business_Development","test_Query_AgentRateConfigList","TestQueryAgentrateconfiglist","","","test_Query_AgentRateConfigList[查询拓展组通道费率限制]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:39 CST 2023","183","test_case.Merchant_Details","test_Change_MerchantChannel","TestChangeMerchantchannel","","","test_Change_MerchantChannel[修改商户微信被扫支付通道]","
+        :param :
+        :return:
+        "
+"failed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:32 CST 2023","127","test_case.Employee_Manage","test_Add_platformRole","TestAddPlatformrole","","","test_Add_platformRole[新增权限组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:40 CST 2023","Tue Jul 11 16:49:42 CST 2023","1570","test_case.Merchant_Details","test_Get_MultipleCanUserChannelConfigs","TestGetMultiplecanuserchannelconfigs","","","test_Get_MultipleCanUserChannelConfigs[获取批量可使用通道配置]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:38 CST 2023","1996","test_case.Login","test_login","TestLogin","","","test_login[正常登录]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","83","test_case.Merchant_Details","test_Query_UnionCardRate","TestQueryUnioncardrate","","","test_Query_UnionCardRate[查询商户POS刷卡D1到账详情]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:45 CST 2023","Tue Jul 11 16:49:46 CST 2023","127","test_case.Merchant_Management","test_Query_ByPage","TestQueryBypage","","","test_Query_ByPage[搜索百果园商户]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","123","test_case.Agent_Homepage","test_Pay_BizProportion","TestPayBizproportion","","","test_Pay_BizProportion[近三日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","81","test_case.Merchant_Management","test_Select_MerchantByCondition","TestSelectMerchantbycondition","","","test_Select_MerchantByCondition[商户账号下拉数据展示]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","154","test_case.Merchant_Details","test_Edit_QuickPayConfig","TestEditQuickpayconfig","","","test_Edit_QuickPayConfig[关闭银盛D0]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:40 CST 2023","151","test_case.Merchant_Details","test_Get_CanUseChannelConfigs","TestGetCanusechannelconfigs","","","test_Get_CanUseChannelConfigs[获取可使用通道配置]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","104","test_case.Agent_Homepage","test_Top_Date","TestTopDate","","","test_Top_Date[近三日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","98","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[组合查询]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:30 CST 2023","226","test_case.Commission_settlement","test_Download_AgentCommissionSettleToExcel","TestDownloadAgentcommissionsettletoexcel","","","test_Download_AgentCommissionSettleToExcel[佣金数据导出]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:48 CST 2023","Tue Jul 11 16:49:49 CST 2023","93","test_case.Transaction_Flow","test_Select_PageRefundOrder","TestSelectPagerefundorder","","","test_Select_PageRefundOrder[昨日退款订单]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:48 CST 2023","Tue Jul 11 16:49:48 CST 2023","159","test_case.Transaction_Flow","test_Select_OrderStatic","TestSelectOrderstatic","","","test_Select_OrderStatic[交易流水近七日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","109","test_case.Agent_Homepage","test_Pay_WayProportion","TestPayWayproportion","","","test_Pay_WayProportion[近三十日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","197","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[设备列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:47 CST 2023","Tue Jul 11 16:49:47 CST 2023","124","test_case.Transaction_Flow","test_Select_OrderDetails","TestSelectOrderdetails","","","test_Select_OrderDetails[查看订单详情]","
+        :param :
+        :return:
+        "
+"skipped","Tue Jul 11 16:49:24 CST 2023","Tue Jul 11 16:49:24 CST 2023","0","test_case.Account_Center","test_Send_SmsCode","TestSendSmscode","","","test_Send_SmsCode[获取验证码]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:28 CST 2023","118","test_case.Agent_Homepage","test_Top_Date","TestTopDate","","","test_Top_Date[近三十日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","131","test_case.Agent_Homepage","test_Trade_Trend","TestTradeTrend","","","test_Trade_Trend[近三十日交易趋势]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","92","test_case.Business_Development","test_Select_RateTemplateList","TestSelectRatetemplatelist","","","test_Select_RateTemplateList[获取费率模板]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:49 CST 2023","Tue Jul 11 16:49:49 CST 2023","114","test_case.Transaction_Flow","test_Select_ShopByConditon","TestSelectShopbyconditon","","","test_Select_ShopByConditon[展示全部收款门店]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","114","test_case.Merchant_Details","test_Query_YsepayD0","TestQueryYsepayd0","","","test_Query_YsepayD0[银盛D0]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","50","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取未注册的十一位手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:29 CST 2023","103","test_case.Business_Development","test_Query_PageByCondition","TestQueryPagebycondition","","","test_Query_PageByCondition[拓展组列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","49","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取空手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","72","test_case.Query_Solution","test_Query_solution","TestQuerySolution","","","test_Query_solution[解决方案]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:26 CST 2023","171","test_case.Agent_Homepage","test_Pay_BizProportion","TestPayBizproportion","","","test_Pay_BizProportion[近三十日收款渠道统计]","
+        :param :
+        :return:
+        "
+"failed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","64","test_case.Employee_Manage","test_Add_User","TestAddUser","","","test_Add_User[新增员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:47 CST 2023","Tue Jul 11 16:49:48 CST 2023","150","test_case.Transaction_Flow","test_Select_OrderStatic","TestSelectOrderstatic","","","test_Select_OrderStatic[交易流水今日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","192","test_case.Business_Development","test_Export_Partner","TestExportPartner","","","test_Export_Partner[拓展组列表导出]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","93","test_case.Business_Development","test_Query_PageByCondition","TestQueryPagebycondition","","","test_Query_PageByCondition[查询登录手机号为14765432189的拓展组]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","142","test_case.Merchant_Details","test_Get_ActivityDetailById","TestGetActivitydetailbyid","","","test_Get_ActivityDetailById[获取活动规则]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:27 CST 2023","126","test_case.Agent_Homepage","test_Pay_WayProportion","TestPayWayproportion","","","test_Pay_WayProportion[近七日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:47 CST 2023","Tue Jul 11 16:49:47 CST 2023","325","test_case.Transaction_Flow","test_Select_ByPage","TestSelectBypage","","","test_Select_ByPage[查询近七日订单流水]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","80","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取十二位手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:49 CST 2023","Tue Jul 11 16:49:49 CST 2023","129","test_case.Transaction_Flow","test_Select_PageRefundOrder","TestSelectPagerefundorder","","","test_Select_PageRefundOrder[近七日退款订单]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:39 CST 2023","Tue Jul 11 16:49:39 CST 2023","111","test_case.Merchant_Details","test_Disabled_Merchant","TestDisabledMerchant","","","test_Disabled_Merchant[禁用商户账号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:24 CST 2023","Tue Jul 11 16:49:24 CST 2023","422","test_case.Account_Center","test_Get_AgentBaseInfo","TestGetAgentbaseinfo","","","test_Get_AgentBaseInfo[获取服务商账户信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","127","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询属于百果园水果商户账号的设备]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","98","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选条件为正确的账户名称]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:48 CST 2023","Tue Jul 11 16:49:48 CST 2023","100","test_case.Transaction_Flow","test_Select_PageRefundOrder","TestSelectPagerefundorder","","","test_Select_PageRefundOrder[今日退款订单]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:36 CST 2023","Tue Jul 11 16:49:36 CST 2023","64","test_case.Login","test_Send_RegisterCode","TestSendRegistercode","","","test_Send_RegisterCode[获取非1开头的手机号验证码信息]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","151","test_case.Commission_settlement","test_Download_AgentCommissionSettleDetailExcel","TestDownloadAgentcommissionsettledetailexcel","","","test_Download_AgentCommissionSettleDetailExcel[佣金明细导出]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","160","test_case.Commission_settlement","test_Get_ShopCommissionSettleMonthByPage","TestGetShopcommissionsettlemonthbypage","","","test_Get_ShopCommissionSettleMonthByPage[佣金明细-佣金明细]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","115","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询绑定时间为当月第一天的设备列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","76","test_case.Merchant_Details","test_Select_MerchantState","TestSelectMerchantstate","","","test_Select_MerchantState[查询商户乐刷分账开通状态]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:46 CST 2023","Tue Jul 11 16:49:46 CST 2023","95","test_case.Merchant_Management","test_Query_PartnerGroupList","TestQueryPartnergrouplist","","","test_Query_PartnerGroupList[所属拓展组下拉数据展示]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","133","test_case.Agent_Homepage","test_Pay_TypeProportion","TestPayTypeproportion","","","test_Pay_TypeProportion[近三十天收款方式统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","78","test_case.Login","test_login","TestLogin","","","test_login[输入空的密码]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:48 CST 2023","Tue Jul 11 16:49:48 CST 2023","180","test_case.Transaction_Flow","test_Select_OrderStatic","TestSelectOrderstatic","","","test_Select_OrderStatic[交易流水近三十日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","53","test_case.Equipment_Management","test_Query_DeviceTypes","TestQueryDevicetypes","","","test_Query_DeviceTypes[查询设备类型]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:30 CST 2023","Tue Jul 11 16:49:30 CST 2023","116","test_case.Commission_settlement","test_Get_AgentSettleConfigs","TestGetAgentsettleconfigs","","","test_Get_AgentSettleConfigs[获取服务商结算配置]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","105","test_case.Merchant_Details","test_Query_ChannelSwitchByPage","TestQueryChannelswitchbypage","","","test_Query_ChannelSwitchByPage[查询商户支付方式通道配置]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:35 CST 2023","Tue Jul 11 16:49:35 CST 2023","91","test_case.Equipment_Management","test_Query_DeviceNo","TestQueryDeviceno","","","test_Query_DeviceNo[查询设备详情]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","101","test_case.Employee_Manage","test_Add_User","TestAddUser","","","test_Add_User[查询员工列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:44 CST 2023","Tue Jul 11 16:49:44 CST 2023","116","test_case.Merchant_Details","test_Query_WxRealAuditInfo","TestQueryWxrealauditinfo","","","test_Query_WxRealAuditInfo[商户实名认证]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","68","test_case.Login","test_login","TestLogin","","","test_login[输入空的手机号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","74","test_case.Merchant_Details","test_Query_OssToken","TestQueryOsstoken","","","test_Query_OssToken[获取OSS token]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:31 CST 2023","Tue Jul 11 16:49:31 CST 2023","82","test_case.Employee_Manage","test_Add_User","TestAddUser","","","test_Add_User[删除员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:43 CST 2023","Tue Jul 11 16:49:43 CST 2023","110","test_case.Merchant_Details","test_Query_MerchantAccredit","TestQueryMerchantaccredit","","","test_Query_MerchantAccredit[商户分账授权状态]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:49 CST 2023","Tue Jul 11 16:49:49 CST 2023","83","test_case.Transaction_Flow","test_Select_ShopByConditon","TestSelectShopbyconditon","","","test_Select_ShopByConditon[搜索100153收款门店]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","102","test_case.Agent_Homepage","test_Top_Date","TestTopDate","","","test_Top_Date[昨日顶部统计数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:28 CST 2023","Tue Jul 11 16:49:28 CST 2023","100","test_case.Agent_Homepage","test_Trade_Trend","TestTradeTrend","","","test_Trade_Trend[近七日交易趋势]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:24 CST 2023","Tue Jul 11 16:49:25 CST 2023","140","test_case.Activity_Management","test_Select_ActivityMerchantList","TestSelectActivitymerchantlist","","","test_Select_ActivityMerchantList[查询参与活动商户列表]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:24 CST 2023","Tue Jul 11 16:49:24 CST 2023","118","test_case.Activity_Management","test_Select_ActivityByPage","TestSelectActivitybypage","","","test_Select_ActivityByPage[查询历史活动]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:33 CST 2023","Tue Jul 11 16:49:33 CST 2023","91","test_case.Employee_Manage","test_Query_AgentUser","TestQueryAgentuser","","","test_Query_AgentUser[筛选不存在手机号的员工]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","99","test_case.Login","test_login","TestLogin","","","test_login[输入大于11位的手机号]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:38 CST 2023","Tue Jul 11 16:49:38 CST 2023","95","test_case.Login","test_login","TestLogin","","","test_login[输入错误的密码]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:26 CST 2023","Tue Jul 11 16:49:26 CST 2023","135","test_case.Agent_Homepage","test_Pay_TypeProportion","TestPayTypeproportion","","","test_Pay_TypeProportion[昨日收款方式统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","146","test_case.Agent_Homepage","test_Pay_BizProportion","TestPayBizproportion","","","test_Pay_BizProportion[昨日收款渠道统计]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:29 CST 2023","Tue Jul 11 16:49:29 CST 2023","96","test_case.Business_Development","test_Select_RateTemplateList","TestSelectRatetemplatelist","","","test_Select_RateTemplateList[获取""测试服务商模板-1""费率模板]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:25 CST 2023","Tue Jul 11 16:49:25 CST 2023","106","test_case.Agent_Homepage","test_Agent_Ranking","TestAgentRanking","","","test_Agent_Ranking[近三日商户交易排行]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:27 CST 2023","Tue Jul 11 16:49:27 CST 2023","220","test_case.Agent_Homepage","test_Query_AllAreaByChannelCode","TestQueryAllareabychannelcode","","","test_Query_AllAreaByChannelCode[查询通道地区code码]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:40 CST 2023","Tue Jul 11 16:49:40 CST 2023","259","test_case.Merchant_Details","test_Get_MerchantChannelConfigs","TestGetMerchantchannelconfigs","","","test_Get_MerchantChannelConfigs[查询商户费率]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:30 CST 2023","Tue Jul 11 16:49:30 CST 2023","128","test_case.Commission_settlement","test_Get_AgentCommissionSettleMonth","TestGetAgentcommissionsettlemonth","","","test_Get_AgentCommissionSettleMonth[获取服务商佣金数据]","
+        :param :
+        :return:
+        "
+"passed","Tue Jul 11 16:49:34 CST 2023","Tue Jul 11 16:49:34 CST 2023","91","test_case.Equipment_Management","test_Query_DeviceList","TestQueryDevicelist","","","test_Query_DeviceList[查询绑定到百果园水果100036的设备]","
+        :param :
+        :return:
+        "

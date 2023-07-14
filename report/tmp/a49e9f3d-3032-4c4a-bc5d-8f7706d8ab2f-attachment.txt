@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 禁用商户账号
+请求路径: https://api.pre.lianok.com/agent/v1/merchantNew/disabeldMerchant
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=67197f8484694a3cb44a46391ce92d62', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '227'}
+请求内容: {'merchantNo': '100018', 'isDisabled': '1'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":true}
+接口响应时长: 107 ms
+Http状态码: 200
+=====================================================

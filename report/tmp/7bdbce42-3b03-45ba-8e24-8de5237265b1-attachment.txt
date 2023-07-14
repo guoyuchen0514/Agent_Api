@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 佣金明细导出
+请求路径: https://api.pre.lianok.com/agent/v1/commissionSettle/downloadAgentCommissionSettleDetailExcel
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '54'}
+请求内容: {'settleConfigId': '2910', 'tradeMonth': '2023-04-01'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"c5de2b3a-313e-4cf3-b01b-e3a7cb818a3e"}
+接口响应时长: 138 ms
+Http状态码: 200
+=====================================================

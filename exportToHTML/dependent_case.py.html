@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>dependent_case.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+dependent_case.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-02-27 14:19</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : dependent_case.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">#</span>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>ast
+<a name="l9"><span class="ln">9    </span></a><span class="s2">import </span>json
+<a name="l10"><span class="ln">10   </span></a><span class="s2">from </span>typing <span class="s2">import </span>Text, Dict, Union, List
+<a name="l11"><span class="ln">11   </span></a><span class="s2">from </span>jsonpath <span class="s2">import </span>jsonpath
+<a name="l12"><span class="ln">12   </span></a><span class="s2">from </span>utils.mysql_tool.mysql_control <span class="s2">import </span>SetUpMySQL
+<a name="l13"><span class="ln">13   </span></a><span class="s2">from </span>utils.read_file_tools.regular_control <span class="s2">import </span>regular, cache_regular
+<a name="l14"><span class="ln">14   </span></a><span class="s2">from </span>utils.others_tool.jsonpath_date_replace <span class="s2">import </span>jsonpath_replace
+<a name="l15"><span class="ln">15   </span></a><span class="s2">from </span>utils.logging_tool.log_control <span class="s2">import </span>WARNING
+<a name="l16"><span class="ln">16   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>DependentType
+<a name="l17"><span class="ln">17   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>TestCase, DependentCaseData, DependentData
+<a name="l18"><span class="ln">18   </span></a><span class="s2">from </span>utils.others_tool.exceptions <span class="s2">import </span>ValueNotFoundError
+<a name="l19"><span class="ln">19   </span></a><span class="s2">from </span>utils.cache_process.cache_control <span class="s2">import </span>CacheHandler
+<a name="l20"><span class="ln">20   </span></a><span class="s2">from </span>utils <span class="s2">import </span>config
+<a name="l21"><span class="ln">21   </span></a><span class="s2">from </span>utils.requests_tool.request_control <span class="s2">import </span>RequestControl
+<a name="l22"><span class="ln">22   </span></a>
+<a name="l23"><span class="ln">23   </span></a><span class="s2">class </span>DependentCase:
+<a name="l24"><span class="ln">24   </span></a>    <span class="s0">&quot;&quot;&quot; 处理依赖相关的业务 &quot;&quot;&quot;</span>
+<a name="l25"><span class="ln">25   </span></a>
+<a name="l26"><span class="ln">26   </span></a>    <span class="s2">def </span>__init__(self, dependent_yaml_case: TestCase):
+<a name="l27"><span class="ln">27   </span></a>        self.__yaml_case = dependent_yaml_case
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>    @classmethod
+<a name="l30"><span class="ln">30   </span></a>    <span class="s2">def </span>get_cache(cls, case_id: Text) -&gt; Dict:
+<a name="l31"><span class="ln">31   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l32"><span class="ln">32   </span></a>        获取缓存用例池中的数据，通过 case_id 提取 
+<a name="l33"><span class="ln">33   </span></a>        :param case_id: 
+<a name="l34"><span class="ln">34   </span></a>        :return: case_id_01 
+<a name="l35"><span class="ln">35   </span></a>        &quot;&quot;&quot;</span>
+<a name="l36"><span class="ln">36   </span></a>        _case_data = CacheHandler.get_cache(case_id)
+<a name="l37"><span class="ln">37   </span></a>        <span class="s2">return </span>_case_data
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a>    @classmethod
+<a name="l40"><span class="ln">40   </span></a>    <span class="s2">def </span>jsonpath_data(
+<a name="l41"><span class="ln">41   </span></a>            cls,
+<a name="l42"><span class="ln">42   </span></a>            obj: Dict,
+<a name="l43"><span class="ln">43   </span></a>            expr: Text) -&gt; list:
+<a name="l44"><span class="ln">44   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l45"><span class="ln">45   </span></a>        通过jsonpath提取依赖的数据 
+<a name="l46"><span class="ln">46   </span></a>        :param obj: 对象信息 
+<a name="l47"><span class="ln">47   </span></a>        :param expr: jsonpath 方法 
+<a name="l48"><span class="ln">48   </span></a>        :return: 提取到的内容值,返回是个数组 
+<a name="l49"><span class="ln">49   </span></a> 
+<a name="l50"><span class="ln">50   </span></a>        对象: {&quot;data&quot;: applyID} --&gt; jsonpath提取方法: $.data.data.[0].applyId 
+<a name="l51"><span class="ln">51   </span></a>        &quot;&quot;&quot;</span>
+<a name="l52"><span class="ln">52   </span></a>
+<a name="l53"><span class="ln">53   </span></a>        _jsonpath_data = jsonpath(obj, expr)
+<a name="l54"><span class="ln">54   </span></a>        <span class="s0"># 判断是否正常提取到数据，如未提取到，则抛异常</span>
+<a name="l55"><span class="ln">55   </span></a>        <span class="s2">if </span>_jsonpath_data <span class="s2">is False</span>:
+<a name="l56"><span class="ln">56   </span></a>            <span class="s2">raise </span>ValueNotFoundError(
+<a name="l57"><span class="ln">57   </span></a>                <span class="s3">f&quot;jsonpath提取失败！</span><span class="s2">\n </span><span class="s3">提取的数据: </span><span class="s2">{</span>obj<span class="s2">} \n </span><span class="s3">jsonpath规则: </span><span class="s2">{</span>expr<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l58"><span class="ln">58   </span></a>            )
+<a name="l59"><span class="ln">59   </span></a>        <span class="s2">return </span>_jsonpath_data
+<a name="l60"><span class="ln">60   </span></a>
+<a name="l61"><span class="ln">61   </span></a>    @classmethod
+<a name="l62"><span class="ln">62   </span></a>    <span class="s2">def </span>set_cache_value(cls, dependent_data: <span class="s3">&quot;DependentData&quot;</span>) -&gt; Union[Text, <span class="s2">None</span>]:
+<a name="l63"><span class="ln">63   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l64"><span class="ln">64   </span></a>        获取依赖中是否需要将数据存入缓存中 
+<a name="l65"><span class="ln">65   </span></a>        &quot;&quot;&quot;</span>
+<a name="l66"><span class="ln">66   </span></a>        <span class="s2">try</span>:
+<a name="l67"><span class="ln">67   </span></a>            <span class="s2">return </span>dependent_data.set_cache
+<a name="l68"><span class="ln">68   </span></a>        <span class="s2">except </span>KeyError:
+<a name="l69"><span class="ln">69   </span></a>            <span class="s2">return None</span>
+<a name="l70"><span class="ln">70   </span></a>
+<a name="l71"><span class="ln">71   </span></a>    @classmethod
+<a name="l72"><span class="ln">72   </span></a>    <span class="s2">def </span>replace_key(cls, dependent_data: <span class="s3">&quot;DependentData&quot;</span>):
+<a name="l73"><span class="ln">73   </span></a>        <span class="s0">&quot;&quot;&quot; 获取需要替换的内容 &quot;&quot;&quot;</span>
+<a name="l74"><span class="ln">74   </span></a>        <span class="s2">try</span>:
+<a name="l75"><span class="ln">75   </span></a>            _replace_key = dependent_data.replace_key
+<a name="l76"><span class="ln">76   </span></a>            <span class="s2">return </span>_replace_key
+<a name="l77"><span class="ln">77   </span></a>        <span class="s2">except </span>KeyError:
+<a name="l78"><span class="ln">78   </span></a>            <span class="s2">return None</span>
+<a name="l79"><span class="ln">79   </span></a>
+<a name="l80"><span class="ln">80   </span></a>    <span class="s2">def </span>url_replace(
+<a name="l81"><span class="ln">81   </span></a>            self,
+<a name="l82"><span class="ln">82   </span></a>            replace_key: Text,
+<a name="l83"><span class="ln">83   </span></a>            jsonpath_dates: Dict,
+<a name="l84"><span class="ln">84   </span></a>            jsonpath_data: list) -&gt; <span class="s2">None</span>:
+<a name="l85"><span class="ln">85   </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l86"><span class="ln">86   </span></a>        url中的动态参数替换 
+<a name="l87"><span class="ln">87   </span></a>        # 如: 一般有些接口的参数在url中,并且没有参数名称, /api/v1/work/spu/approval/spuApplyDetails/{id} 
+<a name="l88"><span class="ln">88   </span></a>        # 那么可以使用如下方式编写用例, 可以使用 $url_params{}替换, 
+<a name="l89"><span class="ln">89   </span></a>        # 如/api/v1/work/spu/approval/spuApplyDetails/$url_params{id} 
+<a name="l90"><span class="ln">90   </span></a>        :param jsonpath_data: jsonpath 解析出来的数据值 
+<a name="l91"><span class="ln">91   </span></a>        :param replace_key: 用例中需要替换数据的 replace_key 
+<a name="l92"><span class="ln">92   </span></a>        :param jsonpath_dates: jsonpath 存放的数据值 
+<a name="l93"><span class="ln">93   </span></a>        :return: 
+<a name="l94"><span class="ln">94   </span></a>        &quot;&quot;&quot;</span>
+<a name="l95"><span class="ln">95   </span></a>
+<a name="l96"><span class="ln">96   </span></a>        <span class="s2">if </span><span class="s3">&quot;$url_param&quot; </span><span class="s2">in </span>replace_key:
+<a name="l97"><span class="ln">97   </span></a>            _url = self.__yaml_case.url.replace(replace_key, str(jsonpath_data[<span class="s4">0</span>]))
+<a name="l98"><span class="ln">98   </span></a>            jsonpath_dates[<span class="s3">'$.url'</span>] = _url
+<a name="l99"><span class="ln">99   </span></a>        <span class="s2">else</span>:
+<a name="l100"><span class="ln">100  </span></a>            jsonpath_dates[replace_key] = jsonpath_data[<span class="s4">0</span>]
+<a name="l101"><span class="ln">101  </span></a>
+<a name="l102"><span class="ln">102  </span></a>    <span class="s2">def </span>_dependent_type_for_sql(
+<a name="l103"><span class="ln">103  </span></a>            self,
+<a name="l104"><span class="ln">104  </span></a>            setup_sql: List,
+<a name="l105"><span class="ln">105  </span></a>            dependence_case_data: <span class="s3">&quot;DependentCaseData&quot;</span>,
+<a name="l106"><span class="ln">106  </span></a>            jsonpath_dates: Dict) -&gt; <span class="s2">None</span>:
+<a name="l107"><span class="ln">107  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l108"><span class="ln">108  </span></a>        判断依赖类型为 sql，程序中的依赖参数从 数据库中提取数据 
+<a name="l109"><span class="ln">109  </span></a>        @param setup_sql: 前置sql语句 
+<a name="l110"><span class="ln">110  </span></a>        @param dependence_case_data: 依赖的数据 
+<a name="l111"><span class="ln">111  </span></a>        @param jsonpath_dates: 依赖相关的用例数据 
+<a name="l112"><span class="ln">112  </span></a>        @return: 
+<a name="l113"><span class="ln">113  </span></a>        &quot;&quot;&quot;</span>
+<a name="l114"><span class="ln">114  </span></a>        <span class="s0"># 判断依赖数据类型，依赖 sql中的数据</span>
+<a name="l115"><span class="ln">115  </span></a>        <span class="s2">if </span>setup_sql <span class="s2">is not None</span>:
+<a name="l116"><span class="ln">116  </span></a>            <span class="s2">if </span>config.mysql_db.switch:
+<a name="l117"><span class="ln">117  </span></a>                setup_sql = ast.literal_eval(cache_regular(str(setup_sql)))
+<a name="l118"><span class="ln">118  </span></a>                sql_data = SetUpMySQL().setup_sql_data(sql=setup_sql)
+<a name="l119"><span class="ln">119  </span></a>                dependent_data = dependence_case_data.dependent_data
+<a name="l120"><span class="ln">120  </span></a>                <span class="s2">for </span>i <span class="s2">in </span>dependent_data:
+<a name="l121"><span class="ln">121  </span></a>                    _jsonpath = i.jsonpath
+<a name="l122"><span class="ln">122  </span></a>                    jsonpath_data = self.jsonpath_data(obj=sql_data, expr=_jsonpath)
+<a name="l123"><span class="ln">123  </span></a>                    _set_value = self.set_cache_value(i)
+<a name="l124"><span class="ln">124  </span></a>                    _replace_key = self.replace_key(i)
+<a name="l125"><span class="ln">125  </span></a>                    <span class="s2">if </span>_set_value <span class="s2">is not None</span>:
+<a name="l126"><span class="ln">126  </span></a>                        CacheHandler.update_cache(cache_name=_set_value, value=jsonpath_data[<span class="s4">0</span>])
+<a name="l127"><span class="ln">127  </span></a>                        <span class="s0"># Cache(_set_value).set_caches(jsonpath_data[0])</span>
+<a name="l128"><span class="ln">128  </span></a>                    <span class="s2">if </span>_replace_key <span class="s2">is not None</span>:
+<a name="l129"><span class="ln">129  </span></a>                        jsonpath_dates[_replace_key] = jsonpath_data[<span class="s4">0</span>]
+<a name="l130"><span class="ln">130  </span></a>                        self.url_replace(
+<a name="l131"><span class="ln">131  </span></a>                            replace_key=_replace_key,
+<a name="l132"><span class="ln">132  </span></a>                            jsonpath_dates=jsonpath_dates,
+<a name="l133"><span class="ln">133  </span></a>                            jsonpath_data=jsonpath_data,
+<a name="l134"><span class="ln">134  </span></a>                        )
+<a name="l135"><span class="ln">135  </span></a>            <span class="s2">else</span>:
+<a name="l136"><span class="ln">136  </span></a>                WARNING.logger.warning(<span class="s3">&quot;检查到数据库开关为关闭状态，请确认配置&quot;</span>)
+<a name="l137"><span class="ln">137  </span></a>
+<a name="l138"><span class="ln">138  </span></a>    <span class="s2">def </span>dependent_handler(
+<a name="l139"><span class="ln">139  </span></a>            self,
+<a name="l140"><span class="ln">140  </span></a>            _jsonpath: Text,
+<a name="l141"><span class="ln">141  </span></a>            set_value: Text,
+<a name="l142"><span class="ln">142  </span></a>            replace_key: Text,
+<a name="l143"><span class="ln">143  </span></a>            jsonpath_dates: Dict,
+<a name="l144"><span class="ln">144  </span></a>            data: Dict,
+<a name="l145"><span class="ln">145  </span></a>            dependent_type: int
+<a name="l146"><span class="ln">146  </span></a>    ) -&gt; <span class="s2">None</span>:
+<a name="l147"><span class="ln">147  </span></a>        <span class="s0">&quot;&quot;&quot; 处理数据替换 &quot;&quot;&quot;</span>
+<a name="l148"><span class="ln">148  </span></a>        jsonpath_data = self.jsonpath_data(
+<a name="l149"><span class="ln">149  </span></a>            data,
+<a name="l150"><span class="ln">150  </span></a>            _jsonpath
+<a name="l151"><span class="ln">151  </span></a>        )
+<a name="l152"><span class="ln">152  </span></a>        <span class="s2">if </span>set_value <span class="s2">is not None</span>:
+<a name="l153"><span class="ln">153  </span></a>            <span class="s2">if </span>len(jsonpath_data) &gt; <span class="s4">1</span>:
+<a name="l154"><span class="ln">154  </span></a>                CacheHandler.update_cache(cache_name=set_value, value=jsonpath_data)
+<a name="l155"><span class="ln">155  </span></a>            <span class="s2">else</span>:
+<a name="l156"><span class="ln">156  </span></a>                CacheHandler.update_cache(cache_name=set_value, value=jsonpath_data[<span class="s4">0</span>])
+<a name="l157"><span class="ln">157  </span></a>        <span class="s2">if </span>replace_key <span class="s2">is not None</span>:
+<a name="l158"><span class="ln">158  </span></a>            <span class="s2">if </span>dependent_type == <span class="s4">0</span>:
+<a name="l159"><span class="ln">159  </span></a>                jsonpath_dates[replace_key] = jsonpath_data[<span class="s4">0</span>]
+<a name="l160"><span class="ln">160  </span></a>            self.url_replace(replace_key=replace_key, jsonpath_dates=jsonpath_dates,
+<a name="l161"><span class="ln">161  </span></a>                             jsonpath_data=jsonpath_data)
+<a name="l162"><span class="ln">162  </span></a>
+<a name="l163"><span class="ln">163  </span></a>    <span class="s2">def </span>is_dependent(self) -&gt; Union[Dict, bool]:
+<a name="l164"><span class="ln">164  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l165"><span class="ln">165  </span></a>        判断是否有数据依赖 
+<a name="l166"><span class="ln">166  </span></a>        :return: 
+<a name="l167"><span class="ln">167  </span></a>        &quot;&quot;&quot;</span>
+<a name="l168"><span class="ln">168  </span></a>
+<a name="l169"><span class="ln">169  </span></a>        <span class="s0"># 获取用例中的dependent_type值，判断该用例是否需要执行依赖</span>
+<a name="l170"><span class="ln">170  </span></a>        _dependent_type = self.__yaml_case.dependence_case
+<a name="l171"><span class="ln">171  </span></a>        <span class="s0"># 获取依赖用例数据</span>
+<a name="l172"><span class="ln">172  </span></a>        _dependence_case_dates = self.__yaml_case.dependence_case_data
+<a name="l173"><span class="ln">173  </span></a>        <span class="s0"># _setup_sql = self.__yaml_case.setup_sql</span>
+<a name="l174"><span class="ln">174  </span></a>        <span class="s0"># 判断是否有依赖</span>
+<a name="l175"><span class="ln">175  </span></a>
+<a name="l176"><span class="ln">176  </span></a>        print(<span class="s3">&quot;============&quot;</span>,type(_dependence_case_dates),<span class="s3">&quot;===============&quot;</span>)
+<a name="l177"><span class="ln">177  </span></a>
+<a name="l178"><span class="ln">178  </span></a>        <span class="s2">if </span>_dependent_type <span class="s2">is True</span>:
+<a name="l179"><span class="ln">179  </span></a>            <span class="s0"># 读取依赖相关的用例数据</span>
+<a name="l180"><span class="ln">180  </span></a>            jsonpath_dates = {}
+<a name="l181"><span class="ln">181  </span></a>            <span class="s0"># 循环所有需要依赖的数据</span>
+<a name="l182"><span class="ln">182  </span></a>            <span class="s2">try</span>:
+<a name="l183"><span class="ln">183  </span></a>                <span class="s2">for </span>dependence_case_data <span class="s2">in </span>_dependence_case_dates:
+<a name="l184"><span class="ln">184  </span></a>                    _case_id = dependence_case_data.case_id
+<a name="l185"><span class="ln">185  </span></a>                    <span class="s0"># 判断依赖数据为sql，case_id需要写成self，否则程序中无法获取case_id</span>
+<a name="l186"><span class="ln">186  </span></a>                    <span class="s2">if </span>_case_id == <span class="s3">'self'</span>:
+<a name="l187"><span class="ln">187  </span></a>                        <span class="s2">pass</span>
+<a name="l188"><span class="ln">188  </span></a>                        <span class="s0"># self._dependent_type_for_sql(</span>
+<a name="l189"><span class="ln">189  </span></a>                        <span class="s0">#     setup_sql=_setup_sql,</span>
+<a name="l190"><span class="ln">190  </span></a>                        <span class="s0">#     dependence_case_data=dependence_case_data,</span>
+<a name="l191"><span class="ln">191  </span></a>                        <span class="s0">#     jsonpath_dates=jsonpath_dates)</span>
+<a name="l192"><span class="ln">192  </span></a>                    <span class="s2">else</span>:
+<a name="l193"><span class="ln">193  </span></a>                        re_data = regular(str(self.get_cache(_case_id)))
+<a name="l194"><span class="ln">194  </span></a>                        re_data = ast.literal_eval(cache_regular(str(re_data)))
+<a name="l195"><span class="ln">195  </span></a>                        res = RequestControl(re_data).http_request()
+<a name="l196"><span class="ln">196  </span></a>                        <span class="s2">if </span>dependence_case_data.dependent_data <span class="s2">is not None</span>:
+<a name="l197"><span class="ln">197  </span></a>                            dependent_data = dependence_case_data.dependent_data
+<a name="l198"><span class="ln">198  </span></a>                            <span class="s2">for </span>i <span class="s2">in </span>dependent_data:
+<a name="l199"><span class="ln">199  </span></a>
+<a name="l200"><span class="ln">200  </span></a>                                _case_id = dependence_case_data.case_id
+<a name="l201"><span class="ln">201  </span></a>                                _jsonpath = i.jsonpath
+<a name="l202"><span class="ln">202  </span></a>                                _request_data = self.__yaml_case.data
+<a name="l203"><span class="ln">203  </span></a>                                _replace_key = self.replace_key(i)
+<a name="l204"><span class="ln">204  </span></a>                                _set_value = self.set_cache_value(i)
+<a name="l205"><span class="ln">205  </span></a>                                <span class="s0"># 判断依赖数据类型, 依赖 response 中的数据</span>
+<a name="l206"><span class="ln">206  </span></a>                                <span class="s2">if </span>i.dependent_type == DependentType.RESPONSE.value:
+<a name="l207"><span class="ln">207  </span></a>                                    self.dependent_handler(
+<a name="l208"><span class="ln">208  </span></a>                                        data=json.loads(res.response_data),
+<a name="l209"><span class="ln">209  </span></a>                                        _jsonpath=_jsonpath,
+<a name="l210"><span class="ln">210  </span></a>                                        set_value=_set_value,
+<a name="l211"><span class="ln">211  </span></a>                                        replace_key=_replace_key,
+<a name="l212"><span class="ln">212  </span></a>                                        jsonpath_dates=jsonpath_dates,
+<a name="l213"><span class="ln">213  </span></a>                                        dependent_type=<span class="s4">0</span>
+<a name="l214"><span class="ln">214  </span></a>                                    )
+<a name="l215"><span class="ln">215  </span></a>
+<a name="l216"><span class="ln">216  </span></a>                                <span class="s0"># 判断依赖数据类型, 依赖 request 中的数据</span>
+<a name="l217"><span class="ln">217  </span></a>                                <span class="s2">elif </span>i.dependent_type == DependentType.REQUEST.value:
+<a name="l218"><span class="ln">218  </span></a>                                    self.dependent_handler(
+<a name="l219"><span class="ln">219  </span></a>                                        data=res.body,
+<a name="l220"><span class="ln">220  </span></a>                                        _jsonpath=_jsonpath,
+<a name="l221"><span class="ln">221  </span></a>                                        set_value=_set_value,
+<a name="l222"><span class="ln">222  </span></a>                                        replace_key=_replace_key,
+<a name="l223"><span class="ln">223  </span></a>                                        jsonpath_dates=jsonpath_dates,
+<a name="l224"><span class="ln">224  </span></a>                                        dependent_type=<span class="s4">1</span>
+<a name="l225"><span class="ln">225  </span></a>                                    )
+<a name="l226"><span class="ln">226  </span></a>
+<a name="l227"><span class="ln">227  </span></a>                                <span class="s2">else</span>:
+<a name="l228"><span class="ln">228  </span></a>                                    <span class="s2">raise </span>ValueError(
+<a name="l229"><span class="ln">229  </span></a>                                        <span class="s3">&quot;依赖的dependent_type不正确，只支持request、response、sql依赖</span><span class="s2">\n</span><span class="s3">&quot;</span>
+<a name="l230"><span class="ln">230  </span></a>                                        <span class="s3">f&quot;当前填写内容: </span><span class="s2">{</span>i.dependent_type<span class="s2">}</span><span class="s3">&quot;</span>
+<a name="l231"><span class="ln">231  </span></a>                                    )
+<a name="l232"><span class="ln">232  </span></a>                <span class="s2">return </span>jsonpath_dates
+<a name="l233"><span class="ln">233  </span></a>            <span class="s2">except </span>KeyError <span class="s2">as </span>exc:
+<a name="l234"><span class="ln">234  </span></a>                <span class="s0"># pass</span>
+<a name="l235"><span class="ln">235  </span></a>                <span class="s2">raise </span>ValueNotFoundError(
+<a name="l236"><span class="ln">236  </span></a>                    <span class="s3">f&quot;dependence_case_data依赖用例中，未找到 </span><span class="s2">{</span>exc<span class="s2">} </span><span class="s3">参数，请检查是否填写&quot;</span>
+<a name="l237"><span class="ln">237  </span></a>                    <span class="s3">f&quot;如已填写，请检查是否存在yaml缩进问题&quot;</span>
+<a name="l238"><span class="ln">238  </span></a>                ) <span class="s2">from </span>exc
+<a name="l239"><span class="ln">239  </span></a>            <span class="s2">except </span>TypeError <span class="s2">as </span>exc:
+<a name="l240"><span class="ln">240  </span></a>                <span class="s2">raise </span>ValueNotFoundError(
+<a name="l241"><span class="ln">241  </span></a>                    <span class="s3">&quot;dependence_case_data下的所有内容均不能为空！&quot;</span>
+<a name="l242"><span class="ln">242  </span></a>                    <span class="s3">&quot;请检查相关数据是否填写，如已填写，请检查缩进问题&quot;</span>
+<a name="l243"><span class="ln">243  </span></a>                ) <span class="s2">from </span>exc
+<a name="l244"><span class="ln">244  </span></a>        <span class="s2">else</span>:
+<a name="l245"><span class="ln">245  </span></a>            <span class="s2">return False</span>
+<a name="l246"><span class="ln">246  </span></a>
+<a name="l247"><span class="ln">247  </span></a>    <span class="s2">def </span>get_dependent_data(self) -&gt; <span class="s2">None</span>:
+<a name="l248"><span class="ln">248  </span></a>        <span class="s0">&quot;&quot;&quot; 
+<a name="l249"><span class="ln">249  </span></a>        jsonpath 和 依赖的数据,进行替换 
+<a name="l250"><span class="ln">250  </span></a>        :return: 
+<a name="l251"><span class="ln">251  </span></a>        &quot;&quot;&quot;</span>
+<a name="l252"><span class="ln">252  </span></a>        print(<span class="s3">&quot;get_dependent_data called&quot;</span>)
+<a name="l253"><span class="ln">253  </span></a>        _dependent_data = DependentCase(self.__yaml_case).is_dependent()
+<a name="l254"><span class="ln">254  </span></a>        _new_data = <span class="s2">None</span>
+<a name="l255"><span class="ln">255  </span></a>        <span class="s0"># 判断有依赖</span>
+<a name="l256"><span class="ln">256  </span></a>        <span class="s2">if </span>_dependent_data <span class="s2">is not None and </span>_dependent_data <span class="s2">is not False</span>:
+<a name="l257"><span class="ln">257  </span></a>            <span class="s0"># if _dependent_data is not False:</span>
+<a name="l258"><span class="ln">258  </span></a>            <span class="s2">for </span>key, value <span class="s2">in </span>_dependent_data.items():
+<a name="l259"><span class="ln">259  </span></a>                print(key, value)
+<a name="l260"><span class="ln">260  </span></a>                <span class="s0"># 通过jsonpath判断出需要替换数据的位置</span>
+<a name="l261"><span class="ln">261  </span></a>                _change_data = key.split(<span class="s3">&quot;.&quot;</span>)
+<a name="l262"><span class="ln">262  </span></a>                <span class="s0"># jsonpath 数据解析</span>
+<a name="l263"><span class="ln">263  </span></a>                <span class="s0"># 不要删 这个yaml_case</span>
+<a name="l264"><span class="ln">264  </span></a>                yaml_case = self.__yaml_case
+<a name="l265"><span class="ln">265  </span></a>                _new_data = jsonpath_replace(change_data=_change_data, key_name=<span class="s3">'yaml_case'</span>)
+<a name="l266"><span class="ln">266  </span></a>                print(_new_data)
+<a name="l267"><span class="ln">267  </span></a>                <span class="s0"># 最终提取到的数据,转换成 __yaml_case.data</span>
+<a name="l268"><span class="ln">268  </span></a>                _new_data += <span class="s3">' = ' </span>+ str(value)
+<a name="l269"><span class="ln">269  </span></a>                exec(_new_data)
+<a name="l270"><span class="ln">270  </span></a>
+<a name="l271"><span class="ln">271  </span></a><span class="s0">#</span></pre>
+</body>
+</html>

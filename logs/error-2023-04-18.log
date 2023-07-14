@@ -1,0 +1,28 @@
+ERROR2023-04-18 11:51:40,554D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-18.log:run_time_decorator.py:33 
+==============================================
+测试用例执行时间较长，请关注.
+函数运行时间: 3304 ms
+测试用例相关数据: url='https://api.pre.lianok.com/common/v1/user/login' is_run=None detail='输入大于11位的手机号' response_data='{"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}' request_body={'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'} method='POST' sql_data={'sql': None} yaml_data=TestCase(url='https://api.pre.lianok.com/common/v1/user/login', method='POST', detail='输入大于11位的手机号', assert_data={'errorCode': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}}, headers={'Content-Type': 'application/json'}, requestType='JSON', is_run=None, data={'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}, dependence_case=False, dependence_case_data=None, sql=None, setup_sql=None, status_code=None, teardown_sql=None, teardown=None, current_request_set_cache=None, sleep=None) headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'} cookie={} assert_data={'errorCode': {'jsonpath': '$.status', 'type': '==', 'value': 1, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': '==', 'value': '用户名不存在', 'AssertType': None}} res_time=3304 status_code=200 teardown=None teardown_sql=None body={'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+=================================================
+ERROR2023-04-18 14:29:08,608D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-18.log:log_decorator.py:47 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-11 00:00:00', 'currentPage': 1, 'endTime': '2023-04-11 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-04-18T06:29:08.648+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-04-18 14:34:59,611D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-18.log:log_decorator.py:47 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '$cache{{login_cookie}}', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-04-11 00:00:00', 'currentPage': 1, 'endTime': '2023-04-11 23:59:59', 'pageSize': 10}
+接口响应内容: {"timestamp":"2023-04-18T06:34:59.652+0000","status":401,"error":"Unauthorized","message":"No message available","path":"/merchant/v1/statistic/getShopRank"}
+Http状态码: 401
+=====================================================
+ERROR2023-04-18 14:37:53,121D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-18.log:assertion_control.py:160 JsonPath值获取失败 $status 
+ERROR2023-04-18 16:15:31,743D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-04-18.log:assertion_control.py:160 JsonPath值获取失败 $.data[3].totalCount 

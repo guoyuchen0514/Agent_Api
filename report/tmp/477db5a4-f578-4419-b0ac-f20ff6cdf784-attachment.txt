@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 开放平台
+请求路径: https://api.pre.lianok.com/agent/v1/apply/selectByPage
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '38'}
+请求内容: {'currentPage': '1', 'pageSize': '10'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":3,"agentNo":"285171","openMerchantCode":"1423045170000002","openMerchantName":"小熊测试对接商1","callBackUrl":null,"salt":"8dLMP29b3v","status":"platformPass","reason":"唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧唧唧复唧唧","linkMan":null,"linkPhone":null,"linkEmail":null,"submitTime":"2023-02-14 17:48:44","statusCN":"platformPass"}],"totalCount":1}
+接口响应时长: 131 ms
+Http状态码: 200
+=====================================================

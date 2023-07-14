@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>conftest.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+conftest.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-02-13 16:43</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : conftest.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>sys
+<a name="l9"><span class="ln">9    </span></a><span class="s2">import </span>allure
+<a name="l10"><span class="ln">10   </span></a><span class="s2">import </span>pytest
+<a name="l11"><span class="ln">11   </span></a><span class="s2">import </span>ast
+<a name="l12"><span class="ln">12   </span></a><span class="s2">import </span>requests
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a><span class="s2">from  </span>utils.cache_process.cache_control <span class="s2">import </span>CacheHandler
+<a name="l15"><span class="ln">15   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>TestCase
+<a name="l16"><span class="ln">16   </span></a><span class="s2">from </span>utils.read_file_tools.regular_control <span class="s2">import </span>cache_regular
+<a name="l17"><span class="ln">17   </span></a><span class="s2">from </span>utils.others_tool.allure_data.allure_tool <span class="s2">import </span>allure_step,allure_step_no
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a>
+<a name="l20"><span class="ln">20   </span></a><span class="s2">def </span>get_login_token():
+<a name="l21"><span class="ln">21   </span></a>    url = <span class="s3">'https://api.pre.lianok.com/common/v1/user/login'</span>
+<a name="l22"><span class="ln">22   </span></a>    header = {
+<a name="l23"><span class="ln">23   </span></a>        <span class="s3">&quot;content-type&quot;</span>: <span class="s3">&quot;application/json&quot;</span>
+<a name="l24"><span class="ln">24   </span></a>    }
+<a name="l25"><span class="ln">25   </span></a>    data = {<span class="s3">&quot;phone&quot;</span>:<span class="s3">&quot;15617886089&quot;</span>,<span class="s3">&quot;password&quot;</span>:<span class="s3">&quot;zxc123456&quot;</span>,<span class="s3">&quot;type&quot;</span>:<span class="s3">&quot;password&quot;</span>,<span class="s3">&quot;system&quot;</span>:<span class="s3">&quot;agent&quot;</span>}
+<a name="l26"><span class="ln">26   </span></a>
+<a name="l27"><span class="ln">27   </span></a>    res = requests.post(url=url, json=data, headers=header,verify=<span class="s2">True</span>)
+<a name="l28"><span class="ln">28   </span></a>    response_token =res.json()[<span class="s3">'data'</span>][<span class="s3">'accessToken'</span>]
+<a name="l29"><span class="ln">29   </span></a>    CacheHandler.update_cache(cache_name=<span class="s3">'login_cookie'</span>,value=response_token)
+<a name="l30"><span class="ln">30   </span></a>get_login_token()
+<a name="l31"><span class="ln">31   </span></a>
+<a name="l32"><span class="ln">32   </span></a>
+<a name="l33"><span class="ln">33   </span></a>@pytest.fixture(scope=<span class="s3">&quot;function&quot;</span>, autouse=<span class="s2">True</span>)
+<a name="l34"><span class="ln">34   </span></a><span class="s2">def  </span>case_skip(in_data):
+<a name="l35"><span class="ln">35   </span></a>    <span class="s0">&quot;&quot;&quot;处理跳过用例&quot;&quot;&quot;</span>
+<a name="l36"><span class="ln">36   </span></a>    in_data = TestCase(**in_data)
+<a name="l37"><span class="ln">37   </span></a>    <span class="s2">if </span>ast.literal_eval(cache_regular(str(in_data.is_run))) <span class="s2">is False</span>:
+<a name="l38"><span class="ln">38   </span></a>        allure.dynamic.title(in_data.detail)
+<a name="l39"><span class="ln">39   </span></a>        allure_step_no(<span class="s3">f&quot;请求URL: </span><span class="s2">{</span>in_data.is_run<span class="s2">}</span><span class="s3">&quot;</span>)
+<a name="l40"><span class="ln">40   </span></a>        allure_step_no(<span class="s3">f&quot;请求方式: </span><span class="s2">{</span>in_data.method<span class="s2">}</span><span class="s3">&quot;</span>)
+<a name="l41"><span class="ln">41   </span></a>        allure_step(<span class="s3">&quot;请求头: &quot;</span>, in_data.headers)
+<a name="l42"><span class="ln">42   </span></a>        allure_step(<span class="s3">&quot;请求数据: &quot;</span>, in_data.data)
+<a name="l43"><span class="ln">43   </span></a>        allure_step(<span class="s3">&quot;依赖数据: &quot;</span>, in_data.dependence_case_data)
+<a name="l44"><span class="ln">44   </span></a>        allure_step(<span class="s3">&quot;预期数据: &quot;</span>, in_data.assert_data)
+<a name="l45"><span class="ln">45   </span></a>        pytest.skip()
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a>
+<a name="l48"><span class="ln">48   </span></a>
+<a name="l49"><span class="ln">49   </span></a></pre>
+</body>
+</html>

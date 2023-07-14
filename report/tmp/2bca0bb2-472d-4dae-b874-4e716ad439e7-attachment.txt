@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 获取短信验证码
+请求路径: https://api.pre.lianok.com/agent/v1/shop/sendDcpaySmsCode
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '90'}
+请求内容: {'shopNo': '100036', 'channelCode': 'leShua', 'agentNo': '285171', 'phone': '13455456867'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":"913488"}
+接口响应时长: 379 ms
+Http状态码: 200
+=====================================================

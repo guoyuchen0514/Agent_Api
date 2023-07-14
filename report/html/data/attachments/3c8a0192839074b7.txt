@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 删除权限组
+请求路径: https://api.pre.lianok.com/operation/v1/platformRole/delete
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=2f3d4de2b39b4f1b8dba8f5a3ff8710a', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '124'}
+请求内容: {'id': '205'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":true}
+接口响应时长: 103 ms
+Http状态码: 200
+=====================================================

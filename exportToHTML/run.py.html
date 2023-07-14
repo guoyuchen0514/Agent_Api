@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>run.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+run.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-02-13 16:44</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 小熊</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : run.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>os
+<a name="l9"><span class="ln">9    </span></a><span class="s2">import </span>pytest
+<a name="l10"><span class="ln">10   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>NotificationType
+<a name="l11"><span class="ln">11   </span></a><span class="s2">from </span>utils.others_tool.allure_data.allure_report_data <span class="s2">import </span>AllureFileClean
+<a name="l12"><span class="ln">12   </span></a><span class="s2">from </span>utils.logging_tool.log_control <span class="s2">import </span>INFO
+<a name="l13"><span class="ln">13   </span></a><span class="s0"># from utils.notify.wechat_send import WeChatSend</span>
+<a name="l14"><span class="ln">14   </span></a><span class="s0"># from utils.notify.ding_talk import DingTalkSendMsg</span>
+<a name="l15"><span class="ln">15   </span></a><span class="s0"># from utils.notify.send_mail import SendEmail</span>
+<a name="l16"><span class="ln">16   </span></a><span class="s2">from </span>utils.notify.lark <span class="s2">import </span>FeiShuTalkChatBot
+<a name="l17"><span class="ln">17   </span></a><span class="s0"># from utils.others_tool.allure_data.error_case_excel import ErrorCaseExcel</span>
+<a name="l18"><span class="ln">18   </span></a><span class="s2">from </span>utils <span class="s2">import </span>config
+<a name="l19"><span class="ln">19   </span></a>
+<a name="l20"><span class="ln">20   </span></a>
+<a name="l21"><span class="ln">21   </span></a><span class="s2">def </span>run():
+<a name="l22"><span class="ln">22   </span></a>    <span class="s0"># 从配置文件中获取项目名称</span>
+<a name="l23"><span class="ln">23   </span></a>    <span class="s2">try</span>:
+<a name="l24"><span class="ln">24   </span></a>        INFO.logger.info(
+<a name="l25"><span class="ln">25   </span></a>            <span class="s3">&quot;&quot;&quot; 
+<a name="l26"><span class="ln">26   </span></a>                       ,-,                       
+<a name="l27"><span class="ln">27   </span></a>                     ,' /                        
+<a name="l28"><span class="ln">28   </span></a>                   ,'  (          _          _   
+<a name="l29"><span class="ln">29   </span></a>           __...--'     `-....__,'(      _,-'/   
+<a name="l30"><span class="ln">30   </span></a>  _,---''''                     ````-._,'  ,'    
+<a name="l31"><span class="ln">31   </span></a>,'  o            杭州 火脸               `  &lt;      
+<a name="l32"><span class="ln">32   </span></a>`.____  )))                          ...'  \    </span>
+<a name="l33"><span class="ln">33   </span></a>   <span class="s3">`--..._        .   .__....----''''   `-. \   </span>
+<a name="l34"><span class="ln">34   </span></a>          <span class="s3">```7--i-`.  \                    `-`   
+<a name="l35"><span class="ln">35   </span></a>             `.(    `-.`.                        
+<a name="l36"><span class="ln">36   </span></a>               `'      `'                        
+<a name="l37"><span class="ln">37   </span></a>                  开始执行{}项目... 
+<a name="l38"><span class="ln">38   </span></a>                &quot;&quot;&quot;</span>.format(config.project_name)
+<a name="l39"><span class="ln">39   </span></a>        )
+<a name="l40"><span class="ln">40   </span></a>
+<a name="l41"><span class="ln">41   </span></a>        <span class="s0"># 判断现有的测试用例，如果未生成测试代码，则自动生成</span>
+<a name="l42"><span class="ln">42   </span></a>        <span class="s0"># TestCaseAutomaticGeneration().get_case_automatic()</span>
+<a name="l43"><span class="ln">43   </span></a>
+<a name="l44"><span class="ln">44   </span></a>        pytest.main([<span class="s3">'-s'</span>, <span class="s3">'-W'</span>, <span class="s3">'ignore:Module already imported:pytest.PytestWarning'</span>,
+<a name="l45"><span class="ln">45   </span></a>                     <span class="s3">'--alluredir'</span>, <span class="s3">'.</span><span class="s2">\\</span><span class="s3">report</span><span class="s2">\\</span><span class="s3">tmp'</span>, <span class="s3">&quot;--clean-alluredir&quot;</span>]) <span class="s0">#如果报告存在清楚它</span>
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a>        <span class="s3">&quot;&quot;&quot; 
+<a name="l48"><span class="ln">48   </span></a>                   --reruns: 失败重跑次数 
+<a name="l49"><span class="ln">49   </span></a>                   --count: 重复执行次数 
+<a name="l50"><span class="ln">50   </span></a>                   -v: 显示错误位置以及错误的详细信息 
+<a name="l51"><span class="ln">51   </span></a>                   -s: 等价于 pytest --capture=no 可以捕获print函数的输出 
+<a name="l52"><span class="ln">52   </span></a>                   -q: 简化输出信息 
+<a name="l53"><span class="ln">53   </span></a>                   -m: 运行指定标签的测试用例 
+<a name="l54"><span class="ln">54   </span></a>                   -x: 一旦错误，则停止运行 
+<a name="l55"><span class="ln">55   </span></a>                   --maxfail: 设置最大失败次数，当超出这个阈值时，则不会在执行测试用例 
+<a name="l56"><span class="ln">56   </span></a>                    &quot;--reruns=3&quot;, &quot;--reruns-delay=2&quot; 
+<a name="l57"><span class="ln">57   </span></a>                   &quot;&quot;&quot;</span>
+<a name="l58"><span class="ln">58   </span></a>
+<a name="l59"><span class="ln">59   </span></a>        os.system(<span class="s3">r&quot;allure generate .\report\tmp -o .\report\html --clean &quot;</span>) <span class="s0">#-o报告内容放到指定文件夹下</span>
+<a name="l60"><span class="ln">60   </span></a>
+<a name="l61"><span class="ln">61   </span></a>
+<a name="l62"><span class="ln">62   </span></a>        allure_data = AllureFileClean().get_case_count()
+<a name="l63"><span class="ln">63   </span></a>        notification_mapping = {
+<a name="l64"><span class="ln">64   </span></a>            <span class="s0"># NotificationType.DING_TALK.value: DingTalkSendMsg(allure_data).send_ding_notification,</span>
+<a name="l65"><span class="ln">65   </span></a>            <span class="s0"># NotificationType.WECHAT.value: WeChatSend(allure_data).send_wechat_notification,</span>
+<a name="l66"><span class="ln">66   </span></a>            <span class="s0"># NotificationType.EMAIL.value: SendEmail(allure_data).send_main,</span>
+<a name="l67"><span class="ln">67   </span></a>            NotificationType.FEI_SHU.value: FeiShuTalkChatBot(allure_data).post
+<a name="l68"><span class="ln">68   </span></a>        }
+<a name="l69"><span class="ln">69   </span></a>
+<a name="l70"><span class="ln">70   </span></a>        <span class="s2">if </span>config.notification_type != NotificationType.DEFAULT.value:
+<a name="l71"><span class="ln">71   </span></a>            notification_mapping.get(config.notification_type)()
+<a name="l72"><span class="ln">72   </span></a>
+<a name="l73"><span class="ln">73   </span></a>        <span class="s0"># if config.excel_report:</span>
+<a name="l74"><span class="ln">74   </span></a>        <span class="s0">#     ErrorCaseExcel().write_case()</span>
+<a name="l75"><span class="ln">75   </span></a>
+<a name="l76"><span class="ln">76   </span></a>        <span class="s0"># 程序运行之后，自动启动报告，如果不想启动报告，可注释这段代码</span>
+<a name="l77"><span class="ln">77   </span></a>        <span class="s0">#  os.system(f&quot;allure serve .\\report\\tmp -h 127.0.0.1 -p 9999&quot;)</span>
+<a name="l78"><span class="ln">78   </span></a>
+<a name="l79"><span class="ln">79   </span></a>    <span class="s2">except </span>Exception:
+<a name="l80"><span class="ln">80   </span></a>        <span class="s0"># 如有异常，相关异常发送邮件</span>
+<a name="l81"><span class="ln">81   </span></a>        <span class="s0"># e = traceback.format_exc()</span>
+<a name="l82"><span class="ln">82   </span></a>        <span class="s0"># send_email = SendEmail(AllureFileClean.get_case_count())</span>
+<a name="l83"><span class="ln">83   </span></a>        <span class="s0"># send_email.error_mail(e)</span>
+<a name="l84"><span class="ln">84   </span></a>        <span class="s2">raise</span>
+<a name="l85"><span class="ln">85   </span></a>
+<a name="l86"><span class="ln">86   </span></a>
+<a name="l87"><span class="ln">87   </span></a><span class="s2">if </span>__name__ == <span class="s3">'__main__'</span>:
+<a name="l88"><span class="ln">88   </span></a>    run()
+<a name="l89"><span class="ln">89   </span></a>
+<a name="l90"><span class="ln">90   </span></a><span class="s2">if </span>__name__ == <span class="s3">'__main__'</span>:
+<a name="l91"><span class="ln">91   </span></a>    pytest.main()
+<a name="l92"><span class="ln">92   </span></a>
+<a name="l93"><span class="ln">93   </span></a>
+<a name="l94"><span class="ln">94   </span></a></pre>
+</body>
+</html>

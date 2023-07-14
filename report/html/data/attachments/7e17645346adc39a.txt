@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 95 ms
+Http状态码: 200
+=====================================================

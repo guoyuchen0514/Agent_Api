@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询不存在的权限组
+请求路径: https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage?currentPage=1&pageSize=10&platformType=2&roleName=agsduyfdgajh
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 101 ms
+Http状态码: 200
+=====================================================

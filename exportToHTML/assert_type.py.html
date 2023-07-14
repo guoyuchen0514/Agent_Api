@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>assert_type.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+assert_type.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-04-17 11:24</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : assert_type.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a><span class="s0">&quot;&quot;&quot; 
+<a name="l10"><span class="ln">10   </span></a>assert 断言类型 
+<a name="l11"><span class="ln">11   </span></a>&quot;&quot;&quot;</span>
+<a name="l12"><span class="ln">12   </span></a>
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a><span class="s2">from </span>typing <span class="s2">import </span>Any,Union,Text
+<a name="l15"><span class="ln">15   </span></a>
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a><span class="s2">def </span>equals(
+<a name="l18"><span class="ln">18   </span></a>        check_value: Any, expect_value: Any, message: Text =<span class="s3">&quot;&quot;</span>
+<a name="l19"><span class="ln">19   </span></a>):
+<a name="l20"><span class="ln">20   </span></a>    <span class="s0">&quot;&quot;&quot;判断是否相等&quot;&quot;&quot;</span>
+<a name="l21"><span class="ln">21   </span></a>
+<a name="l22"><span class="ln">22   </span></a>    <span class="s2">assert </span>check_value == expect_value , message
+<a name="l23"><span class="ln">23   </span></a>
+<a name="l24"><span class="ln">24   </span></a>
+<a name="l25"><span class="ln">25   </span></a><span class="s2">def </span>less_than(
+<a name="l26"><span class="ln">26   </span></a>        check_value: Union[int,float], expect_value: Union[int,float], message: Text =<span class="s3">&quot;&quot;</span>
+<a name="l27"><span class="ln">27   </span></a>):
+<a name="l28"><span class="ln">28   </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果小于预期结果&quot;&quot;&quot;</span>
+<a name="l29"><span class="ln">29   </span></a>    <span class="s2">assert </span>check_value &lt; expect_value,message
+<a name="l30"><span class="ln">30   </span></a>
+<a name="l31"><span class="ln">31   </span></a>
+<a name="l32"><span class="ln">32   </span></a><span class="s2">def </span>less_than_or_equals(
+<a name="l33"><span class="ln">33   </span></a>        check_value: Union[int,float], expect_value: Union[int,float], message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l34"><span class="ln">34   </span></a>):
+<a name="l35"><span class="ln">35   </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果小于等于预期结果&quot;&quot;&quot;</span>
+<a name="l36"><span class="ln">36   </span></a>    <span class="s2">assert </span>check_value &lt;= expect_value, message
+<a name="l37"><span class="ln">37   </span></a>
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a><span class="s2">def </span>greater_than(
+<a name="l40"><span class="ln">40   </span></a>        check_value: Union[int,float],expect_Value: Union[int,float], message:Text=<span class="s3">&quot;&quot;</span>
+<a name="l41"><span class="ln">41   </span></a>):
+<a name="l42"><span class="ln">42   </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果大于预期结果&quot;&quot;&quot;</span>
+<a name="l43"><span class="ln">43   </span></a>    <span class="s2">assert </span>check_value &gt; expect_Value, message
+<a name="l44"><span class="ln">44   </span></a>
+<a name="l45"><span class="ln">45   </span></a><span class="s2">def </span>greater_than_or_equals(
+<a name="l46"><span class="ln">46   </span></a>        check_value: Union[int,float],expect_Value: Union[int,float], message:Text=<span class="s3">&quot;&quot;</span>
+<a name="l47"><span class="ln">47   </span></a>):
+<a name="l48"><span class="ln">48   </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果大于等于预期结果&quot;&quot;&quot;</span>
+<a name="l49"><span class="ln">49   </span></a>    <span class="s2">assert </span>check_value &gt;= expect_Value,message
+<a name="l50"><span class="ln">50   </span></a>
+<a name="l51"><span class="ln">51   </span></a>
+<a name="l52"><span class="ln">52   </span></a><span class="s2">def </span>not_equals(
+<a name="l53"><span class="ln">53   </span></a>        check_value: Any, expect_value: Any, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l54"><span class="ln">54   </span></a>):
+<a name="l55"><span class="ln">55   </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果不等于预期结果&quot;&quot;&quot;</span>
+<a name="l56"><span class="ln">56   </span></a>    <span class="s2">assert </span>check_value != expect_value,message
+<a name="l57"><span class="ln">57   </span></a>
+<a name="l58"><span class="ln">58   </span></a>
+<a name="l59"><span class="ln">59   </span></a><span class="s2">def </span>string_equals(
+<a name="l60"><span class="ln">60   </span></a>        check_value: Text, expect_value: Any, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l61"><span class="ln">61   </span></a>):
+<a name="l62"><span class="ln">62   </span></a>    <span class="s0">#判断字符串是否相等</span>
+<a name="l63"><span class="ln">63   </span></a>    <span class="s2">assert </span>check_value == expect_value, message
+<a name="l64"><span class="ln">64   </span></a>
+<a name="l65"><span class="ln">65   </span></a>
+<a name="l66"><span class="ln">66   </span></a><span class="s2">def </span>length_equals(
+<a name="l67"><span class="ln">67   </span></a>        check_value: Text, expect_Value: int, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l68"><span class="ln">68   </span></a>):
+<a name="l69"><span class="ln">69   </span></a>    <span class="s0">&quot;&quot;&quot;判断长度是否相等&quot;&quot;&quot;</span>
+<a name="l70"><span class="ln">70   </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l71"><span class="ln">71   </span></a>        expect_Value, int
+<a name="l72"><span class="ln">72   </span></a>    ), <span class="s3">&quot;expect_value 需要为float/int 类型&quot;</span>
+<a name="l73"><span class="ln">73   </span></a>    <span class="s2">assert </span>len(check_value) == expect_Value, message
+<a name="l74"><span class="ln">74   </span></a>
+<a name="l75"><span class="ln">75   </span></a>
+<a name="l76"><span class="ln">76   </span></a><span class="s2">def </span>length_greater_than(
+<a name="l77"><span class="ln">77   </span></a>        check_value: Text, expect_Value: int , message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l78"><span class="ln">78   </span></a>):
+<a name="l79"><span class="ln">79   </span></a>    <span class="s0">&quot;&quot;&quot;判断长度大于&quot;&quot;&quot;</span>
+<a name="l80"><span class="ln">80   </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l81"><span class="ln">81   </span></a>        expect_Value,(float,int)
+<a name="l82"><span class="ln">82   </span></a>    ),<span class="s3">'expect_value需要为 float/int类型'</span>
+<a name="l83"><span class="ln">83   </span></a>    <span class="s2">assert </span>len(check_value) &gt; expect_Value, message
+<a name="l84"><span class="ln">84   </span></a>
+<a name="l85"><span class="ln">85   </span></a>
+<a name="l86"><span class="ln">86   </span></a><span class="s2">def </span>length_greater_than_or_equals(
+<a name="l87"><span class="ln">87   </span></a>        check_value: Text, expect_value: Union[int, float], message: Text = <span class="s3">&quot;&quot;</span>
+<a name="l88"><span class="ln">88   </span></a>):
+<a name="l89"><span class="ln">89   </span></a>    <span class="s0">&quot;&quot;&quot;判断长度大于等于&quot;&quot;&quot;</span>
+<a name="l90"><span class="ln">90   </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l91"><span class="ln">91   </span></a>        expect_value, (int, float)
+<a name="l92"><span class="ln">92   </span></a>    ), <span class="s3">&quot;expect_value 需要为 float/int 类型&quot;</span>
+<a name="l93"><span class="ln">93   </span></a>    <span class="s2">assert </span>len(check_value) &gt;= expect_value, message
+<a name="l94"><span class="ln">94   </span></a>
+<a name="l95"><span class="ln">95   </span></a>
+<a name="l96"><span class="ln">96   </span></a><span class="s2">def </span>length_less_than_or_equals(
+<a name="l97"><span class="ln">97   </span></a>    check_value: Text, expect_value: Union[int,float], message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l98"><span class="ln">98   </span></a>):
+<a name="l99"><span class="ln">99   </span></a>    <span class="s0">&quot;&quot;&quot;判断长度小于等于&quot;&quot;&quot;</span>
+<a name="l100"><span class="ln">100  </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l101"><span class="ln">101  </span></a>        expect_value,(int,float)
+<a name="l102"><span class="ln">102  </span></a>    ), <span class="s3">'expect_value需要为float/int 类型'</span>
+<a name="l103"><span class="ln">103  </span></a>    <span class="s2">assert </span>len(check_value) &lt;= expect_value, message
+<a name="l104"><span class="ln">104  </span></a>
+<a name="l105"><span class="ln">105  </span></a>
+<a name="l106"><span class="ln">106  </span></a>
+<a name="l107"><span class="ln">107  </span></a><span class="s2">def </span>contain(
+<a name="l108"><span class="ln">108  </span></a>        check_value: Any, expect_value: Any , message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l109"><span class="ln">109  </span></a>):
+<a name="l110"><span class="ln">110  </span></a>    <span class="s0">&quot;&quot;&quot;判断期望结果内容包含在实际结果中&quot;&quot;&quot;</span>
+<a name="l111"><span class="ln">111  </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l112"><span class="ln">112  </span></a>        check_value, (list,tuple,dict,str,bytes)
+<a name="l113"><span class="ln">113  </span></a>    ),<span class="s3">'expect_Value需要为 list/tuple/dict/str/bytes 类型'</span>
+<a name="l114"><span class="ln">114  </span></a>    <span class="s2">assert </span>expect_value <span class="s2">in </span>check_value, message
+<a name="l115"><span class="ln">115  </span></a>
+<a name="l116"><span class="ln">116  </span></a>
+<a name="l117"><span class="ln">117  </span></a><span class="s2">def </span>contained_by(
+<a name="l118"><span class="ln">118  </span></a>        check_value: Any, expect_Value: Any, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l119"><span class="ln">119  </span></a>):
+<a name="l120"><span class="ln">120  </span></a>    <span class="s0">&quot;&quot;&quot;判断实际结果包含在期望结果中&quot;&quot;&quot;</span>
+<a name="l121"><span class="ln">121  </span></a>    <span class="s2">assert </span>isinstance(
+<a name="l122"><span class="ln">122  </span></a>        expect_Value,(list,tuple,dict,str,bytes)
+<a name="l123"><span class="ln">123  </span></a>    ), <span class="s3">'expect_value需要为 list/tuple/dict/str/bytes 类型'</span>
+<a name="l124"><span class="ln">124  </span></a>    <span class="s2">assert </span>check_value <span class="s2">in </span>expect_Value, message
+<a name="l125"><span class="ln">125  </span></a>
+<a name="l126"><span class="ln">126  </span></a>
+<a name="l127"><span class="ln">127  </span></a>
+<a name="l128"><span class="ln">128  </span></a><span class="s2">def </span>startswith(
+<a name="l129"><span class="ln">129  </span></a>        check_value: Any, expect_value:Any, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l130"><span class="ln">130  </span></a>):
+<a name="l131"><span class="ln">131  </span></a>    <span class="s0">&quot;&quot;&quot;判断响应内容的开头是否和预期结果内容的开头相等&quot;&quot;&quot;</span>
+<a name="l132"><span class="ln">132  </span></a>    <span class="s2">assert </span>str(check_value).startswith(str(expect_value)),message
+<a name="l133"><span class="ln">133  </span></a>
+<a name="l134"><span class="ln">134  </span></a>
+<a name="l135"><span class="ln">135  </span></a><span class="s2">def </span>endswith(
+<a name="l136"><span class="ln">136  </span></a>        check_value: Any, expect_value: Any, message: Text=<span class="s3">&quot;&quot;</span>
+<a name="l137"><span class="ln">137  </span></a>):
+<a name="l138"><span class="ln">138  </span></a>    <span class="s0">&quot;&quot;&quot;判断响应内容的结尾是否和预期结果内容相等&quot;&quot;&quot;</span>
+<a name="l139"><span class="ln">139  </span></a>    <span class="s2">assert </span>str(check_value).endswith(str(expect_value)),message
+<a name="l140"><span class="ln">140  </span></a>
+<a name="l141"><span class="ln">141  </span></a>
+<a name="l142"><span class="ln">142  </span></a>
+<a name="l143"><span class="ln">143  </span></a>
+<a name="l144"><span class="ln">144  </span></a>
+<a name="l145"><span class="ln">145  </span></a>
+<a name="l146"><span class="ln">146  </span></a>
+<a name="l147"><span class="ln">147  </span></a>
+<a name="l148"><span class="ln">148  </span></a>
+<a name="l149"><span class="ln">149  </span></a>
+<a name="l150"><span class="ln">150  </span></a></pre>
+</body>
+</html>

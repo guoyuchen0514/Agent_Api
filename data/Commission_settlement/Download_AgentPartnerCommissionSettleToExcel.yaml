@@ -1,0 +1,49 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 佣金结算模块
+  allureStory: 拓展组佣金
+
+Download_AgentPartnerCommissionSettleToExcel_01:
+    host: ${{host()}}
+    url: /agent/v1/commissionSettle/downloadAgentPartnerCommissionSettleToExcel
+    method: POST
+    detail: 拓展组佣金导出
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      queryBeginTime: '${{get_six_month_FirstDay()}}'
+      queryEndTime: '${{MonthFirstDay()}}'
+      commissionType: '1'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 1
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+
+

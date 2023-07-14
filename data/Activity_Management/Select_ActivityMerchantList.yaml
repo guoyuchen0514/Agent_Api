@@ -1,0 +1,46 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 活动管理
+  allureStory: 活动列表
+
+Select_ActivityMerchantList_01:
+    host: ${{host()}}
+    url: /agent/v1/activity/selectActivityMerchantList
+    method: POST
+    detail: 查询参与活动商户列表
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      activityId: '32'
+      currentPage: '1'
+      pageSize: '10'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:

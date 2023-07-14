@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>allure.bat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #808080; font-weight: bold; font-style: italic;}
+.s2 { color: #000000;}
+.s3 { color: #808080; font-style: italic;}
+.s4 { color: #008000; font-weight: bold;}
+.s5 { color: #000000;}
+.s6 { color: #660e7a; font-weight: bold; font-style: italic;}
+.s7 { color: #000000; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+allure.bat</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Copyright 2015 the original author or authors.</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">you may not use this file except in compliance with the License.</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">You may obtain a copy of the License at</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l8"><span class="ln">8    </span></a><span class="s0">@</span><span class="s1">rem      </span><span class="s3">https://www.apache.org/licenses/LICENSE-2.0</span>
+<a name="l9"><span class="ln">9    </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l10"><span class="ln">10   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Unless required by applicable law or agreed to in writing, software</span>
+<a name="l11"><span class="ln">11   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<a name="l12"><span class="ln">12   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<a name="l13"><span class="ln">13   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">See the License for the specific language governing permissions and</span>
+<a name="l14"><span class="ln">14   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">limitations under the License.</span>
+<a name="l15"><span class="ln">15   </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a><span class="s0">@</span>if <span class="s4">&quot;%DEBUG%&quot; </span><span class="s0">== </span><span class="s4">&quot;&quot; </span><span class="s0">@echo off</span>
+<a name="l18"><span class="ln">18   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">##########################################################################</span>
+<a name="l19"><span class="ln">19   </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l20"><span class="ln">20   </span></a><span class="s0">@</span><span class="s1">rem  </span><span class="s3">allure startup script for Windows</span>
+<a name="l21"><span class="ln">21   </span></a><span class="s0">@</span><span class="s1">rem</span>
+<a name="l22"><span class="ln">22   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">##########################################################################</span>
+<a name="l23"><span class="ln">23   </span></a>
+<a name="l24"><span class="ln">24   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Set local scope for the variables with windows NT shell</span>
+<a name="l25"><span class="ln">25   </span></a><span class="s0">if </span><span class="s4">&quot;%OS%&quot;</span><span class="s0">==</span><span class="s4">&quot;Windows_NT&quot; </span><span class="s0">setlocal</span>
+<a name="l26"><span class="ln">26   </span></a>
+<a name="l27"><span class="ln">27   </span></a><span class="s0">set </span>DIRNAME<span class="s0">=</span>%~dp0
+<a name="l28"><span class="ln">28   </span></a><span class="s0">if </span><span class="s4">&quot;%DIRNAME%&quot; </span><span class="s0">== </span><span class="s4">&quot;&quot; </span><span class="s0">set </span>DIRNAME<span class="s0">=</span>. 
+<a name="l29"><span class="ln">29   </span></a><span class="s0">set </span>APP_BASE_NAME<span class="s0">=</span>%~n0
+<a name="l30"><span class="ln">30   </span></a><span class="s0">set </span>APP_HOME<span class="s0">=</span>%DIRNAME%.. 
+<a name="l31"><span class="ln">31   </span></a>
+<a name="l32"><span class="ln">32   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Resolve any &quot;.&quot; and &quot;..&quot; in APP_HOME to make it shorter.</span>
+<a name="l33"><span class="ln">33   </span></a><span class="s0">for </span><span class="s6">%%</span>i in (<span class="s4">&quot;%APP_HOME%&quot;</span>) do <span class="s0">set </span>APP_HOME<span class="s0">=</span><span class="s6">%%</span>~fi 
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Add default JVM options here. You can also use JAVA_OPTS and ALLURE_OPTS to pass JVM options to this script.</span>
+<a name="l36"><span class="ln">36   </span></a><span class="s0">set </span>DEFAULT_JVM_OPTS<span class="s0">=</span>
+<a name="l37"><span class="ln">37   </span></a>
+<a name="l38"><span class="ln">38   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Find java.exe</span>
+<a name="l39"><span class="ln">39   </span></a><span class="s0">if defined </span>JAVA_HOME <span class="s0">goto </span>findJavaFromJavaHome 
+<a name="l40"><span class="ln">40   </span></a>
+<a name="l41"><span class="ln">41   </span></a><span class="s0">set </span>JAVA_EXE<span class="s0">=</span>java.exe 
+<a name="l42"><span class="ln">42   </span></a>%JAVA_EXE% -version <span class="s0">&gt;</span><span class="s6">NUL 2</span><span class="s0">&gt;&amp;</span>1 
+<a name="l43"><span class="ln">43   </span></a><span class="s0">if </span><span class="s4">&quot;%ERRORLEVEL%&quot; </span><span class="s0">== </span><span class="s4">&quot;0&quot; </span><span class="s0">goto </span>execute 
+<a name="l44"><span class="ln">44   </span></a>
+<a name="l45"><span class="ln">45   </span></a><span class="s0">echo</span>. 
+<a name="l46"><span class="ln">46   </span></a><span class="s0">echo </span>ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 
+<a name="l47"><span class="ln">47   </span></a><span class="s0">echo</span>. 
+<a name="l48"><span class="ln">48   </span></a><span class="s0">echo </span>Please set the JAVA_HOME variable in your environment to match the 
+<a name="l49"><span class="ln">49   </span></a><span class="s0">echo </span>location of your Java installation. 
+<a name="l50"><span class="ln">50   </span></a>
+<a name="l51"><span class="ln">51   </span></a><span class="s0">goto </span>fail 
+<a name="l52"><span class="ln">52   </span></a>
+<a name="l53"><span class="ln">53   </span></a>:<span class="s0">findJavaFromJavaHome</span>
+<a name="l54"><span class="ln">54   </span></a><span class="s0">set </span>JAVA_HOME<span class="s0">=</span>%JAVA_HOME:<span class="s7">&quot;</span>=%
+<a name="l55"><span class="ln">55   </span></a><span class="s0">set </span>JAVA_EXE<span class="s0">=</span>%JAVA_HOME%/bin/java.exe 
+<a name="l56"><span class="ln">56   </span></a>
+<a name="l57"><span class="ln">57   </span></a><span class="s0">if exist </span><span class="s4">&quot;%JAVA_EXE%&quot; </span><span class="s0">goto </span>execute 
+<a name="l58"><span class="ln">58   </span></a>
+<a name="l59"><span class="ln">59   </span></a><span class="s0">echo</span>. 
+<a name="l60"><span class="ln">60   </span></a><span class="s0">echo </span>ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
+<a name="l61"><span class="ln">61   </span></a><span class="s0">echo</span>. 
+<a name="l62"><span class="ln">62   </span></a><span class="s0">echo </span>Please set the JAVA_HOME variable in your environment to match the 
+<a name="l63"><span class="ln">63   </span></a><span class="s0">echo </span>location of your Java installation. 
+<a name="l64"><span class="ln">64   </span></a>
+<a name="l65"><span class="ln">65   </span></a><span class="s0">goto </span>fail 
+<a name="l66"><span class="ln">66   </span></a>
+<a name="l67"><span class="ln">67   </span></a>:<span class="s0">execute</span>
+<a name="l68"><span class="ln">68   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Setup the command line</span>
+<a name="l69"><span class="ln">69   </span></a>
+<a name="l70"><span class="ln">70   </span></a><span class="s0">set </span>CLASSPATH<span class="s0">=</span>%APP_HOME%\lib\allure-commandline-2.14.0.jar;%APP_HOME%\lib\jcommander-1.81.jar;%APP_HOME%\lib\allure-generator-2.14.0.jar;%APP_HOME%\lib\jackson-dataformat-xml-2.12.3.jar;%APP_HOME%\lib\jackson-module-jaxb-annotations-2.12.3.jar;%APP_HOME%\lib\jackson-annotations-2.12.3.jar;%APP_HOME%\lib\jackson-core-2.12.3.jar;%APP_HOME%\lib\jackson-dataformat-yaml-2.12.3.jar;%APP_HOME%\lib\allure-plugin-api-2.14.0.jar;%APP_HOME%\lib\allure-model-2.13.0.jar;%APP_HOME%\lib\jackson-databind-2.12.3.jar;%APP_HOME%\lib\commons-io-2.8.0.jar;%APP_HOME%\lib\jetty-server-9.4.20.v20190813.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.28.jar;%APP_HOME%\lib\snakeyaml-1.27.jar;%APP_HOME%\lib\javax.servlet-api-3.1.0.jar;%APP_HOME%\lib\jetty-http-9.4.20.v20190813.jar;%APP_HOME%\lib\jetty-io-9.4.20.v20190813.jar;%APP_HOME%\lib\allure1-model-1.0.jar;%APP_HOME%\lib\slf4j-api-1.7.28.jar;%APP_HOME%\lib\log4j-1.2.17.jar;%APP_HOME%\lib\jaxb-api-2.3.1.jar;%APP_HOME%\lib\httpclient-4.5.13.jar;%APP_HOME%\lib\tika-core-1.26.jar;%APP_HOME%\lib\freemarker-2.3.31.jar;%APP_HOME%\lib\jetty-util-9.4.20.v20190813.jar;%APP_HOME%\lib\opencsv-4.6.jar;%APP_HOME%\lib\flexmark-0.62.2.jar;%APP_HOME%\lib\woodstox-core-6.2.4.jar;%APP_HOME%\lib\stax2-api-4.2.1.jar;%APP_HOME%\lib\javax.activation-api-1.2.0.jar;%APP_HOME%\lib\properties-2.0.RC5.jar;%APP_HOME%\lib\jaxb-utils-1.0.jar;%APP_HOME%\lib\httpcore-4.4.13.jar;%APP_HOME%\lib\commons-beanutils-1.9.3.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\commons-codec-1.11.jar;%APP_HOME%\lib\commons-text-1.3.jar;%APP_HOME%\lib\commons-lang3-3.12.0.jar;%APP_HOME%\lib\commons-collections4-4.2.jar;%APP_HOME%\lib\flexmark-util-format-0.62.2.jar;%APP_HOME%\lib\flexmark-util-ast-0.62.2.jar;%APP_HOME%\lib\flexmark-util-builder-0.62.2.jar;%APP_HOME%\lib\flexmark-util-dependency-0.62.2.jar;%APP_HOME%\lib\flexmark-util-html-0.62.2.jar;%APP_HOME%\lib\flexmark-util-sequence-0.62.2.jar;%APP_HOME%\lib\flexmark-util-collection-0.62.2.jar;%APP_HOME%\lib\flexmark-util-data-0.62.2.jar;%APP_HOME%\lib\flexmark-util-misc-0.62.2.jar;%APP_HOME%\lib\flexmark-util-visitor-0.62.2.jar;%APP_HOME%\lib\jakarta.xml.bind-api-2.3.2.jar;%APP_HOME%\lib\jakarta.activation-api-1.2.1.jar;%APP_HOME%\lib\commons-collections-3.2.2.jar;%APP_HOME%\lib\annotations-15.0.jar;%APP_HOME%\lib\config 
+<a name="l71"><span class="ln">71   </span></a>
+<a name="l72"><span class="ln">72   </span></a>
+<a name="l73"><span class="ln">73   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">Execute allure</span>
+<a name="l74"><span class="ln">74   </span></a><span class="s4">&quot;%JAVA_EXE%&quot; </span>%DEFAULT_JVM_OPTS% %JAVA_OPTS% %ALLURE_OPTS%  -classpath <span class="s4">&quot;%CLASSPATH%&quot; </span>io.qameta.allure.CommandLine %*
+<a name="l75"><span class="ln">75   </span></a>
+<a name="l76"><span class="ln">76   </span></a>:<span class="s0">end</span>
+<a name="l77"><span class="ln">77   </span></a><span class="s0">@</span><span class="s1">rem </span><span class="s3">End local scope for the variables with windows NT shell</span>
+<a name="l78"><span class="ln">78   </span></a><span class="s0">if </span><span class="s4">&quot;%ERRORLEVEL%&quot;</span><span class="s0">==</span><span class="s4">&quot;0&quot; </span><span class="s0">goto </span>mainEnd 
+<a name="l79"><span class="ln">79   </span></a>
+<a name="l80"><span class="ln">80   </span></a>:<span class="s0">fail</span>
+<a name="l81"><span class="ln">81   </span></a><span class="s1">rem </span><span class="s3">Set variable ALLURE_EXIT_CONSOLE if you need the _script_ return code instead of</span>
+<a name="l82"><span class="ln">82   </span></a><span class="s1">rem </span><span class="s3">the _cmd.exe /c_ return code!</span>
+<a name="l83"><span class="ln">83   </span></a><span class="s0">if  not </span><span class="s4">&quot;&quot; </span><span class="s0">== </span><span class="s4">&quot;%ALLURE_EXIT_CONSOLE%&quot; </span><span class="s0">exit </span><span class="s6">1</span>
+<a name="l84"><span class="ln">84   </span></a><span class="s0">exit </span>/b <span class="s6">1</span>
+<a name="l85"><span class="ln">85   </span></a>
+<a name="l86"><span class="ln">86   </span></a>:<span class="s0">mainEnd</span>
+<a name="l87"><span class="ln">87   </span></a><span class="s0">if </span><span class="s4">&quot;%OS%&quot;</span><span class="s0">==</span><span class="s4">&quot;Windows_NT&quot; </span><span class="s0">endlocal</span>
+<a name="l88"><span class="ln">88   </span></a>
+<a name="l89"><span class="ln">89   </span></a>:<span class="s0">omega</span>
+<a name="l90"><span class="ln">90   </span></a></pre>
+</body>
+</html>

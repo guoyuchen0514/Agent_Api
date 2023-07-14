@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询佣金总额
+请求路径: https://api.pre.lianok.com/agent/v1/commissionSettle/commissionStaticsInfo?ids
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"commissionAmount":"0","receiptAmount":"0","invoiceBalanceAmount":"1001.00","taxRate":"0.01","invoiceType":"valueAddedTax","bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankCardNo":"123123124341234123","bankAccountHolder":"小熊","auditStatus":0}}
+接口响应时长: 87 ms
+Http状态码: 200
+=====================================================

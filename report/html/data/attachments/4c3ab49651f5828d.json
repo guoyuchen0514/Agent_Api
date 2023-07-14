@@ -1,0 +1,1 @@
+"{'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}, 'Title': {'jsonpath': '$.data[6].meta.title', 'type': '==', 'value': '活动管理', 'AssertType': None}}"

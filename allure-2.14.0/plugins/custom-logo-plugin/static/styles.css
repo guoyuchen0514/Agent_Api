@@ -1,0 +1,14 @@
+.side-nav__brand {
+  background: url('allure_logo.jpg') no-repeat left center !important;
+  margin-left: 10px;
+  height: 45px;
+  background-size: contain !important;
+}
+
+.side-nav__brand span {
+  display: none;
+}
+.side-nav__brand:after {
+  content: '杭州火脸科技有限公司';
+  margin-left: 10px;
+}

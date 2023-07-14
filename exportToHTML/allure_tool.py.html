@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>allure_tool.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #0000ff;}
+.s4 { color: #008080; font-weight: bold;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+allure_tool.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-03-07 15:40</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : allure_tool.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>json
+<a name="l9"><span class="ln">9    </span></a><span class="s2">import </span>allure
+<a name="l10"><span class="ln">10   </span></a><span class="s2">from </span>utils.others_tool.models <span class="s2">import </span>AllureAttachmentType
+<a name="l11"><span class="ln">11   </span></a>
+<a name="l12"><span class="ln">12   </span></a><span class="s2">def </span>allure_step(step: str, var: str) -&gt; <span class="s2">None</span>:
+<a name="l13"><span class="ln">13   </span></a>    <span class="s0">#</span>
+<a name="l14"><span class="ln">14   </span></a>    <span class="s0">#  :param step: 步骤及附件名称</span>
+<a name="l15"><span class="ln">15   </span></a>    <span class="s0"># :param var: 附件内容</span>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s0">#</span>
+<a name="l17"><span class="ln">17   </span></a>     <span class="s2">with </span>allure.step(step):
+<a name="l18"><span class="ln">18   </span></a>        allure.attach(
+<a name="l19"><span class="ln">19   </span></a>            json.dumps(
+<a name="l20"><span class="ln">20   </span></a>                str(var),
+<a name="l21"><span class="ln">21   </span></a>                ensure_ascii=<span class="s2">False</span>,
+<a name="l22"><span class="ln">22   </span></a>                indent=<span class="s3">4</span>),
+<a name="l23"><span class="ln">23   </span></a>            step,
+<a name="l24"><span class="ln">24   </span></a>            allure.attachment_type.JSON)
+<a name="l25"><span class="ln">25   </span></a>
+<a name="l26"><span class="ln">26   </span></a>
+<a name="l27"><span class="ln">27   </span></a><span class="s2">def </span>allure_attach(source: str, name: str, extension: str):
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>    <span class="s0"># allure报告上传附件、图片、excel等</span>
+<a name="l30"><span class="ln">30   </span></a>    <span class="s0"># :param source: 文件路径，相当于传一个文件</span>
+<a name="l31"><span class="ln">31   </span></a>    <span class="s0"># :param name: 附件名称</span>
+<a name="l32"><span class="ln">32   </span></a>    <span class="s0"># :param extension: 附件的拓展名称</span>
+<a name="l33"><span class="ln">33   </span></a>    <span class="s0"># :return:</span>
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>
+<a name="l36"><span class="ln">36   </span></a>    <span class="s0"># 获取上传附件的尾缀，判断对应的 attachment_type 枚举值</span>
+<a name="l37"><span class="ln">37   </span></a>    _name = name.split(<span class="s4">'.'</span>)[-<span class="s3">1</span>].upper()
+<a name="l38"><span class="ln">38   </span></a>    _attachment_type = getattr(AllureAttachmentType, _name, <span class="s2">None</span>)
+<a name="l39"><span class="ln">39   </span></a>
+<a name="l40"><span class="ln">40   </span></a>    allure.attach.file(
+<a name="l41"><span class="ln">41   </span></a>        source=source,
+<a name="l42"><span class="ln">42   </span></a>        name=name,
+<a name="l43"><span class="ln">43   </span></a>        attachment_type=_attachment_type <span class="s2">if </span>_attachment_type <span class="s2">is None else </span>_attachment_type.value,
+<a name="l44"><span class="ln">44   </span></a>        extension=extension
+<a name="l45"><span class="ln">45   </span></a>    )
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a>
+<a name="l48"><span class="ln">48   </span></a><span class="s2">def </span>allure_step_no(step: str):
+<a name="l49"><span class="ln">49   </span></a>    <span class="s0">#</span>
+<a name="l50"><span class="ln">50   </span></a>    <span class="s0"># 无附件的操作步骤</span>
+<a name="l51"><span class="ln">51   </span></a>    <span class="s0"># :param step: 步骤名称</span>
+<a name="l52"><span class="ln">52   </span></a>    <span class="s0"># :return:</span>
+<a name="l53"><span class="ln">53   </span></a>    <span class="s0">#</span>
+<a name="l54"><span class="ln">54   </span></a>     <span class="s2">with </span>allure.step(step):
+<a name="l55"><span class="ln">55   </span></a>        <span class="s2">pass</span>
+<a name="l56"><span class="ln">56   </span></a></pre>
+</body>
+</html>

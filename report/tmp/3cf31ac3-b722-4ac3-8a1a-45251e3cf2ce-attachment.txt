@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 获取费率模板
+请求路径: https://api.pre.lianok.com/agent/v1/rate/selectRateTemplateList?agentNo&currentPage=1&pageSize=1000&merchantNameOrPhone
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":45,"templateName":"测试服务商模板-1","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-06-05 15:23:07","updateTime":"2023-06-05 15:23:07"},{"id":47,"templateName":"富友费率模板","createrName":"小熊测试服务商","isDeleted":0,"createTime":"2023-07-06 14:14:41","updateTime":"2023-07-06 14:14:41"}]}
+接口响应时长: 88 ms
+Http状态码: 200
+=====================================================

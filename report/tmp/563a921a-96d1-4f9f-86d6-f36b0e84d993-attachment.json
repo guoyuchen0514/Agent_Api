@@ -1,0 +1,1 @@
+"{\"status\":0,\"code\":0,\"message\":null,\"param\":null,\"data\":[{\"payBiz\":\"api\",\"payBizName\":\"接口支付\",\"color\":\"#C3F37B\",\"tradeAmount\":\"40.00\"},{\"payBiz\":\"codeBoard\",\"payBizName\":\"码牌支付\",\"color\":\"#8495FF\",\"tradeAmount\":\"0.01\"}]}"

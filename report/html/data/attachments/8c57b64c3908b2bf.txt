@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询结算明细
+请求路径: https://api.pre.lianok.com/agent/v1/agentSettle/getApplyInfo
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '17'}
+请求内容: {'ids': ['5040']}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","actualAmount":"0.84","receiptAmount":"0.80","invoiceBalanceAmount":"1001.00","taxRate":"0.01","invoiceType":"valueAddedTax","settleMonthList":[{"id":5040,"agentNo":"285171","settleAmount":"0.84","tradeMonth":"2023-04","settleType":"2910","settleTypeDesc":"间连扫码奖励","receiptAmount":"0.80","taxRate":"0.01","invoiceType":null}]}}
+接口响应时长: 119 ms
+Http状态码: 200
+=====================================================

@@ -1,0 +1,4 @@
+ERROR2023-05-18 09:59:58,215D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-18.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-05-18 10:28:56,210D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-18.log:mysql_control.py:142 数据库连接失败，失败原因 'bool' object is not subscriptable
+ERROR2023-05-18 10:29:47,649D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-18.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-05-18 10:37:19,277D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-18.log:mysql_control.py:142 数据库连接失败，失败原因 'bool' object is not subscriptable

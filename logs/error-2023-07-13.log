@@ -1,0 +1,7 @@
+ERROR2023-07-13 16:03:47,466D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:25:36,530D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:27:01,069D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:37:49,444D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:38:34,927D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:44:47,620D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range
+ERROR2023-07-13 16:45:02,787D:\Agent_Api\logs\error-2023-07-13.log:mysql_control.py:142 数据库连接失败，失败原因 tuple index out of range

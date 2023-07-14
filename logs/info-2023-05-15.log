@@ -1,0 +1,1470 @@
+INFO2023-05-15 09:30:56,595D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '3cc9032cff154eab9b3ab59eae5ab327', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 09:38:32,757D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '1386d8ba96864666a4592aaab114b8de', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 09:56:01,447D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '311545471ad8436c8a5e0c2c2fc7801f', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 09:56:22,107D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9c7cc8073bff4dd6b8c6f9fe136ce11a', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 11:59:21,770D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6d7abbe2368a404ca6ef7df54966391c'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 12:00:30,157D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'bfbd15f7ae1e44e7b2a4257c65451fcf'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 13:40:34,185D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '4c153c12244f47f685a0676b5bf786d3'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 13:44:22,731D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'c3ccc38d6f4f4e8e92dc7ece9171f2cf'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 13:50:00,625D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b5704b54ed70423b863d8dceec9161c2'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 13:58:54,975D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'bf08a2806fee49a9a7babc81b677d1f6'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 14:07:26,095D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '48669dc9b88542a3bc651ae0d975f8cf'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,006D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"ab84f52fbf7f4f82b1606945f7469d5f","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,110D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,305D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,393D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,492D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,613D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:08,709D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:18:23,501D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a6adead2d363451084a80e5dd93911e0'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:22:54,599D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07337d7b6148426da777c96bad6918a2'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:56,720D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"8ef1eddce978469bbc385c7af1dc7ab3","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:56,904D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:57,113D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:57,191D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:57,298D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:57,397D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:34:57,479D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:27,739D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"91c6efa786bf4dca99de697c5c212919","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:27,871D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:27,975D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:28,092D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入2次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:28,228D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:28,319D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:28,405D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:36,563D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"d376571df9e74bb8bbd9cec81b7c626d","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:36,705D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:36,814D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:36,921D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入1次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:37,034D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:37,142D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:36:37,230D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:38:47,456D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"84bf30f7367944ae97b34343cbec54d9","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:48,765D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"6bf9c38c6c2c4952b926ca9ec313b2da","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:48,994D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:49,073D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:49,170D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"账户已锁定,请在1小时后重试","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:49,289D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:49,370D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:40:49,458D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,417D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"c0fc6ec8aa13405da713736c69851a6b","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,567D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,664D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,747D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"账户已锁定,请在1小时后重试","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,863D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:05,951D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:41:06,032D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,181D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"cf6adc1abd2649a3ad6f201ce71d9887","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,328D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,429D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,518D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入错误过多,请在1小时后重试登录","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,668D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,807D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:44:05,894D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:58,681D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"4e780dbcbfa94f559ec7b3c36c21ece3","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:58,828D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:58,938D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:59,021D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入错误过多,请在1小时后重试登录","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:59,130D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:59,230D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:46:59,332D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:47:35,422D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"75bf92741a4540caade7a1b60a415783","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:24,800D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"055b711bef934114b99fc38c7c1cc701","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:46,729D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"6ca77648545446eb97f2a60f6f274bfe","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:46,822D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:47,016D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:47,097D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入错误过多,请在1小时后重试登录","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:47,209D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:47,300D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:48:47,421D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 15:49:27,280D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"def5de3ab98d4582838f3048b3e6f9e3","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,337D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"0d600083dc9f4e55be7003f7b86af120","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,460D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,611D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,711D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入错误过多,请在1小时后重试登录","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,805D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,890D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:06:38,987D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,166D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"0dff1a0b587445c48700a239dfb96e8e","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,248D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,338D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,416D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,572D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,662D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:10:11,743D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:12:41,814D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '94105ab12bc04714b3ec492dfd5305e8', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:14:01,054D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '80236942c68c427698fadffad3a184fc', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:14:14,800D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e6615a8cf29a4b7b8dd0a844ac3cbe97', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:15:13,158D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'dd5ac3ce6e0742cfaafe6ac61923eb3c', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:17:07,934D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '4638f3ecba384302989133131a2227c2', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:18:19,773D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '51d3fde261de42cebf2032712c4f6358', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:18:51,196D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchant/v1/statistic/getShopRank
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b14132aa3e234c9a9b6f98dde99c9870', 'Content-Length': '104'}
+请求内容: {'beginTime': '2023-05-15 00:00:00', 'currentPage': 1, 'endTime': '2023-05-15 23:59:59', 'pageSize': 10}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"shopNo":"100127","shopName":"商户_缪永昇","shopShortName":"皆人自动化专用商户(勿动","totalAmount":"11.00","totalCount":2}],"totalCount":1}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:19:16,857D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'fe642b0fd17048cb8be8889ec2a455aa'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:19:36,923D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ec354bd717b04363b6c536e6cb50b9aa'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:39:32,279D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '872f9979f52841b5add6f9e0cd3dc91f'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:42:06,548D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'bbb2399b56bf4bf8829a2ed2411bf532'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:49:47,937D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'df73191481dd4cbd95d59098aff2fd03'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:53:44,963D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9a165847cafc42fd847421e3cfd2aabb'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:56:32,219D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'ed9d17938a714d89b902fbf50900c095'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 16:58:25,371D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'cc24d694935e4788aa14f2223d4eb9b3'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:04:34,481D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9baaa2630a5643f1acdc5d1b86c27ab4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:06:50,930D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'd449cdbeffa94941916c9d22b46d6c9b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:08:30,440D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '7a0c1d22061f47d3b7589919dd78132a'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:09:47,910D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '86eb557d23fe40d0bc24673e61d4a19b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:11:03,333D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '1948dfa4b06f4c648f6444d555223f13'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:12:08,821D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'efd5daf27a8e485d8e42202e157deae8'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:14:53,069D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '166c937213e74198a120db3bc6208d54'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:22:19,676D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '4978929349114991901a790a0d85f1e1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:24:14,681D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '1d1358b0ac614ae5872e3413854d3f35'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:25:11,847D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f88e1319abad4346b902979e5ef987b6'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:25:37,985D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '65144786d6304affbd9ae651921a3dbf'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:26:09,416D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '50bf2966e9594719b1deb7341a2611e6'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:40:11,734D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0d740c581ad845ba9792102044cce0fe'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:40:36,035D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '572c4683a85e4f26a795164d8d5ff42b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:40:55,347D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '7f3a9701a50344dc81f270fc98f362e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:10,064D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'd0b9e6fd76994350975fbbb4d19518a0'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:18,626D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"41f9b861c5d74c76bc3167db3cf1f0ab","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:18,995D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:19,623D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:19,726D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:19,814D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:19,994D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:48:20,075D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:22,774D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"b4b0e6a6aa104a9e9076a219fec8aacd","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:22,863D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:22,955D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:23,050D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:23,162D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:23,246D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 17:59:23,356D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:51,608D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"4f9a12a02cb94518b61789de28ce5a6d","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:51,815D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入少于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '1666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:51,939D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '89'}
+请求内容: {'phone': '16666666666', 'password': 'hl12345', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入4次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:52,054D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '79'}
+请求内容: {'phone': '', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入2次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:52,146D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入空的密码
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '82'}
+请求内容: {'phone': '16666666666', 'password': '', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"密码输入不正确，你还可以输入3次","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:52,255D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入非1开头的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '06666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:52,349D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 输入大于11位的手机号
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '91'}
+请求内容: {'phone': '166666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":1,"code":0,"message":"用户名不存在","param":null,"data":null}
+Http状态码: 200
+=====================================================
+INFO2023-05-15 18:18:58,087D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-05-15.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/merchantNew/v1/order/selectByPage?currentPage=1&pageSize=10&queryBeginPayTime=2023-05-15%2000:00:00&queryEndPayTime=2023-05-15%2023:59:59
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b166011f6fbd498391ddef2906abda90'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":132,"orderNo":"81023135140000004","payTime":"2023-05-15 14:06:52","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":2,"orderStatusName":"收款成功","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"10.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.040000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":131,"orderNo":"81023135140000003","payTime":"2023-05-15 14:06:39","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"10.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"10.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":130,"orderNo":"81023135140000002","payTime":"2023-05-15 14:01:28","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":5,"orderStatusName":"全部退款","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"0.00","serviceFee":"0.000000","joinActivityTypeList":["orderShareAmount"],"joinActivityTypes":"orderShareAmount","yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"},{"id":129,"orderNo":"81023135140000001","payTime":"2023-05-15 14:01:13","shopNo":"100127","shopName":"皆人自动化专用商户(勿动","shopShortName":"皆人自动化专用商户(勿动","merchantNo":"100087","merchantName":"皆人自动化专用商户(勿动","merchantLoginAccount":null,"payWay":"wechat","payWayName":"微信","orderStatus":3,"orderStatusName":"交易关闭","cashierNo":"100214","cashierName":"皆人自动化专用商户(勿动","totalAmount":"1.00","actualAmount":"0.00","benefitAmount":"0.00","canRefundAmount":"1.00","serviceFee":"0.000000","joinActivityTypeList":[],"joinActivityTypes":null,"yesterdayOrderShare":false,"origin":"codeBoard","originName":"门店码牌","payBiz":"codeBoard","payBizName":"码牌支付"}],"totalCount":4}
+Http状态码: 200
+=====================================================

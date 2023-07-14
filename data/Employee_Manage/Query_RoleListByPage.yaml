@@ -1,0 +1,119 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 员工管理模块
+  allureStory: 权限组配置
+
+
+Query_RoleListByPage_1:
+    host: ${{host()}}
+    url: /operation/v1/platformRole/queryRoleListByPage
+    method: GET
+    detail: 查询全部权限组
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: 1
+      pageSize: 10
+      platformType: 2
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+
+    sql:
+
+Query_RoleListByPage_2:
+    host: ${{host()}}
+    url: /operation/v1/platformRole/queryRoleListByPage
+    method: GET
+    detail: 模糊查询test权限组列表
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: 1
+      pageSize: 10
+      platformType: 2
+      roleName: test
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+
+    sql:
+
+Query_RoleListByPage_3:
+    host: ${{host()}}
+    url: /operation/v1/platformRole/queryRoleListByPage
+    method: GET
+    detail: 查询不存在的权限组
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: 1
+      pageSize: 10
+      platformType: 2
+      roleName: agsduyfdgajh
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+
+    sql:

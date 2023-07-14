@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 银盛D0
+请求路径: https://api.pre.lianok.com/common/v1/config/rate/config/query
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '91'}
+请求内容: {'agentNo': '285171', 'channelCode': 'ysepay', 'shopNo': '100036', 'topAgentCode': 'zicai'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"channelCode":"ysepay","topAgentCode":"zicai","agentNo":"285171","minAliRate":"0.0023","maxAliRate":"0.1000","minWeixinRate":"0.0023","maxWeixinRate":"0.1000","minCloudPayGt1000Rate":"0.0055","maxCloudPayGt1000Rate":"0.0100","minCloudPayLe1000Rate":"0.0025","maxCloudPayLe1000Rate":"0.01","minScanCodeQuickPayRate":"0.0003","maxScanCodeQuickPayRate":"0.0020","minShareServiceRate":null,"maxShareServiceRate":"0.1","minQuickPaymentRate":null,"maxQuickPaymentRate":null,"minPersonalOnlineBankRate":null,"maxPersonalOnlineBankRate":null,"minBusinessFixedFee":null,"minCloudCreditcardRate":null,"maxCloudCreditcardRate":null,"minCloudDebitcardRate":null,"maxCloudDebitcardRate":null}}
+接口响应时长: 109 ms
+Http状态码: 200
+=====================================================

@@ -1,0 +1,250 @@
+INFO2023-04-17 14:28:56,435D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"019d3297a02e4bbfa285c7071402d3e5","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:33:15,752D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"6743ee187f70415da0e7d0762ac51a69","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:34:12,033D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"793049edc3a248de84d969dd93995453","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:35:40,199D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"809ad391d65b4108b359661d5e2e3bb4","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:37:05,450D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"7d58bd11fab643b9a8b62fa5907bf383","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:39:27,666D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"8fcf93ab143048a198d844ea7ba04c46","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:39:47,086D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"65d267db5cdc4a76bf4f4b08cbe31eef","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:40:43,258D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"412882e90e094f8f88bede6185c00598","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:41:52,277D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"93f84e741cd74ebfb445032232c63804","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:42:14,459D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"9457dcdcea6d4958b1784ac14fc9883d","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:44:17,844D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"d66a7ba129ce4523ad1fb1aebb104f6c","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:45:35,427D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"25d4f77273844d1ebdc82b85aa354c6a","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 17:46:56,671D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"98fd33c395e94ad9923a9d6771152433","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:06:30,498D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"18709c47be944a27b25827f6c8f90f55","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:06:51,161D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"eb47ee3636dc4b5c953d043fe0995ca2","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:07:34,154D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"de4c61602257407daec3a6b276a7f535","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:20:06,166D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"9a3c0c308a814865865f3f27a42f7004","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:20:23,700D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"cc017c9178e740c8b1b0ed5ba43a877a","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:25:04,376D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"769276641ba0472fa46915901d1c11d9","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:26:10,066D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"8d398e6ac5f64a03b2bfabbe7e57eb73","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:27:17,316D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"d3ac1f0026cf47cab4d3d74d915f4e71","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:27:42,129D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"2f1b2586c1264e08b8a4d72ef373b442","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:30:07,770D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"3fe6c940db3a4133a2e9de89a7ef457e","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:31:57,049D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"81d46e5739194548801ea93af25b0f46","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================
+INFO2023-04-17 18:37:13,708D:\Project\jieren_test\Merchant_Api_Test\logs\info-2023-04-17.log:log_decorator.py:44 
+======================================================
+用例标题: 正常登录
+请求路径: https://api.pre.lianok.com/common/v1/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '90'}
+请求内容: {'phone': '16666666666', 'password': 'hl123456', 'type': 'password', 'system': 'merchant'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"flag":false,"accessToken":"c5b9fc7486e14802b4230b8af7929ce1","user":{"id":1417,"deleted":null,"createTime":"2023-04-11T10:53:02","updateTime":"2023-04-11T10:53:02","system":"merchant","managementType":1,"parentNumber":"0","channelAgentCode":"zicai","number":"100087","company":"皆人自动化专用商户(勿动","name":"皆人自动化专用商户(勿动","phone":"16666666666","loginAccount":null,"password":"d6894682e5b40c57c009fa5c4507947f","email":null,"sex":null,"jobName":null,"img":null,"provinceCode":null,"cityCode":null,"areaCode":null,"roleId":5,"managerId":null,"infoStatus":1,"status":"normal","userInfo":null,"superiorId":null,"authenticationCode":null,"authorizeCode":null,"thirdPartyJson":null,"type":null,"typeDescription":null,"otherInfo":null,"jobNumber":null,"birthday":null,"position":null,"nickName":null,"userType":2,"topAgentInfo":null,"agentInfo":null,"merchantInfo":null,"merchantEmployeeInfo":null,"partnerInfo":null,"identityData":null,"voiceBroadcastConfig":null,"creator":null,"editor":null,"remark":null,"client":null,"agentNo":null,"partnerGroupNo":null,"partnerNo":null,"shopQrCode":null}}}
+Http状态码: 200
+=====================================================

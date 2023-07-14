@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 新增权限组
+请求路径: https://api.pre.lianok.com/operation/v1/platformRole/add
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '221'}
+请求内容: {'platformType': 2, 'roleName': '自动化测试权限组', 'menuIds': [273, 242, 240, 244, 267, 246, 333, 334, 322, 305, 328, 331, 332, 248, 249, 236, 241, 243, 266, 245, 321, 304, 327, 330, 247]}
+接口响应内容: {"status":1,"code":0,"message":"权限名称重复!","param":null,"data":null}
+接口响应时长: 114 ms
+Http状态码: 200
+=====================================================

@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 商户分账授权状态
+请求路径: https://api.pre.lianok.com/agent/v1/share/queryMerchantAccredit?shopNo=100036&channelCode=leShua&merchantNo=100018
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"shareAccreditVO":{"id":24,"channelAgentCode":"zicai","channelCode":"leShua","merchantNo":"100018","shopNo":"100036","channelMerchantNo":"4047014090","licenseFullname":null,"sharePercent":1000,"accreditType":1,"feeRate":0,"feeType":"0","shareProtocolPic":null,"contractUrl":"https://h5.leshuazf.com/wap/merBillAgreement/accredit.html?merchantId=4047014090&token=d87763b92b4243fea86d68dda08ec59d&contractId=SHFZ-iYdnZa-1669255931104","shareType":4,"shareStatus":0,"shareMode":1,"shareMarkType":1,"submitFeeRate":0,"shareCategory":2,"shareStrategy":"OrderAmountAndServiceFeeShare"},"shareMerchantListVO":[]}}
+接口响应时长: 105 ms
+Http状态码: 200
+=====================================================

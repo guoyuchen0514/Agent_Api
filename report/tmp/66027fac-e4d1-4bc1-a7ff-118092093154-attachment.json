@@ -1,0 +1,1 @@
+"{'status_code': 200, 'errorCode': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'errorMsg': {'jsonpath': '$.message', 'type': 'startswith', 'value': '密码输入不正确', 'AssertType': None}}"

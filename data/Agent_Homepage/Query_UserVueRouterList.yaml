@@ -1,0 +1,54 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 首页模块
+  allureStory: 查询登录用户菜单权限
+
+QueryVue_01:
+    host: ${{host()}}
+    url: /operation/v1/systemMenu/queryUserVueRouterList
+    method: GET
+    detail: 查询服务商角色菜单权限
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      system: 'agent'
+      userId: '1108'
+      roleId: '1'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+
+      Title:
+        jsonpath: $.data[6].meta.title
+        type: ==
+        value: '活动管理'
+        AssertType:
+
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+

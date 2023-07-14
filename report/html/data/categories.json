@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_Add_User[新增员工]",
+        "uid" : "c8a2f42ba8cb5d7e",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689065371359,
+          "stop" : 1689065371423,
+          "duration" : 64
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/agent/v1/user/addUser', 'method': 'POST', 'detail': '新增员工', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': True, 'data': {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      }, {
+        "name" : "test_Add_platformRole[新增权限组]",
+        "uid" : "52c9610e0978c0a6",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1689065371966,
+          "stop" : 1689065372093,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'url': 'https://api.pre.lianok.com/operation/v1/platformRole/add', 'method': 'POST', 'detail': '新增权限组', 'assert_data': {'status_code': 200, 'Code': {'jsonpath': '$.code', 'type': '==', 'value': 0, 'AssertType': None}, 'Status': {'jsonpath': '$.status', 'type': '==', 'value': 0, 'AssertType': None}}, 'headers': {'Content-Type': 'application/json', 'accesstoken': '$cache{login_cookie}'}, 'requestType': 'JSON', 'is_run': None, 'data': {'platformType': 2, 'roleName': '自动化测试权限组', 'menuIds': [273, 242, 240, 244, 267, 246, 333, 334, 322, 305, 328, 331, 332, 248, 249, 236, 241, 243, 266, 245, 321, 304, 327, 330, 247]}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'setup_sql': None, 'status_code': None, 'teardown_sql': None, 'teardown': None, 'current_request_set_cache': None, 'sleep': None}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

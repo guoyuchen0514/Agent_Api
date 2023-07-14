@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 近三十日收款渠道统计
+请求路径: https://api.pre.lianok.com/agent/v1/overData/payBizProportion
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '62'}
+请求内容: {'beginTradeDate': '2023-06-11', 'endTradeDate': '2023-07-10'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"payBiz":"api","payBizName":"接口支付","color":"#C3F37B","tradeAmount":"45.19"},{"payBiz":"app","payBizName":"app","color":"#FFABA3","tradeAmount":"0.09"},{"payBiz":"codeBoard","payBizName":"码牌支付","color":"#8495FF","tradeAmount":"0.38"},{"payBiz":"plugin","payBizName":"插件","color":"#FFEA97","tradeAmount":"0.07"},{"payBiz":"pos","payBizName":"pos","color":"#77BCFF","tradeAmount":"0.17"},{"payBiz":"receive_item","payBizName":"收款单","color":"#F29AFF","tradeAmount":"0.05"}]}
+接口响应时长: 166 ms
+Http状态码: 200
+=====================================================

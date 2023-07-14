@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>case_automatic_control.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+case_automatic_control.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">import </span>os
+<a name="l2"><span class="ln">2    </span></a><span class="s0">import </span>re
+<a name="l3"><span class="ln">3    </span></a><span class="s0">import </span>datetime
+<a name="l4"><span class="ln">4    </span></a><span class="s0">import </span>yaml
+<a name="l5"><span class="ln">5    </span></a><span class="s0">from </span>utils.read_file_tools.yaml_control <span class="s0">import </span>GetYamlData
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">from </span>utils.read_file_tools.get_yaml_data_analysis <span class="s0">import </span>CaseData
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a>
+<a name="l10"><span class="ln">10   </span></a><span class="s0">def </span>ensure_path_sep(path):
+<a name="l11"><span class="ln">11   </span></a>    <span class="s2">&quot;&quot;&quot;确保路径中的分隔符为正确的格式&quot;&quot;&quot;</span>
+<a name="l12"><span class="ln">12   </span></a>    <span class="s0">return </span>path.replace(<span class="s3">'/'</span>, os.path.sep).replace(<span class="s3">'</span><span class="s0">\\</span><span class="s3">'</span>, os.path.sep)
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s0">class </span>CaseData:
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a>    <span class="s0">def </span>__init__(self, file_path):
+<a name="l18"><span class="ln">18   </span></a>        self.file_path = file_path
+<a name="l19"><span class="ln">19   </span></a>
+<a name="l20"><span class="ln">20   </span></a>    <span class="s0">def </span>get_yaml_data(self):
+<a name="l21"><span class="ln">21   </span></a>        <span class="s0">try</span>:
+<a name="l22"><span class="ln">22   </span></a>            <span class="s0">with </span>open(self.file_path, <span class="s3">'r'</span>, encoding=<span class="s3">'utf-8'</span>) <span class="s0">as </span>f:
+<a name="l23"><span class="ln">23   </span></a>                data = yaml.safe_load(f)
+<a name="l24"><span class="ln">24   </span></a>            <span class="s0">return </span>data
+<a name="l25"><span class="ln">25   </span></a>        <span class="s0">except </span>Exception <span class="s0">as </span>e:
+<a name="l26"><span class="ln">26   </span></a>            print(<span class="s3">f&quot;读取yaml文件出错：</span><span class="s0">{</span>e<span class="s0">}</span><span class="s3">&quot;</span>)
+<a name="l27"><span class="ln">27   </span></a>            <span class="s0">raise</span>
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>    <span class="s2"># Rest of the code...</span>
+<a name="l30"><span class="ln">30   </span></a>
+<a name="l31"><span class="ln">31   </span></a>
+<a name="l32"><span class="ln">32   </span></a><span class="s0">def </span>write_testcase_file(*, allure_epic, allure_feature, class_title, func_title, case_path, case_ids, yaml_file_name,
+<a name="l33"><span class="ln">33   </span></a>                        allure_story, yesterday_time, testcase_file_name):
+<a name="l34"><span class="ln">34   </span></a>    now = datetime.datetime.now().strftime(<span class="s3">'%Y-%m-%d %H:%M:%S'</span>)
+<a name="l35"><span class="ln">35   </span></a>
+<a name="l36"><span class="ln">36   </span></a>    <span class="s2"># Rest of the code...</span>
+<a name="l37"><span class="ln">37   </span></a>
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a><span class="s0">def </span>get_testcase_content(yaml_file_path, yesterday_time):
+<a name="l40"><span class="ln">40   </span></a>    case_data = CaseData(ensure_path_sep(<span class="s3">'</span><span class="s0">\\</span><span class="s3">common</span><span class="s0">\\</span><span class="s3">config.yaml'</span>))
+<a name="l41"><span class="ln">41   </span></a>    yaml_data = case_data.get_yaml_data()
+<a name="l42"><span class="ln">42   </span></a>
+<a name="l43"><span class="ln">43   </span></a>    allure_epic = yaml_data[<span class="s3">'case_common'</span>][<span class="s3">'allureEpic'</span>]
+<a name="l44"><span class="ln">44   </span></a>    allure_feature = yaml_data[<span class="s3">'case_common'</span>][<span class="s3">'allureFeature'</span>]
+<a name="l45"><span class="ln">45   </span></a>    allure_story = yaml_data[<span class="s3">'case_common'</span>][<span class="s3">'allureStory'</span>]
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a>    class_title = case_data.case_process(case_id_switch=<span class="s0">True</span>)
+<a name="l48"><span class="ln">48   </span></a>    func_title = case_data.case_process(case_id_switch=<span class="s0">True</span>)
+<a name="l49"><span class="ln">49   </span></a>    case_ids = case_data.case_process(case_id_switch=<span class="s0">True</span>)
+<a name="l50"><span class="ln">50   </span></a>
+<a name="l51"><span class="ln">51   </span></a>    case_dir = os.path.dirname(yaml_file_path)
+<a name="l52"><span class="ln">52   </span></a>    yaml_file_name = os.path.basename(yaml_file_path)
+<a name="l53"><span class="ln">53   </span></a>    case_file_name = os.path.splitext(yaml_file_name)[<span class="s4">0</span>]
+<a name="l54"><span class="ln">54   </span></a>    case_path = os.path.join(case_dir, <span class="s3">'..'</span>, <span class="s3">'..'</span>, <span class="s3">'test_case'</span>, <span class="s3">f&quot;test_</span><span class="s0">{</span>case_file_name<span class="s0">}</span><span class="s3">.py&quot;</span>)
+<a name="l55"><span class="ln">55   </span></a>    testcase_file_name = <span class="s3">f&quot;test_</span><span class="s0">{</span>case_file_name<span class="s0">}</span><span class="s3">.py&quot;</span>
+<a name="l56"><span class="ln">56   </span></a>
+<a name="l57"><span class="ln">57   </span></a>    write_testcase_file(
+<a name="l58"><span class="ln">58   </span></a>        allure_epic=allure_epic,
+<a name="l59"><span class="ln">59   </span></a>        allure_feature=allure_feature,
+<a name="l60"><span class="ln">60   </span></a>        class_title=class_title,
+<a name="l61"><span class="ln">61   </span></a>        func_title=func_title,
+<a name="l62"><span class="ln">62   </span></a>        case_path=case_path,
+<a name="l63"><span class="ln">63   </span></a>        case_ids=case_ids,
+<a name="l64"><span class="ln">64   </span></a>        yaml_file_name=yaml_file_name,
+<a name="l65"><span class="ln">65   </span></a>        allure_story=allure_story,
+<a name="l66"><span class="ln">66   </span></a>        yesterday_time=yesterday_time,
+<a name="l67"><span class="ln">67   </span></a>        testcase_file_name=testcase_file_name
+<a name="l68"><span class="ln">68   </span></a>    )
+<a name="l69"><span class="ln">69   </span></a>
+<a name="l70"><span class="ln">70   </span></a>
+<a name="l71"><span class="ln">71   </span></a><span class="s0">def </span>generate_testcases(yaml_dir_path, yesterday_time):
+<a name="l72"><span class="ln">72   </span></a>    yaml_files = get_yaml_files(yaml_dir_path)
+<a name="l73"><span class="ln">73   </span></a>    <span class="s0">for </span>yaml_file <span class="s0">in </span>yaml_files:
+<a name="l74"><span class="ln">74   </span></a>        get_testcase_content(yaml_file, yesterday_time)
+<a name="l75"><span class="ln">75   </span></a>
+<a name="l76"><span class="ln">76   </span></a>
+<a name="l77"><span class="ln">77   </span></a><span class="s0">def </span>get_yaml_files(yaml_dir_path):
+<a name="l78"><span class="ln">78   </span></a>    yaml_files = []
+<a name="l79"><span class="ln">79   </span></a>    <span class="s0">for </span>root, dirs, files <span class="s0">in </span>os.walk(yaml_dir_path):
+<a name="l80"><span class="ln">80   </span></a>        <span class="s0">for </span>file <span class="s0">in </span>files:
+<a name="l81"><span class="ln">81   </span></a>            <span class="s0">if </span>file.endswith(<span class="s3">&quot;.yaml&quot;</span>) <span class="s0">or </span>file.endswith(<span class="s3">&quot;.yml&quot;</span>):
+<a name="l82"><span class="ln">82   </span></a>                yaml_files.append(os.path.join(root, file))
+<a name="l83"><span class="ln">83   </span></a>    <span class="s0">return </span>yaml_files
+<a name="l84"><span class="ln">84   </span></a>
+<a name="l85"><span class="ln">85   </span></a>
+<a name="l86"><span class="ln">86   </span></a><span class="s0">if </span>__name__ == <span class="s3">'__main__'</span>:
+<a name="l87"><span class="ln">87   </span></a>    yaml_dir_path = os.path.abspath(os.path.join(os.path.dirname(__file__), <span class="s3">'..'</span>, <span class="s3">'data'</span>))
+<a name="l88"><span class="ln">88   </span></a>    yesterday_time = str(datetime.date.today() - datetime.timedelta(days=<span class="s4">1</span>))
+<a name="l89"><span class="ln">89   </span></a>    generate_testcases(yaml_dir_path, yesterday_time)
+<a name="l90"><span class="ln">90   </span></a></pre>
+</body>
+</html>

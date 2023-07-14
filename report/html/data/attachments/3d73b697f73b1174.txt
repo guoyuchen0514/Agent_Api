@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询小熊测试拓展组
+请求路径: https://api.pre.lianok.com/agent/v1/agentPartner/queryPageByCondition
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '117'}
+请求内容: {'currentPage': '1', 'pageSize': '10', 'userType': '13', 'partnerName': '小熊测试拓展组'}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":23,"partnerName":"小熊测试拓展组","partnerNo":"100017","mobile":"14712324836","isBlocked":0,"blockName":"启用","merchantCount":0,"monthMerchantCount":0,"userType":null,"partnerNameMobile":"小熊测试拓展组(14712324836)","createTime":"2023-04-06 11:19:04","remark":null}],"totalCount":1}
+接口响应时长: 77 ms
+Http状态码: 200
+=====================================================

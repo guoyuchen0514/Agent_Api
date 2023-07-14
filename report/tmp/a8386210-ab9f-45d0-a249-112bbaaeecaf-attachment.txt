@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 搜索百果园商户
+请求路径: https://api.pre.lianok.com/agent/v1/shop/queryByPage?currentPage=1&pageSize=10&shopShortName=%E7%99%BE%E6%9E%9C%E5%9B%AD
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":432,"channelAgentCode":"zicai","agentNo":"285171","subAgentNo":null,"agentPartnerNo":null,"partnerGroupNo":null,"merchantNo":"100018","parentShopNo":"0","shopNo":"100036","shopName":"商户_郭雨晨","shopShortName":"百果园水果店","mccCode":"5441","mccCodeCN":"食品药品类/糖果及坚果商店","shopImg":"https://horse-pay-develop.oss-cn-hangzhou.aliyuncs.com/common/20221123151745413_sC8v2dZ1V9jP.jpg","provinceCode":"330000","provinceName":"浙江省","cityCode":"330100","cityName":"杭州市","areaCode":"330105","areaName":"拱墅区","address":"拱墅区城西银泰B1层10-22","lng":null,"lat":null,"contacter":null,"phone":"13455456867","qrCodeNo":null,"qrCode":null,"qrCodeKey":null,"kbShopId":null,"useChannelCode":"leShua","status":4,"isDisabled":0,"deleted":null,"createTime":"2022-11-23 15:18:46","updateTime":"2023-07-11 16:49:45","shopAddress":"浙江省杭州市拱墅区拱墅区城西银泰B1层10-22","merchantName":"百果园水果","loginAccount":"13455456862","merchantAccount":null,"password":null,"roleId":0,"system":null,"userNo":null,"deviceNum":null,"channelStatusList":[{"channelCode":"leShua","status":4,"channelAgentCode":"zicai"},{"channelCode":"ysepay","status":4,"channelAgentCode":"zicai"},{"channelCode":"suiXingFu","status":4,"channelAgentCode":"zicai"},{"channelCode":"heLiBao","status":4,"channelAgentCode":"zicai"},{"channelCode":"wechat","status":2,"channelAgentCode":"zicai"},{"channelCode":"alipay","status":1,"channelAgentCode":"zicai"},{"channelCode":"leShuaOnline","status":-1,"channelAgentCode":null}],"partnerGroupName":"小熊测试服务商","partnerName":"小熊测试服务商"}],"totalCount":1}
+接口响应时长: 122 ms
+Http状态码: 200
+=====================================================

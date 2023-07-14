@@ -1,0 +1,2 @@
+ERROR2023-05-16 15:24:06,220D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-16.log:assertion_control.py:168 JsonPath值获取失败 $.data[0].userName 
+ERROR2023-05-16 15:44:01,923D:\Project\jieren_test\Merchant_Api_Test\logs\error-2023-05-16.log:mysql_control.py:142 数据库连接失败，失败原因 (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'actual_amount,service_fee FROM pay_order_14.order_30 WHERE merchant_no ='100087'' at line 1")

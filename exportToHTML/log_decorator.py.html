@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>log_decorator.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
+.s4 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+log_decorator.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># !/usr/bin/env python3</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># -*- coding: utf-8 -*-</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># @Time : 2023-03-07 15:11</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># @Author : 皆人</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># @File : log_decorator.py</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># @Software: PyCharm</span>
+<a name="l7"><span class="ln">7    </span></a>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a><span class="s0">&quot;&quot;&quot; 
+<a name="l10"><span class="ln">10   </span></a>日志装饰器，控制程序日志输入，默认为 True 
+<a name="l11"><span class="ln">11   </span></a>如设置 False，则程序不会打印日志 
+<a name="l12"><span class="ln">12   </span></a>&quot;&quot;&quot;</span>
+<a name="l13"><span class="ln">13   </span></a><span class="s2">import </span>ast
+<a name="l14"><span class="ln">14   </span></a><span class="s2">from </span>functools <span class="s2">import </span>wraps
+<a name="l15"><span class="ln">15   </span></a><span class="s2">from </span>utils.read_file_tools.regular_control <span class="s2">import </span>cache_regular
+<a name="l16"><span class="ln">16   </span></a><span class="s2">from </span>utils.logging_tool.log_control <span class="s2">import </span>INFO, ERROR
+<a name="l17"><span class="ln">17   </span></a>
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a><span class="s2">def </span>log_decorator(switch: bool):
+<a name="l20"><span class="ln">20   </span></a>    <span class="s0">&quot;&quot;&quot; 
+<a name="l21"><span class="ln">21   </span></a>    封装日志装饰器, 打印请求信息 
+<a name="l22"><span class="ln">22   </span></a>    :param switch: 定义日志开关 
+<a name="l23"><span class="ln">23   </span></a>    :return: 
+<a name="l24"><span class="ln">24   </span></a>    &quot;&quot;&quot;</span>
+<a name="l25"><span class="ln">25   </span></a>    <span class="s2">def </span>decorator(func):
+<a name="l26"><span class="ln">26   </span></a>        @wraps(func)
+<a name="l27"><span class="ln">27   </span></a>        <span class="s2">def </span>swapper(*args, **kwargs):
+<a name="l28"><span class="ln">28   </span></a>            <span class="s0"># 判断日志为开启状态，才打印日志</span>
+<a name="l29"><span class="ln">29   </span></a>            res = func(*args, **kwargs)
+<a name="l30"><span class="ln">30   </span></a>            <span class="s0"># 判断日志开关为开启状态      # f&quot;接口响应时长: {res.res_time} ms\n&quot; \</span>
+<a name="l31"><span class="ln">31   </span></a>            <span class="s2">if </span>switch:
+<a name="l32"><span class="ln">32   </span></a>                _log_msg = <span class="s3">f&quot;</span><span class="s2">\n</span><span class="s3">======================================================</span><span class="s2">\n</span><span class="s3">&quot; </span>\
+<a name="l33"><span class="ln">33   </span></a>                               <span class="s3">f&quot;用例标题: </span><span class="s2">{</span>res.detail<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l34"><span class="ln">34   </span></a>                               <span class="s3">f&quot;请求路径: </span><span class="s2">{</span>res.url<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l35"><span class="ln">35   </span></a>                               <span class="s3">f&quot;请求方式: </span><span class="s2">{</span>res.method<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l36"><span class="ln">36   </span></a>                               <span class="s3">f&quot;请求头:   </span><span class="s2">{</span>res.headers<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l37"><span class="ln">37   </span></a>                               <span class="s3">f&quot;请求内容: </span><span class="s2">{</span>res.request_body<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l38"><span class="ln">38   </span></a>                               <span class="s3">f&quot;接口响应内容: </span><span class="s2">{</span>res.response_data<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l39"><span class="ln">39   </span></a>                               <span class="s3">f&quot;接口响应时长: </span><span class="s2">{</span>res.res_time<span class="s2">} </span><span class="s3">ms</span><span class="s2">\n</span><span class="s3">&quot;</span>\
+<a name="l40"><span class="ln">40   </span></a>                               <span class="s3">f&quot;Http状态码: </span><span class="s2">{</span>res.status_code<span class="s2">}\n</span><span class="s3">&quot; </span>\
+<a name="l41"><span class="ln">41   </span></a>                               <span class="s3">&quot;=====================================================&quot;</span>
+<a name="l42"><span class="ln">42   </span></a>                _is_run = ast.literal_eval(cache_regular(str(res.is_run)))
+<a name="l43"><span class="ln">43   </span></a>                <span class="s0"># 判断正常打印的日志，控制台输出绿色</span>
+<a name="l44"><span class="ln">44   </span></a>                <span class="s2">if </span>_is_run <span class="s2">in </span>(<span class="s2">True</span>, <span class="s2">None</span>) <span class="s2">and </span>res.status_code == <span class="s4">200</span>:
+<a name="l45"><span class="ln">45   </span></a>                    INFO.logger.info(_log_msg)
+<a name="l46"><span class="ln">46   </span></a>                <span class="s2">else</span>:
+<a name="l47"><span class="ln">47   </span></a>                    <span class="s0"># 失败的用例，控制台打印红色</span>
+<a name="l48"><span class="ln">48   </span></a>                    ERROR.logger.error(_log_msg)
+<a name="l49"><span class="ln">49   </span></a>            <span class="s2">return </span>res
+<a name="l50"><span class="ln">50   </span></a>        <span class="s2">return </span>swapper
+<a name="l51"><span class="ln">51   </span></a>    <span class="s2">return </span>decorator
+<a name="l52"><span class="ln">52   </span></a></pre>
+</body>
+</html>

@@ -1,0 +1,22 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询权限组
+请求路径: https://api.pre.lianok.com/operation/v1/platformRole/queryRoleListByPage?currentPage=1&pageSize=10&platformType=2&roleName=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%9D%83%E9%99%90%E7%BB%84
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":205,"roleName":"自动化测试权限组","platformType":2,"deleted":null,"editor":1108,"editorName":"小熊测试服务商","isModify":0,"createTime":"2023-07-11 16:27:56","updateTime":"2023-07-11 16:27:56"}],"totalCount":1}
+接口响应时长: 108 ms
+Http状态码: 200
+=====================================================
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 编辑权限组
+请求路径: https://api.pre.lianok.com/operation/v1/platformRole/editRoleAndMenu
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4', 'Content-Length': '239'}
+请求内容: {'roleId': '205', 'roleName': '自动化测试权限组4', 'platformType': 2, 'menuIds': [236, 273, 241, 242, 240, 243, 244, 266, 267, 245, 246, 333, 334, 321, 322, 304, 305, 327, 328, 330, 331, 332, 247, 248, 249]}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 336 ms
+Http状态码: 200
+=====================================================

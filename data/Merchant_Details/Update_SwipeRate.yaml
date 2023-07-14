@@ -1,0 +1,93 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 商户详情
+  allureStory: 修改商户POS刷卡费率
+
+Update_SwipeRate_01:
+    host: ${{host()}}
+    url: /agent/v1/shop/agentUpdateSwipeRate
+    method: POST
+    detail: 修改商户POS刷卡D1到账费率
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      merchantNo: '100018'
+      shopNo: '100036'
+      swipeType: '1'
+      channelCode: 'leShua'
+      unionDebitRate: '0.0052'
+      unionCreditRate: '0.0052'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Update_SwipeRate_02:
+    host: ${{host()}}
+    url: /agent/v1/shop/agentUpdateSwipeRate
+    method: POST
+    detail: 修改商户POS刷卡D0到账费率
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      merchantNo: '100018'
+      shopNo: '100036'
+      swipeType: '2'
+      channelCode: 'leShua'
+      unionDebitRate: '0.0055'
+      unionCreditRate: '0.0055'
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:

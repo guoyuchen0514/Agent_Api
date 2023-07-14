@@ -1,0 +1,173 @@
+# 公共参数
+case_common:
+  allureEpic: 服务商后台接口
+  allureFeature: 交易流水
+  allureStory: 订单列表
+
+Select_OrderStatic_01:
+    host: ${{host()}}
+    url: /agent/v1/order/selectOrderStatic
+    method: GET
+    detail: 交易流水今日顶部统计数据
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+      beginTime: '${{today_date()}}'
+      endTime: '${{today_end_date()}}'
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Select_OrderStatic_02:
+    host: ${{host()}}
+    url: /agent/v1/order/selectOrderStatic
+    method: GET
+    detail: 交易流水昨日顶部统计数据
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+      beginTime: '${{yesterday_date()}}'
+      endTime: '${{yesterday_end_date(}}'
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Select_OrderStatic_03:
+    host: ${{host()}}
+    url: /agent/v1/order/selectOrderStatic
+    method: GET
+    detail: 交易流水近七日顶部统计数据
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+      beginTime: '${{pastsevendays_date()}}'
+      endTime: '${{today_end_date()}}'
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:
+
+Select_OrderStatic_04:
+    host: ${{host()}}
+    url: /agent/v1/order/selectOrderStatic
+    method: GET
+    detail: 交易流水近三十日顶部统计数据
+    headers:
+      Content-Type: application/json
+      accesstoken: $cache{login_cookie}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: data
+    # 是否执行，空或者 true 都会执行
+    is_run: True
+    data:
+      currentPage: '1'
+      pageSize: '10'
+      beginTime: '${{pastthirtydays_date()}}'
+      endTime: '${{today_end_date()}}'
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+      # 依赖的数据
+    dependence_case_data: None
+    assert:
+  # 断言接口状态码
+      status_code: 200
+      Code:
+        jsonpath: $.code
+        type: ==
+        value: 0
+        AssertType:
+        # 断言接口返回的username
+      Status:
+        jsonpath: $.status
+        type: ==
+        value: 0
+        AssertType:
+#      Msg:
+#        jsonpath: $.data.user.company
+#        type: ==
+#        value: "小熊测试服务商"
+#        AssertType:
+    sql:

@@ -1,0 +1,814 @@
+INFO2023-07-10 14:51:02,456D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '1a8b2ffa2cb742a080b9f352ff0ca7ba'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 263 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 14:52:44,832D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b0e3f8f9613f49ab87ae9253ae8d1d9c'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 192 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 15:27:44,747D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9216c2f16fb547ff94e9f387ff49337c'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 187 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 15:55:59,941D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '78ca8650ff744e879710ce6a5e7fac05'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 215 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 15:57:30,911D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6722a2490c27483c9d29e14a7d346dfd'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 257 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 16:48:45,584D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取服务商账户信息
+请求路径: https://api.pre.lianok.com/agent/v1/agentInfo/getAgentBaseInfo
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '3ade4fd4b5c74519bb4a2f72a899413b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"agentNo":"285171","businessType":"individual","businessTypeName":"个人","agentName":"小熊测试服务商","loginAccount":"15617886089","personName":null,"personMobile":"15617886089","companyAddress":"浙江省杭州市上城区西湖区浙大森林","activeScopeType":"all","activeScope":{"provinceCode":null,"provinceName":null,"cityCode":null,"cityName":null},"expireDate":"2024-07-06","wechatPayRate":null,"alipayRate":null,"cloudPayLe1000Rate":null,"cloudPayGt1000Rate":null,"bankCardNo":"123123124341234123","bankAccountHolder":"小熊","bankArea":"北京北京市北京市","bankContactLine":"320100004085","bankMobile":null,"bankBranchName":"北京大兴九银村镇银行股份有限公司芦城支行","bankAccountType":"0","bankAccountTypeName":"个人结算卡","chargeFeePercent":null,"agentStatus":"complete","agentStatusDesc":"启用中","blockStatus":1,"blockStatusDesc":"启用中","roleGroupName":null,"agentRateConfigs":[{"channelCode":"alipay","wechatPayRate":null,"alipayRate":"0.0038","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":null,"scanCodeQuickPayRate":null,"shareServiceRate":"0.0000","quickPaymentRate":"0.0000","businessFixedFee":"0.00","personalOnlineBankRate":"0.0000","cloudCreditcardRate":"0.0000","cloudDebitcardRate":"0.0000"},{"channelCode":"fuiou","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":null,"cloudPayLe1000Rate":null,"chargeFeePercent":"0.30","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":"0.0077","businessFixedFee":"7.00","personalOnlineBankRate":"0.0053","cloudCreditcardRate":"0.0062","cloudDebitcardRate":"0.0035"},{"channelCode":"heLiBao","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0052","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShua","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"leShuaOnline","wechatPayRate":"0.0066","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0023","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":"0.0100","quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"suiXingFu","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":null,"shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null},{"channelCode":"ysepay","wechatPayRate":"0.0023","alipayRate":"0.0023","cloudPayGt1000Rate":"0.0055","cloudPayLe1000Rate":"0.0025","chargeFeePercent":"0.00","scanCodeQuickPayRate":"0.0003","shareServiceRate":null,"quickPaymentRate":null,"businessFixedFee":null,"personalOnlineBankRate":null,"cloudCreditcardRate":null,"cloudDebitcardRate":null}]}}
+接口响应时长: 220 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 16:59:23,845D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/role/getRoleList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2211aa02e65345149c5864c9d682f683'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":159,"roleName":"顶代员工","platformType":2,"editorName":null,"createTime":"2023-04-13 15:47:01"},{"id":84,"roleName":"testYY","platformType":2,"editorName":null,"createTime":"2023-04-05 17:32:59"},{"id":83,"roleName":"testTT","platformType":2,"editorName":null,"createTime":"2023-04-05 17:28:07"},{"id":80,"roleName":"3","platformType":2,"editorName":null,"createTime":"2022-12-05 15:29:16"}]}
+接口响应时长: 97 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:03:46,161D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取权限组数据
+请求路径: https://api.pre.lianok.com/agent/v1/role/getRoleList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a5958fdbfd1c4bea95be885b7b870bc3'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":159,"roleName":"顶代员工","platformType":2,"editorName":null,"createTime":"2023-04-13 15:47:01"},{"id":84,"roleName":"testYY","platformType":2,"editorName":null,"createTime":"2023-04-05 17:32:59"},{"id":83,"roleName":"testTT","platformType":2,"editorName":null,"createTime":"2023-04-05 17:28:07"},{"id":80,"roleName":"3","platformType":2,"editorName":null,"createTime":"2022-12-05 15:29:16"}]}
+接口响应时长: 124 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:04:22,018D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 获取权限组数据
+请求路径: https://api.pre.lianok.com/agent/v1/role/getRoleList
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '7a1b6d1cbe8148f0936918f22190f5aa'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":159,"roleName":"顶代员工","platformType":2,"editorName":null,"createTime":"2023-04-13 15:47:01"},{"id":84,"roleName":"testYY","platformType":2,"editorName":null,"createTime":"2023-04-05 17:32:59"},{"id":83,"roleName":"testTT","platformType":2,"editorName":null,"createTime":"2023-04-05 17:28:07"},{"id":80,"roleName":"3","platformType":2,"editorName":null,"createTime":"2022-12-05 15:29:16"}]}
+接口响应时长: 387 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:06:40,488D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f8b73181f7db44b5a4ede61a89db1945'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 239 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:09:45,071D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'b7d0f32593db48c38a50b5fb25e6378a'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 93 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:11:51,648D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '518e784caba44499a5d20e93655de097'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 110 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:15:06,953D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '5c252ff18b6443669f3172226f99c31b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 112 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:15:30,460D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a229c38f77f6423992a2214dd8e81006'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 115 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:15:30,576D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a229c38f77f6423992a2214dd8e81006'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 102 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:17:14,388D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'cc574ffcb7d44832b9a9802ed959bb83'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 104 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:17:14,588D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'cc574ffcb7d44832b9a9802ed959bb83'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 181 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:17:14,675D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'cc574ffcb7d44832b9a9802ed959bb83'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 81 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:21:32,902D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '90366390a5004ed09221a49ceb267995'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 131 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:21:33,017D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '90366390a5004ed09221a49ceb267995'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 93 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:21:33,135D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '90366390a5004ed09221a49ceb267995'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 112 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:21:33,214D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '90366390a5004ed09221a49ceb267995'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 73 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:29:20,825D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8e7a8ba6afcc4faeb684701d5dc27f37'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 94 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:29:20,951D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8e7a8ba6afcc4faeb684701d5dc27f37'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 110 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:29:21,064D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8e7a8ba6afcc4faeb684701d5dc27f37'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 108 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:29:21,160D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8e7a8ba6afcc4faeb684701d5dc27f37'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 90 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:29:21,270D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选正确手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=15617000001
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '8e7a8ba6afcc4faeb684701d5dc27f37'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 105 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:46,822D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 106 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:46,929D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 96 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:47,017D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 82 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:47,095D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 72 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:47,195D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选正确手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=15617000001
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 94 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:31:47,269D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选不存在手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=1981687235
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'e4fbe6a9de6b433081a84e6747563be1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 68 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:54,765D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 89 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:54,891D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 102 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:55,024D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 127 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:55,109D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 80 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:55,228D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选正确手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=15617000001
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 113 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:55,340D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选不存在手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=1981687235
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 104 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:32:55,479D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选手机号以156开头的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=156
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '07e334b5212f41eb9057bb73c440c734'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 130 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:33,989D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 155 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,083D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 81 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,190D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 102 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,272D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 75 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,364D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选正确手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=15617000001
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 87 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,457D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选不存在手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=1981687235
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,560D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选手机号以156开头的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=156
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 94 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 17:51:34,660D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选所属权限组为顶代员工的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&roleId=159
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '2c78307650c54e01830b716fb3d4ab5d'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 85 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,100D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1335,"agentNo":"285171","name":"是的","phone":"13000003001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"},{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":6}
+接口响应时长: 114 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,234D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为正确的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F%E7%86%8A
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 115 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,331D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件为部分的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E5%B0%8F
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1334,"agentNo":"285171","name":"小明","phone":"13000009876","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"136c18f82b72525d07d9f8902504dfb2"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 90 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,405D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选条件不存在的账户名称
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&name=%E7%A9%BA%E7%9A%84%E8%B4%A6%E6%88%B7%E5%90%8D%E7%A7%B0
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 69 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,496D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选正确手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=15617000001
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 84 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,589D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选不存在手机号的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=1981687235
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[],"totalCount":0}
+接口响应时长: 83 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,688D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选手机号以156开头的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=156
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1260,"agentNo":"285171","name":"小熊","phone":"15617000001","roleId":80,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":3}
+接口响应时长: 88 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,796D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 筛选所属权限组为顶代员工的员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone&roleId=159
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1514,"agentNo":"285171","name":"鲸落测试","phone":"15623333333","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"0fa2b35dc2d1c0da17bd3d1521b6e2f0"},{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":2}
+接口响应时长: 92 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:02:01,925D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 组合查询
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&phone=14700000001&roleId=159&name=%E9%A1%B6%E4%BB%A3%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f1d7c331a96248d3b5f24e069930401b'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1436,"agentNo":"285171","name":"顶代员工","phone":"14700000001","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":null,"status":"normal","statusDesc":"启用","password":"39ee488c7696d8f3ee3456218666a3c9"}],"totalCount":1}
+接口响应时长: 119 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:06:30,611D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0df53bd008084f4d8960db6e87e86d5a', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 360 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:07:15,134D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '6c193ed3d0504064954c4f5b87497719', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 436 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:10:21,402D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '69a145d2016743efa254949f69766b98', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":1,"code":0,"message":"登录手机号已存在!","param":null,"data":null}
+接口响应时长: 63 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:10:21,597D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 禁用员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/freezeUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '69a145d2016743efa254949f69766b98', 'Content-Length': '12'}
+请求内容: {'id': 1517}
+接口响应内容: {"status":1,"code":500,"message":"服务器开小差了","param":null,"data":null}
+接口响应时长: 52 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:10:38,310D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0d9cf7ad048149b2b75986d45f6d435f', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 293 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:10:38,385D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 禁用员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/freezeUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0d9cf7ad048149b2b75986d45f6d435f', 'Content-Length': '12'}
+请求内容: {'id': 1517}
+接口响应内容: {"status":1,"code":500,"message":"服务器开小差了","param":null,"data":null}
+接口响应时长: 69 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:22:32,160D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'd426405c2cab46b4a2cc149e06e3b3c1', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 270 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:46:05,733D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f8e9c58b349f4e148d9fd537cd7a8c11', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 292 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:46:05,825D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'f8e9c58b349f4e148d9fd537cd7a8c11'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1520,"agentNo":"285171","name":"自动化测试员工","phone":"19893647823","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":"自动化测试员工","status":"normal","statusDesc":"启用","password":"189dc3467a3d1c256cb3dc7b05c6aa84"}],"totalCount":1}
+接口响应时长: 87 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:47:04,746D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0024384efffd40ad8a98b65277ab1ce5', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":1,"code":0,"message":"登录手机号已存在!","param":null,"data":null}
+接口响应时长: 89 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:47:04,951D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '0024384efffd40ad8a98b65277ab1ce5'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1520,"agentNo":"285171","name":"自动化测试员工","phone":"19893647823","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":"自动化测试员工","status":"normal","statusDesc":"启用","password":"189dc3467a3d1c256cb3dc7b05c6aa84"}],"totalCount":1}
+接口响应时长: 100 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:47:22,767D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a76e5aff50ca438e80c1e6fc6d80d4a1', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 317 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:47:22,859D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': 'a76e5aff50ca438e80c1e6fc6d80d4a1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1521,"agentNo":"285171","name":"自动化测试员工","phone":"19893647823","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":"自动化测试员工","status":"normal","statusDesc":"启用","password":"bd93eb2c335d613528f52b89fdd86dbf"}],"totalCount":1}
+接口响应时长: 86 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:54:39,277D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9b6ca410c2394580b7f0405c8e5354d1', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":1,"code":0,"message":"登录手机号已存在!","param":null,"data":null}
+接口响应时长: 82 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:54:39,492D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '9b6ca410c2394580b7f0405c8e5354d1'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1521,"agentNo":"285171","name":"自动化测试员工","phone":"19893647823","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":"自动化测试员工","status":"normal","statusDesc":"启用","password":"bd93eb2c335d613528f52b89fdd86dbf"}],"totalCount":1}
+接口响应时长: 97 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:54:58,731D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 新增员工
+请求路径: https://api.pre.lianok.com/agent/v1/user/addUser
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '422fc06e1b78409d8648e26f1677cd89', 'Content-Length': '176'}
+请求内容: {'agentNo': None, 'id': None, 'name': '自动化测试员工', 'phone': 19893647823, 'remark': '自动化测试员工', 'roleId': 159}
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":null}
+接口响应时长: 393 ms
+Http状态码: 200
+=====================================================
+INFO2023-07-10 18:54:58,864D:\Agent_Api\logs\info-2023-07-10.log:log_decorator.py:45 
+======================================================
+用例标题: 查询员工列表
+请求路径: https://api.pre.lianok.com/agent/v1/user/queryAgentUser?currentPage=1&pageSize=10&name=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%91%98%E5%B7%A5
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '422fc06e1b78409d8648e26f1677cd89'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":[{"id":1522,"agentNo":"285171","name":"自动化测试员工","phone":"19893647823","roleId":159,"roleName":null,"editor":1108,"editorName":null,"remark":"自动化测试员工","status":"normal","statusDesc":"启用","password":"0af56383bd6d43cd95d1c69fac69ade2"}],"totalCount":1}
+接口响应时长: 128 ms
+Http状态码: 200
+=====================================================

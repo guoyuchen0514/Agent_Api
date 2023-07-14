@@ -1,0 +1,11 @@
+INFO     D:\Agent_Api\logs\info-2023-07-11.log:log_decorator.py:45 
+======================================================
+用例标题: 查询商户号
+请求路径: https://api.pre.lianok.com/agent/v1/shop/querySubMerchantNoInfo?shopNo=100036
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'accesstoken': '910cc6b780af4429a1c7bb9dda27a7e4'}
+请求内容: None
+接口响应内容: {"status":0,"code":0,"message":null,"param":null,"data":{"wechatMerchantNos":[{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"leShua","channelName":"乐刷","merchantNo":"546961579"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"ysepay","channelName":"银盛","merchantNo":"546968660"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"suiXingFu","channelName":"随行付","merchantNo":"547243528"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"heLiBao","channelName":"合利宝","merchantNo":"571793656"}],"alipayMerchantNos":[{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"leShua","channelName":"乐刷","merchantNo":"2088420236270996"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"ysepay","channelName":"银盛","merchantNo":"2088420237655790"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"suiXingFu","channelName":"随行付","merchantNo":"2088420259836016"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"heLiBao","channelName":"合利宝","merchantNo":"2088620674994520"}],"channelMerchantNos":[{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"leShua","channelName":"乐刷","merchantNo":"4047014090"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"ysepay","channelName":"银盛","merchantNo":"826347254410067"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"suiXingFu","channelName":"随行付","merchantNo":"399221125058673"},{"id":null,"deleted":null,"createTime":null,"updateTime":null,"channelCode":"heLiBao","channelName":"合利宝","merchantNo":"E1807781055"}]}}
+接口响应时长: 95 ms
+Http状态码: 200
+=====================================================

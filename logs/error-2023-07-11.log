@@ -1,0 +1,3 @@
+ERROR2023-07-11 16:27:06,489D:\Agent_Api\logs\error-2023-07-11.log:assertion_control.py:165 JsonPath值获取失败 $.data.agentName 
+ERROR2023-07-11 16:33:58,708D:\Agent_Api\logs\error-2023-07-11.log:assertion_control.py:165 JsonPath值获取失败 $.data.agentName 
+ERROR2023-07-11 18:16:37,158D:\Agent_Api\logs\error-2023-07-11.log:mysql_control.py:142 数据库连接失败，失败原因 (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'platform_basic.agent where agent_no=285171' at line 1")
